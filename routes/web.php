@@ -18,3 +18,5 @@ Route::get('/', function () {
 });
 
 Route::view('/test', 'routes.test');
+
+Route::view('/nav', 'routes.nav');
