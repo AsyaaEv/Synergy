@@ -19,5 +19,9 @@ Route::get('/', function () {
 
 Route::view('/test', 'routes.test');
 
+<<<<<<< HEAD
 
 Route::view('/hero', 'routes.hero');
+=======
+Route::view('/nav', 'routes.nav');
+>>>>>>> 730a15aaca87f0e881ecd24241fb4ea2cfc3865e
