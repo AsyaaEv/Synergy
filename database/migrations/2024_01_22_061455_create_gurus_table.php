@@ -17,7 +17,7 @@ return new class extends Migration
             $table->string('mapel');
             $table->string('nip');
             $table->string('email');
-            $table->string('foto');
+            $table->string('foto')->default('no_profile');
             $table->timestamps();
         });
     }
