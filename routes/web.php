@@ -18,3 +18,6 @@ Route::get('/', function () {
 });
 
 Route::view('/test', 'routes.test');
+
+
+Route::view('/hero', 'routes.hero');
