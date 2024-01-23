@@ -1,7 +1,7 @@
-<nav class="navbar nav-respon navbar-expand-lg fixed-top">
+<nav class="navbar nav-respon navbar-expand-lg fixed-top py-4">
     <div class="container container-fluid">
         <a class="navbar-brand d-flex align-items-center" href="#"> <img class="h-14" src="{{Storage::url('assets/pplg/img/pplg-logo.png')}}" alt="">
-            <div class="flex flex-col h-full ml-3"><span class="font-bold text-3xl text-orange-500">PPLG</span><span class="text-lg">SMKN 1 BANGSRI</span></div>
+            <div class="flex flex-col h-full ml-3"><span class="font-bold text-2xl text-orange-500">PPLG</span><span class="text-base">SMKN 1 BANGSRI</span></div>
         </a>
         <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
             <div class="offcanvas-header">
@@ -9,16 +9,16 @@
                 <button type="button" class="btn-close focus:outline-none shadow-none" data-bs-dismiss="offcanvas" aria-label="Close"></button>
             </div>
             <div class="offcanvas-body">
-                <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <ul class="navbar-nav justify-content-end flex-grow-1 pe-3 text-lg font-semibold">
                     <li class="nav-item">
-                        <a class="nav-link mx-lg-2 " aria-current="page" href="">Beranda</a>
+                        <a class="nav-link mx-lg-2" aria-current="page" href="">Beranda</a>
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                             Profil
                         </a>
                         <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">Tentang</a></li>
+                            <li><a class="dropdown-item" href="#">Beranda</a></li>
                             <li><a class="dropdown-item" href="#">Visi Misi</a></li>
                             <li><a class="dropdown-item" href="#">Sejarah</a></li>
                             <li><a class="dropdown-item" href="#">Program Kerja</a></li>
