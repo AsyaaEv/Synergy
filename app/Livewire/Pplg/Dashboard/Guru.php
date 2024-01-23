@@ -12,7 +12,7 @@ class Guru extends Component
     public function render()
     {
         $guru = ModelsGuru::all();
-        return view('livewire.pplg.guru', compact('guru'));
+        return view('livewire.pplg.dashboard.guru', compact('guru'));
     }
 
     public $nama;
@@ -20,7 +20,7 @@ class Guru extends Component
     public $nip;
     public $email;
     public $foto;
-    public function save()
+    public function saveGuru()
     {
         $input = $this->validate([
             'nama' => 'required',
@@ -47,4 +47,11 @@ class Guru extends Component
             session()->flash('alert', 'danger');
         }
     }
+
+    public function editGuru($id){
+        session()->flash('toggle', 'block');
+        $data = ModelsGuru::find($id);
+        $this->nama = $data->nama;
+    }
+
 }
