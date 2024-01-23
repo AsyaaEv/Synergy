@@ -17,7 +17,11 @@ use Illuminate\Support\Facades\Route;
 //     return view('routes.home');
 // });
 
-Route::view('/test', 'routes.test');
+//dashboard guru
+Route::view('/dashboard/guru', 'routes.dashboard.guru');
+Route::get('/dashboard/guru/edit/{id}', function($id){
+    return view('routes.dashboard.guruEdit', ['id' => $id]);
+});
 
 Route::view('/hero', 'routes.hero');
 
