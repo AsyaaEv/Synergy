@@ -56,7 +56,5 @@ class GuruAdd extends Component
         }
     }
 
-    public function hapusGuru(){
-        dd('test');
-    }
+    
 }
