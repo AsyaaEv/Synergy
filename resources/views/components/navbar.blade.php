@@ -1,41 +1,42 @@
-<nav class="navbar bg-body-tertiary fixed-top">
-    <div class="container-fluid container">
-        <a class="navbar-brand" href="#">Offcanvas navbar</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+<nav class="navbar nav-respon navbar-expand-lg fixed-top">
+    <div class="container container-fluid">
+        <a class="navbar-brand d-flex align-items-center" href="#"> <img class="h-14" src="{{Storage::url('assets/pplg/img/pplg-logo.png')}}" alt="">
+            <div class="flex flex-col h-full ml-3"><span class="font-bold text-3xl text-orange-500">PPLG</span><span class="text-lg">SMKN 1 BANGSRI</span></div>
+        </a>
+        <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
             <div class="offcanvas-header">
-                <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Offcanvas</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                <h5 class="offcanvas-title fw-bold" id="offcanvasNavbarLabel">PPLG</h5>
+                <button type="button" class="btn-close focus:outline-none shadow-none" data-bs-dismiss="offcanvas" aria-label="Close"></button>
             </div>
             <div class="offcanvas-body">
                 <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Link</a>
+                        <a class="nav-link mx-lg-2 " aria-current="page" href="">Beranda</a>
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            Dropdown
+                            Profil
                         </a>
                         <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">Action</a></li>
-                            <li><a class="dropdown-item" href="#">Another action</a></li>
-                            <li>
-                                <hr class="dropdown-divider">
-                            </li>
-                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            <li><a class="dropdown-item" href="#">Tentang</a></li>
+                            <li><a class="dropdown-item" href="#">Visi Misi</a></li>
+                            <li><a class="dropdown-item" href="#">Sejarah</a></li>
+                            <li><a class="dropdown-item" href="#">Program Kerja</a></li>
+                            <li><a class="dropdown-item" href="#">Sarana Prasarana</a></li>
+                            <li><a class="dropdown-item" href="#">Struktur Organisasi</a></li>
                         </ul>
                     </li>
+                    <li class="nav-item">
+                        <a class="nav-link mx-lg-2" href="">Kelas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link mx-lg-2 " aria-current="page" href="">Kontak</a>
+                    </li>
                 </ul>
-                <form class="d-flex mt-3" role="search">
-                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-outline-success" type="submit">Search</button>
-                </form>
             </div>
         </div>
+        <button class="navbar-toggler border-0 focus:outline-none shadow-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
     </div>
 </nav>
