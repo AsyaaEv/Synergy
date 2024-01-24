@@ -24,7 +24,6 @@ Route::get('/dashboard/guru/edit/{id}', function($id){
     return view('routes.dashboard.guruEdit', ['id' => $id]);
 });
 
-Route::view('/hero', 'routes.hero');
+Route::view('/home', 'routes.home');
 
-Route::view('/nav', 'routes.nav');
 

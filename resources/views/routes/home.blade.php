@@ -1,4 +1,4 @@
 @extends('index')
 @section('content')
-    @livewire('pplg.nav')
+    @livewire('pplg.home')
 @endsection
