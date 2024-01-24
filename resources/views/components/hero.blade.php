@@ -1,4 +1,4 @@
-<section class="w-full h-screen relative flex flex-col py-20 items-center justify-center object-cover bg-left-top"
+<section class="w-full h-screen flex flex-col py-20 items-center justify-center object-cover bg-left-top"
     style="background-image: url({{ Storage::url('assets/pplg/img/background.png') }})">
     <div class="jumbotron w-full items-center h-auto container">
         <div class="md:w-[27%] w-full h-auto">

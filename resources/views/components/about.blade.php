@@ -1,6 +1,6 @@
 <section id="about" class="bg-[#0D0D0D]">
     <div class="container py-5 ">
-        <h1 class="border-[3px] rounded-[10px] border-white p-[21.7px] inline-block m-0 text-[32px] text-white">About Us</h1>
+        <h1 class="border-[3px] rounded-[10px] border-white p-[10px] inline-block m-0 text-[25px] text-white">About Us</h1>
         <h1 class="text-white text-[44.726px] mt-20 pb-4 border-b-[1px] border-[#626262] font-bold">Presenting Puperior Service Through Innovative Concepts That Dare To Be Different</h1>
         <p class="text-[20px] text-[#D0D0D0] font-bold mt-4 w-[70%]">Our major studies and explores ways of developing software. Starting from creation, maintenance, quality management, and management of software development organizations.</p>
         <div class="swiper mySwiper">
