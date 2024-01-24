@@ -13,9 +13,8 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-// Route::get('/', function () {
-//     return view('routes.home');
-// });
+//Dashboard
+Route::view('/dashboard', 'routes.dashboard.index');
 
 //dashboard guru
 Route::view('/dashboard/guru', 'routes.dashboard.guru');
@@ -24,6 +23,6 @@ Route::get('/dashboard/guru/edit/{id}', function($id){
     return view('routes.dashboard.guruEdit', ['id' => $id]);
 });
 
-Route::view('/home', 'routes.home');
+Route::view('/', 'routes.home');
 
 
