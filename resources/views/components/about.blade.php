@@ -25,7 +25,6 @@
 </section>
 
 <style>
-
     .swiper {
         width: 100%;
         padding-top: 50px;

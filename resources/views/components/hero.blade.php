@@ -4,10 +4,12 @@
         <div class="md:w-[40%] w-full h-auto">
             <h1 class="text-[35px] font-semibold text-[#f78704]">Lorem ipsum dolor sit amet, consectetur adipiscing</h1>
         </div>
-        <div class="md:w-[43%] h-auto mt-3">
+        <div class="md:w-[43%] h-auto mt-4 mb-20">
             <p class="font-normal text-white">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                 eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
         </div>
-        {{-- <a class="btn btn-primary btn-sm rounded" href="#" role="button">Learn more</a> --}}
+        <a class="text-black px-3 py-3 text-xl bg-white  rounded-xl text-decoration-none font-semibold" href="#"
+            role="button">Learn
+            more</a>
     </div>
 </section>
