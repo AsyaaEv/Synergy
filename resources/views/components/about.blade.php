@@ -5,16 +5,16 @@
         <p class="text-[20px] text-[#D0D0D0] font-bold mt-4 w-[70%]">Our major studies and explores ways of developing software. Starting from creation, maintenance, quality management, and management of software development organizations.</p>
         <div class="swiper mySwiper">
             <div class="swiper-wrapper ">
-                <div class="swiper-slide mx-20">
+                <div class="swiper-slide img-fluid mx-20">
                     <img src="https://swiperjs.com/demos/images/nature-1.jpg" />
                 </div>
-                <div class="swiper-slide mx-20">
+                <div class="swiper-slide img-fluid mx-20">
                     <img src="https://swiperjs.com/demos/images/nature-2.jpg" />
                 </div>
-                <div class="swiper-slide mx-20">
+                <div class="swiper-slide img-fluid mx-20">
                     <img src="https://swiperjs.com/demos/images/nature-3.jpg" />
                 </div>
-                <div class="swiper-slide mx-20">
+                <div class="swiper-slide img-fluid mx-20">
                     <img src="https://swiperjs.com/demos/images/nature-3.jpg" />
                 </div>
               
@@ -25,6 +25,7 @@
 </section>
 
 <style>
+
     .swiper {
         width: 100%;
         padding-top: 50px;
