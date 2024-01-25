@@ -23,13 +23,13 @@ class GuruAdd extends Component
     public function save()
     {
         
-        $input = $this->validate([
-            'nama' => 'required',
-            'mapel' => 'required',
-            'kode' => 'required',
-            'nip' => 'required',
-            'email' => 'required',
-        ]);
+        // $input = $this->validate([
+        //     'nama' => 'required',
+        //     'mapel' => 'required',
+        //     'kode' => 'required',
+        //     'nip' => 'required',
+        //     'email' => 'required',
+        // ]);
 
         // dd($this->nama);
 
@@ -46,13 +46,17 @@ class GuruAdd extends Component
             $post->foto = $data;
         }
         try {
-            $post->save();
+            // $post->save();
             session()->flash('msg', __('Guru Berhasil ditambahkan'));
-            session()->flash('alert', 'success');
+            session()->flash('alert', 'bg-green-300');
+            session()->flash('icon', 'info');
+            session()->flash('iconColor', 'blue-500');
             return redirect('/dashboard/guru');
         } catch (\Throwable $th) {
             session()->flash('msg', $th);
-            session()->flash('alert', 'danger');
+            session()->flash('alert', 'bg-red-300');
+            session()->flash('icon', 'warning');
+            session()->flash('iconColor', 'red-500');
         }
     }
 
