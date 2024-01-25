@@ -8,9 +8,10 @@ use Livewire\Component;
 
 class Guru extends Component
 {
+    public $search;
     public function render()
     {
-        $guru = ModelsGuru::all();
+        $guru = ModelsGuru::where('nama', 'like', '%'. $this->search. '%')->orderBy('id', 'desc')->get();
         return view('livewire.pplg.dashboard.guru', compact('guru'));
     }
 

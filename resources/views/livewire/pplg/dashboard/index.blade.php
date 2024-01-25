@@ -1,4 +1,3 @@
-<div>
+<div class="w-full h-screen bg-[#060714]">
     @include('components.dashboard.navbar')
-    @include('components.dashboard.index')
 </div>
