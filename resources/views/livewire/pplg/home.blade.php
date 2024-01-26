@@ -4,5 +4,6 @@
     @include('components.about')
     @include('components.visi')
     @include('components.sejarah')
+    @include('components.sarana')
     {{-- The Master doesn't talk, he acts. --}}
 </div>

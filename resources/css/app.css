@@ -1,3 +1,20 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.nav-item{
+    @apply relative tracking-[1px] 
+};
+
+.nav-item:after{
+    @apply content-[''] bg-[#f78704] h-[3px] w-[0] absolute left-[0] -bottom-[5px] duration-300
+}
+
+.nav-item:hover:after{
+    @apply w-[100%]
+}
+
+.dropdown-content:after{
+    @apply  top-0 duration-300 delay-700 
+}
+
