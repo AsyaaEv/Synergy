@@ -1,7 +1,7 @@
 <section id="sejarah" class="bg-[#0D0D0D]">
     <div class="container py-5">
         <h1 class="border-[1px] rounded-[10px] border-white p-[10px] inline-block m-0 text-[20px] md:text-[25px] text-white font-bold">Sejarah</h1>
-        <div class="dropdowns mt-20">
+        <div class="dropdowns mt-10 md:mt-20">
             <div class="flex flex-col lg:flex-row justify-between text-white">
                 <h1 class="font-bold lg:w-[15%]">Apa itu PPLG?</h1>
                 <div class="flex flex-col lg:w-[75%]">
