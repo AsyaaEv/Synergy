@@ -32,11 +32,11 @@
 <style>
     .rotasi {
         transform: rotate(90deg);
-        transition: 0.5s ease-in-out
+        transition: 100s ease-in-out
     }
 
     .rotasi2 {
-        transition: 0.5s ease-in-out
+        transition: 100s ease-in-out
     }
 
     .dropdowns {
