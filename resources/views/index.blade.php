@@ -19,6 +19,10 @@
         * {
             font-family: 'Montserrat', sans-serif;
         }
+
+        html::-webkit-scrollbar{
+            display: none;  
+        }
     </style>
 </head>
 
