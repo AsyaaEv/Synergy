@@ -13,25 +13,24 @@ class GuruAdd extends Component
     {
         return view('livewire.pplg.dashboard.guru-add');
     }
-
+    
     public $nama;
     public $mapel;
     public $kode;
     public $nip;
     public $email;
     public $foto;
+    public $fotoName;
     public function save()
     {
-        
-        // $input = $this->validate([
-        //     'nama' => 'required',
-        //     'mapel' => 'required',
-        //     'kode' => 'required',
-        //     'nip' => 'required',
-        //     'email' => 'required',
-        // ]);
-
-        // dd($this->nama);
+        $input = $this->validate([
+            'nama' => 'required',
+            'mapel' => 'required',
+            'kode' => 'required',
+            'nip' => 'required',
+            'email' => 'required',
+            'foto' => 'max:1020',
+        ]);
 
         $post = new Guru();
         $post->nama = $this->nama;
@@ -46,17 +45,13 @@ class GuruAdd extends Component
             $post->foto = $data;
         }
         try {
-            // $post->save();
+            $post->save();
             session()->flash('msg', __('Guru Berhasil ditambahkan'));
-            session()->flash('alert', 'bg-green-300');
-            session()->flash('icon', 'info');
-            session()->flash('iconColor', 'blue-500');
+            session()->flash('alert', 'blue-300');
             return redirect('/dashboard/guru');
         } catch (\Throwable $th) {
             session()->flash('msg', $th);
             session()->flash('alert', 'bg-red-300');
-            session()->flash('icon', 'warning');
-            session()->flash('iconColor', 'red-500');
         }
     }
 
