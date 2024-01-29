@@ -2,6 +2,7 @@
 
 namespace Database\Seeders;
 
+use App\Models\Wali;
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 
@@ -12,6 +13,13 @@ class WaliSeeder extends Seeder
      */
     public function run(): void
     {
-        //
+        Wali::create([
+            'nama' => 'Asya',
+            'foto' => '',
+            'mapel' => 'BE',
+            'kode' => 'A',
+            'guru' => 'produktif',
+            'nip' => '09876868'
+        ]);
     }
 }

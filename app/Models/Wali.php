@@ -17,4 +17,8 @@ class Wali extends Model
         'guru',
         'nip',
     ];
+
+    public function kelas(){
+        return $this->belongsTo(Kelas::class, 'nama', 'nama');
+    }
 }

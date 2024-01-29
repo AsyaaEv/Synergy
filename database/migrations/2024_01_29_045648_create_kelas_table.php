@@ -16,8 +16,8 @@ return new class extends Migration
         $table->string('nama');
         $table->string('angkatan');
         $table->string('cover');
-        $table->string('walikelas'); // Menggunakan unsignedBigInteger untuk foreign key
-        $table->foreign('walikelas')->references('nama')->on('walis'); 
+        $table->string('wali');
+        $table->foreign('wali')->references('nama')->on('walis')->onDelete('cascade'); 
         $table->string('prestasi');
         $table->string('memories');
         $table->string('slogan');
