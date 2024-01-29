@@ -9,20 +9,19 @@
                     <div class="flex justify-between items-center">
                         <hr class="md:w-[70%] w-[50%]" style=" border-width: 2px; color: #626262;">
                         <button id="but" onclick="toggleDropdown()" class="relative text-black bg-[#E8E8E8] py-[14px] pl-[14px] pr-[40px] rounded-lg font-bold text-xs">Open Content <i class="halo ph-bold ph-arrow-right text-xs md:text-xl absolute right-4 md:right-3 top-4 md:top-3 align-middle md:ml-1"></i></button>
-
                     </div>
                 </div>
             </div>
             <div id="dropdownContent" class="dropdown-content mt-10 flex-col-reverse md:flex-row">
-                <div class="flex flex-col md:w-[70%] lg:w-[75%] border-[1px] border-[#6F6F6F] font-semibold md:text-xl rounded-3xl text-white items-center justify-center  md:mt-1 mt-5">
+                <div class="contex flex flex-col md:w-[70%] lg:w-[75%] border-[1px] border-[#6F6F6F] font-semibold md:text-xl rounded-3xl text-white overflow-auto">
                     <p class="p-4 m-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, aperiam. Veniam dolore accusantium, commodi architecto aspernatur consectetur mollitia dolor dignissimos dicta voluptas, tempora voluptate error deserunt modi nostrum illum unde, ratione optio id nisi magni dolorem eaque rerum nulla. Deleniti recusandae minima eligendi natus aliquid, architecto animi quia placeat corporis harum tenetur sed fugit quis itaque assumenda possimus dolore quod. </p>
                 </div>
                 <div class="md:w-[25%] flex justify-center md:items-center lg:items-end flex-col">
                     <div class="flex justify-start items-start md:justify-end md:items-center">
-                        <img class="w-56 mb-5 rounded-3xl" src="https://swiperjs.com/demos/images/nature-1.jpg" alt="">
+                        <img class="md:w-56 w-full h-56 mb-5 rounded-3xl object-cover" src="https://swiperjs.com/demos/images/nature-1.jpg" alt="">
                     </div>
-                    <div class="flex justify-end items-end">   
-                        <img class="w-56 rounded-3xl" src="https://swiperjs.com/demos/images/nature-1.jpg" alt="">
+                    <div class=" justify-end items-end mb-5 hidden md:flex">
+                        <img class="md:w-56 w-full h-56 rounded-3xl object-cover" src="https://swiperjs.com/demos/images/nature-1.jpg" alt="">
                     </div>
                 </div>
             </div>
@@ -33,11 +32,11 @@
 <style>
     .rotasi {
         transform: rotate(90deg);
-        transition: .2s ease-in-out
+        transition: 1s ease-in-out
     }
 
     .rotasi2 {
-        transition: .2s ease-in-out
+        transition: 1s ease-in-out
     }
 
     .dropdowns {
@@ -51,17 +50,25 @@
         font-size: 16px;
         border: none;
         cursor: pointer;
+        transition: 0.4s;
     }
 
     .dropdown-content {
-        display: none;
-        width: 100%;
+        max-height: 0;
         overflow: hidden;
-    }
-
-    .start {
+        transition: all 1s ease-in-out;
+        width: 100%;
         display: flex;
         justify-content: space-between;
+    }
+    
+
+    .start {
+        max-height: 900px;
+    }
+
+    .contex::-webkit-scrollbar{
+        display: none;
     }
 
 </style>
