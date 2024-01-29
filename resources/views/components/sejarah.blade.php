@@ -32,11 +32,11 @@
 <style>
     .rotasi {
         transform: rotate(90deg);
-        transition: 1s ease-in-out
+        transition: 100s ease-in-out
     }
 
     .rotasi2 {
-        transition: 1s ease-in-out
+        transition: 100s ease-in-out
     }
 
     .dropdowns {
@@ -50,24 +50,23 @@
         font-size: 16px;
         border: none;
         cursor: pointer;
-        transition: 0.4s;
     }
 
     .dropdown-content {
         max-height: 0;
         overflow: hidden;
-        transition: all 1s ease-in-out;
+        transition: all 0.6s ease-in-out;
         width: 100%;
         display: flex;
         justify-content: space-between;
     }
-    
+
 
     .start {
         max-height: 900px;
     }
 
-    .contex::-webkit-scrollbar{
+    .contex::-webkit-scrollbar {
         display: none;
     }
 
