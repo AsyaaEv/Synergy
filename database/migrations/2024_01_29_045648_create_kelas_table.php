@@ -16,8 +16,8 @@ return new class extends Migration
         $table->string('nama');
         $table->string('angkatan');
         $table->string('cover');
-        $table->string('wali');
-        $table->foreign('wali')->references('nama')->on('walis')->onDelete('cascade'); 
+        $table->string('wali_nama');
+        $table->foreign('wali_nama')->references('nama')->on('walis')->onDelete('cascade'); 
         $table->string('prestasi');
         $table->string('memories');
         $table->string('slogan');

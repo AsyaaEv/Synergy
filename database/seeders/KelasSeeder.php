@@ -17,10 +17,28 @@ class KelasSeeder extends Seeder
             'nama' => 'X PPLG 1',
             'angkatan' => '2023',
             'cover' => '',
-            'wali' => 'Asya',
+            'wali_nama' => 'Asya',
             'prestasi' => '',
             'memories' => '',
             'slogan' => 'SOLIDDDD',
+        ]);
+        Kelas::create([
+            'nama' => 'X PPLG 1',
+            'angkatan' => '2023',
+            'cover' => '',
+            'wali_nama' => 'Rifal',
+            'prestasi' => '',
+            'memories' => '',
+            'slogan' => 'Wibu',
+        ]);
+        Kelas::create([
+            'nama' => 'XI PPLG 1',
+            'angkatan' => '2022',
+            'cover' => '',
+            'wali_nama' => 'Rully',
+            'prestasi' => '',
+            'memories' => '',
+            'slogan' => 'RUGIDONK',
         ]);
     }
 }

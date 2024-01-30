@@ -19,6 +19,7 @@ return new class extends Migration
         $table->string('mapel');
         $table->string('guru');
         $table->string('nip');
+        $table->string('walikelas');
         $table->timestamps();
     });
 }

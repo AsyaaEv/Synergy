@@ -10,17 +10,12 @@ class Kelas extends Model
 {
     use HasFactory;
 
-    protected $fillable = [
-        'nama',
-        'angkatan',
-        'cover',
-        'walikelas',
-        'prestasi',
-        'memories',
-        'slogan',
+    protected $guarded = [
+        'id',
     ];
 
-    public function wali(){
-        return $this->belongsTo(Wali::class, 'nama', 'nama');
+    public function wali()
+    {
+        return $this->belongsTo(Wali::class, 'wali_nama', 'nama');
     }
 }

@@ -36,7 +36,7 @@
                 </a>
             </div>
         </div>
-        <table class="table table-striped table-dark table-sm align-middle">
+        <table class="table table-striped table-dark table-sm align-middle @if($guru) visible @else invisible @endif">
             <thead>
               <tr>
                 <th scope="col">#ID</th>

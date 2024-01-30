@@ -21,5 +21,21 @@ class WaliSeeder extends Seeder
             'guru' => 'produktif',
             'nip' => '09876868'
         ]);
+        Wali::create([
+            'nama' => 'Rully',
+            'foto' => '',
+            'mapel' => 'BE',
+            'kode' => 'A',
+            'guru' => 'non-produktif',
+            'nip' => '09876868'
+        ]);
+        Wali::create([
+            'nama' => 'Rifal',
+            'foto' => '',
+            'mapel' => 'BE',
+            'kode' => 'A',
+            'guru' => 'non-produktif',
+            'nip' => '09876868'
+        ]);
     }
 }
