@@ -6,5 +6,6 @@
     @include('components.sejarah')
     @include('components.sarana')
     @include('components.programKerja')
+    @include('components.struktur')
     {{-- The Master doesn't talk, he acts. --}}
 </div>
