@@ -1,28 +1,30 @@
 <!-- Hero -->
-<div id="hero" class="w-full h-screen bg-white justify-center flex items-center py-20">
-    <div class="container mx-auto">
+<div class="w-full h-auto bg-white py-20">
+    <div class="container mx-auto justify-center items-center flex">
         <div class="w-full mx-auto flex">
             <!-- Bagian Kiri -->
             <div class="w-[40%]">
                 <div class="mb-10">
-                    <h1 class="font-extrabold text-5xl text-slate-800 uppercase">Pengembangan <span
+                    <h1 class="font-extrabold md:text-5xl text-3xl text-slate-800 uppercase">Pengembangan <span
                             class="text-orange">Perangkat Lunak </span>dan Gim</h1>
                 </div>
                 <div class="mb-10">
                     <p class="text-slate-500 font-normal leading-relaxed capitalize">sekolah adalah tempat mencetak
-                        penerus bangsa yang berkualitas dan berprestasi di segala bidang yang dapat bersaing di dunia
-                        internasional</p>
+                        penerus bangsa yang berkualitas dan berprestasi di segala bidang yang dapat bersaing di
+                        dunia internasional</p>
                 </div>
 
-                <div class="w-auto h-6 flex gap-2 mb-8">
-                    <a href=""
-                        class="bg-orange py-4 text-decoration-none rounded-full px-8 text-white font-semibold flex gap-2 items-center justify-between hover:bg-transparent hover:text-orange transition-all duration-500"><span>Get
-                            Started</span><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                            stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                            <path stroke-linecap="round" stroke-linejoin="round"
-                                d="m12.75 15 3-3m0 0-3-3m3 3h-7.5M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
-                        </svg>
-                    </a>
+                <div class="flex gap-2 mb-3">
+                    <div class="w-auto h-6 flex gap-2 mb-12">
+                        <a href=""
+                            class="bg-orange py-4 text-decoration-none rounded-full px-8 text-white font-semibold flex gap-2 items-center justify-between hover:bg-transparent hover:text-orange transition-all duration-500"><span>Get
+                                Started</span><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="m12.75 15 3-3m0 0-3-3m3 3h-7.5M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                            </svg>
+                        </a>
+                    </div>
                 </div>
                 <div class="flex gap-2 items-center">
                     <p class="font-semibold text-slate-600 text-sm">We are in Socials Media :</p>
@@ -57,23 +59,25 @@
             <!-- Bagian Kiri End -->
 
             <!-- Bagian Kanan -->
-            <div class="w-1/2 relative">
+            <div class="w-1/2 relative ">
                 <div class="max-w-4xl flex justify-end">
-                    <div class="w-72 h-[400px] rounded-xl overflow-hidden">
+                    <div class="w-[22rem] h-[30rem] rounded-xl overflow-hidden">
                         <img src="{{ Storage::url('assets/pplg/img/bgVisiMisi.jpg') }}" alt="Gambar"
                             class="w-full h-full object-cover" />
                     </div>
                 </div>
 
                 <div
-                    class="absolute bottom-[1.5rem] left-[10rem] w-[16rem] h-auto rounded-md shadow-md bg-white py-2 px-3">
-                    <p class="text-sm p-1 font-semibold italic leading-relaxed text-slate-800">"Lorem ipsum dolor sit
+                    class="absolute bottom-[1.5rem] left-[5rem] w-[16rem] h-auto rounded-md shadow-md bg-white py-2 px-3">
+                    <p class="text-sm p-1 font-semibold italic leading-relaxed text-slate-800">"Lorem ipsum
+                        dolor
+                        sit
                         amet,
                         consectetur adipisicing elit. Explicabo, vero lorem, elit"</p>
                 </div>
 
                 <div class="bg-white shadow-md p-2 absolute rounded-xl flex gap-2 top-[1.5rem] -right-24">
-                    <div class="w-8 h-8 rounded-full overflow-hidden border-[1px]">
+                    <div class="w-8 h-8 rounded-full overflow-hidden">
                         <img src="{{ Storage::url('no_profile.webp') }}" alt="" class="object-cover h-6" />
                     </div>
 
@@ -110,7 +114,8 @@
                                     clip-rule="evenodd" />
                             </svg>
                         </div>
-                        <p class="text-sm w-[11rem] text-slate-800 capitalize mb-2 font-bold">Jika ingin Sukses
+                        <p class="text-sm w-[11rem] text-slate-800 capitalize mb-2 font-bold">Jika ingin
+                            Sukses
                             Berlajarlah
                             bersabar</p>
                         <p class="text-xs font-normal text-slate-600 capitalize">by admin </p>
