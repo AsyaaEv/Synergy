@@ -1,5 +1,5 @@
 <section id="sejarah" class="bg-[#0D0D0D]">
-    <div class="container py-5">
+    <div class="mx-20 py-5">
         <h1 class="border-[1px] rounded-[10px] border-white p-[10px] inline-block m-0 text-[20px] md:text-[25px] text-white font-bold">Sejarah</h1>
         <div class="dropdowns mt-10 md:mt-20">
             <div class="flex flex-col lg:flex-row justify-between text-white">
@@ -32,11 +32,11 @@
 <style>
     .rotasi {
         transform: rotate(90deg);
-        transition: 1s ease-in-out
+        transition: 0.5s ease-in-out
     }
 
     .rotasi2 {
-        transition: 1s ease-in-out
+        transition: 0.6s ease-in-out
     }
 
     .dropdowns {
@@ -50,24 +50,23 @@
         font-size: 16px;
         border: none;
         cursor: pointer;
-        transition: 0.4s;
     }
 
     .dropdown-content {
         max-height: 0;
         overflow: hidden;
-        transition: all 1s ease-in-out;
+        transition: all 0.6s ease-in-out;
         width: 100%;
         display: flex;
         justify-content: space-between;
     }
-    
+
 
     .start {
         max-height: 900px;
     }
 
-    .contex::-webkit-scrollbar{
+    .contex::-webkit-scrollbar {
         display: none;
     }
 

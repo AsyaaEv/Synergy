@@ -23,6 +23,15 @@ Route::get('/dashboard/guru/edit/{id}', function($id){
     return view('routes.dashboard.guruEdit', ['id' => $id]);
 });
 
+//Dashboard Kelas
+Route::view('/dashboard/kelas', 'routes.dashboard.kelas.index');
+Route::view('/dashboard/kelas/add', 'routes.dashboard.kelas.kelasAdd');
+
+//Dashboard WaliKelas
+Route::view('/dashboard/walikelas', 'routes.dashboard.walikelas.index');
+Route::view('/dashboard/walikelas/add', 'routes.dashboard.walikelas.wkAdd');
+
+
 Route::view('/', 'routes.home');
 
 
