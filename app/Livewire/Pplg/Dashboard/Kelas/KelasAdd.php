@@ -46,14 +46,14 @@ class KelasAdd extends Component
             $data = $this->foto->store('walikelas', 'public');
             $post->cover = $data;
         }
-        $data = Wali::where('nama', $this->wali)->first();
+        $data = Wali::where('nama_lengkap', $this->wali)->first();
         $data->walikelas = $this->nama;
         
         try {
             $post->save();
             $data->save();
             session()->flash('msg', __('Kelas Berhasil ditambahkan'));
-            session()->flash('alert', 'blue-300');
+            session()->flash('alert', 'success');
             return redirect('/dashboard/kelas');
         } catch (\Throwable $th) {
             session()->flash('msg', $th);

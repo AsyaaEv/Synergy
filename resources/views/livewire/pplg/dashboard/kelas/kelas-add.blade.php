@@ -127,7 +127,7 @@
                             <select id="countries" wire:model='wali' class="bg-gray-50 @error('type') border-[2px] border-red-500 placeholder:text-red-500 @enderror font-bold text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
                                 <option selected class="font-bold"> ---Pilih Walikelas---</option>
                                 @forelse ($data as $item)
-                                    <option value="{{$item->nama}}">{{$item->nama}}</option>
+                                    <option value="{{$item->nama_lengkap}}">{{$item->nama_lengkap}}</option>
                                 @empty
                                     <option value="" disabled>Tidak ada walikelas</option>
                                 @endforelse

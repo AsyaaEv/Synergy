@@ -56,9 +56,19 @@
                 <div class="text-white font-medium group-hover:translate-x-2 transition-all">Dashboard</div>
             </a>
             <a href="/dashboard/guru"
-                class="w-full h-auto border-b-[1px] shadow-md hover:border-[1px] rounded-[10px] py-2 flex items-center container gap-2 group hover:cursor-pointer bg-[#060714] decoration-transparent">
+                class="w-full h-auto shadow-md border-b-[1px] hover:border-[1px] rounded-[10px] py-2 flex items-center container gap-2 group hover:cursor-pointer bg-[#060714] decoration-transparent">
                 <i class="ph-fill ph-student text-white text-2xl"></i>
                 <div class="text-white font-medium group-hover:translate-x-2 transition-all">Guru Produktif</div>
+            </a>
+            <a href="/dashboard/kelas"
+                class="w-full h-auto  shadow-md hover:border-b-[1px] rounded-[10px] py-2 flex items-center container gap-2 group hover:cursor-pointer bg-[#060714] decoration-transparent">
+                <i class="ph-fill ph-door text-white text-2xl"></i>
+                <div class="text-white font-medium group-hover:translate-x-2 transition-all">Kelas PPLG</div>
+            </a>
+            <a href="/dashboard/walikelas"
+                class="w-full h-auto  shadow-md hover:border-b-[1px] rounded-[10px] py-2 flex items-center container gap-2 group hover:cursor-pointer bg-[#060714] decoration-transparent">
+                <i class="ph-fill ph-users text-white text-2xl"></i>
+                <div class="text-white font-medium group-hover:translate-x-2 transition-all">Wali Kelas</div>
             </a>
         </div>
     </div>

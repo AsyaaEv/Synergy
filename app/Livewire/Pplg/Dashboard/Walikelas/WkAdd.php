@@ -24,6 +24,15 @@ class WkAdd extends Component
     public function saveWK()
     {
         
+        // $namapendek = $this->nama;
+        $namaArray = explode(' ', $this->nama);
+        if(count($namaArray) > 1){
+            $namapendek = $namaArray[1];
+        } else {
+            $namapendek = $namaArray[0];
+        }
+
+
         $input = $this->validate([
             'nama' => 'required',
             'mapel' => 'required',
@@ -34,7 +43,8 @@ class WkAdd extends Component
         ]);
 
         $post = new Wali();
-        $post->nama = $this->nama;
+        $post->nama_lengkap = $this->nama; 
+        $post->nama_panggilan = $namapendek; 
         $post->mapel = $this->mapel;
         $post->kode = $this->kode;
         $post->nip = $this->nip;
@@ -46,12 +56,12 @@ class WkAdd extends Component
             $data = $this->foto->store('walikelas', 'public');
             $post->foto = $data;
         }
-        
         try {
             $post->save();
-            session()->flash('msg', __('Guru Berhasil ditambahkan'));
-            session()->flash('alert', 'blue-300');
+            session()->flash('msg', __('Kelas Berhasil ditambahkan'));
+            session()->flash('alert', 'success');
             return redirect('/dashboard/walikelas');
+            dd('asdasd');
         } catch (\Throwable $th) {
             session()->flash('msg', $th);
             session()->flash('alert', 'bg-red-300');

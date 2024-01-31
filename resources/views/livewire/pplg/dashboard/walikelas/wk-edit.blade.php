@@ -56,7 +56,7 @@
                 <div class="text-white font-medium group-hover:translate-x-2 transition-all">Dashboard</div>
             </a>
             <a href="/dashboard/guru"
-                class="w-full h-auto shadow-md border-b-[1px] hover:border-[1px] rounded-[10px] py-2 flex items-center container gap-2 group hover:cursor-pointer bg-[#060714] decoration-transparent">
+                class="w-full h-auto shadow-md hover:border-b-[1px] rounded-[10px] py-2 flex items-center container gap-2 group hover:cursor-pointer bg-[#060714] decoration-transparent">
                 <i class="ph-fill ph-student text-white text-2xl"></i>
                 <div class="text-white font-medium group-hover:translate-x-2 transition-all">Guru Produktif</div>
             </a>
@@ -66,7 +66,7 @@
                 <div class="text-white font-medium group-hover:translate-x-2 transition-all">Kelas PPLG</div>
             </a>
             <a href="/dashboard/walikelas"
-                class="w-full h-auto  shadow-md hover:border-b-[1px] rounded-[10px] py-2 flex items-center container gap-2 group hover:cursor-pointer bg-[#060714] decoration-transparent">
+                class="w-full h-auto border-b-[1px] shadow-md hover:border-[1px] rounded-[10px] py-2 flex items-center container gap-2 group hover:cursor-pointer bg-[#060714] decoration-transparent">
                 <i class="ph-fill ph-users text-white text-2xl"></i>
                 <div class="text-white font-medium group-hover:translate-x-2 transition-all">Wali Kelas</div>
             </a>
@@ -77,34 +77,42 @@
             <div class="w-full h-full rounded-[10px] sm:pl-[15rem] overflow-auto pb-[5rem]">
                 <div class="w-full bg-primaryD h-auto rounded-[10px] container pb-4">
                     <div class="w-full h-auto flex gap-2 pt-2 ">
-                        <a href="{{ url('/dashboard/guru') }}"
+                        <a href="{{ url('/dashboard/walikelas') }}"
                             class="w-auto h-auto flex justify-center items-center decoration-transparent text-black">
                             <i class="ph-bold ph-arrow-bend-up-left text-xl  p-2 bg-white rounded-full"></i>
                         </a>
                         <div class="w-auto h-auto">
-                            <div class="font-bold text-xl text-white">Tambah Guru</div>
-                            <div class="font-normal text-md text-white opacity-50">Isi data dibawah ini untuk
-                                menambahkan guru
+                            <div class="font-bold text-xl text-white">Edit WaliKelas</div>
+                            <div class="font-normal text-md text-white opacity-50">Silakan ganti data dibawah ini
                             </div>
                         </div>
                     </div>
                     <hr class="h-[1px] text-white my-2">
                     <form class="w-full h-auto gap-2 flex flex-col" wire:submit.prevent='edit'>
                         <div class="w-full h-auto flex flex-col">
-                            <label for="input-group-1" class="block mb-2 text-sm font-medium text-white">Nama
-                                Guru:</label>
+                            <label for="input-group-1" class="block mb-2 text-sm font-medium text-white">Nama lengkap Guru:</label>
                             <div class="relative">
                                 <div class="absolute inset-y-0 start-0 flex items-center ps-2 pointer-events-none">
                                     <i class="ph-fill ph-user-circle text-3xl"></i>
                                 </div>
-                                <input type="text" id="input-group-1"
-                                    class="bg-gray-50   @error('nama') border-[2px] border-red-500 placeholder:text-red-500 @enderror font-semibold  text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full ps-10 p-2.5  dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-                                    placeholder="Nama Lengkap" wire:model='nama'>
+                                <input type="text" id="input-group-1"  
+                                    class="bg-gray-50   @error('nama_lengkap') border-[2px] border-red-500 placeholder:text-red-500 @enderror font-semibold  text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full ps-10 p-2.5  dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                                    placeholder="Nama Lengkap" wire:model='nama_lengkap'>
                             </div>
                         </div>
                         <div class="w-full h-auto flex flex-col">
-                            <label for="input-group-1" class="block mb-2 text-sm font-medium text-white">Mapel
-                                Guru:</label>
+                            <label for="input-group-1" class="block mb-2 text-sm font-medium text-white">Nama Panggilan Guru:</label>
+                            <div class="relative">
+                                <div class="absolute inset-y-0 start-0 flex items-center ps-2 pointer-events-none">
+                                    <i class="ph-fill ph-user-circle text-3xl"></i>
+                                </div>
+                                <input type="text" id="input-group-1"  
+                                    class="bg-gray-50   @error('nama_panggilan') border-[2px] border-red-500 placeholder:text-red-500 @enderror font-semibold  text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full ps-10 p-2.5  dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                                    placeholder="Nama Lengkap" wire:model='nama_panggilan'> 
+                            </div>
+                        </div>
+                        <div class="w-full h-auto flex flex-col">
+                            <label for="input-group-1" class="block mb-2 text-sm font-medium text-white">Mapel Guru:</label>
                             <div class="relative">
                                 <div class="absolute inset-y-0 start-0 flex items-center ps-2 pointer-events-none">
                                     <i class="ph-fill ph-book-bookmark text-3xl"></i>
@@ -115,8 +123,7 @@
                             </div>
                         </div>
                         <div class="w-full h-auto flex flex-col">
-                            <label for="input-group-1" class="block mb-2 text-sm font-medium text-white">Kode
-                                Guru:</label>
+                            <label for="input-group-1" class="block mb-2 text-sm font-medium text-white">Kode Guru:</label>
                             <div class="relative">
                                 <div class="absolute inset-y-0 start-0 flex items-center ps-2 pointer-events-none">
                                     <i class="ph-fill ph-barcode text-3xl"></i>
@@ -127,8 +134,7 @@
                             </div>
                         </div>
                         <div class="w-full h-auto flex flex-col">
-                            <label for="input-group-1" class="block mb-2 text-sm font-medium text-white">NIP
-                                Guru:</label>
+                            <label for="input-group-1" class="block mb-2 text-sm font-medium text-white">NIP Guru:</label>
                             <div class="relative">
                                 <div class="absolute inset-y-0 start-0 flex items-center ps-2 pointer-events-none">
                                     <i class="ph-fill ph-identification-badge text-3xl"></i>
@@ -138,36 +144,31 @@
                                     placeholder="NIP" wire:model='nip'>
                             </div>
                         </div>
+                        <input type="text" value="{{$this->walikelas}}" wire:model='walikelas' hidden>
                         <div class="w-full h-auto flex flex-col">
-                            <label for="input-group-1" class="block mb-2 text-sm font-medium text-white">Email
-                                Guru:</label>
-                            <div class="relative">
-                                <div class="absolute inset-y-0 start-0 flex items-center ps-2 pointer-events-none">
-                                    <i class="ph-fill ph-envelope text-3xl"></i>
-                                </div>
-                                <input type="text" id="input-group-1"
-                                    class="bg-gray-50  font-semibold @error('email') border-[2px] border-red-500 placeholder:text-red-500 @enderror text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full ps-10 p-2.5  dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-                                    placeholder="Email" wire:model='email'>
-                            </div>
+                            <label for="input-group-1" class="block mb-2 text-sm font-medium text-white">Type Guru:</label>
+                            <select id="countries" wire:model='type' class="bg-gray-50 @error('type') border-[2px] border-red-500 placeholder:text-red-500 @enderror font-bold text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+                                <option selected class="font-bold"> ---Pilih Type Guru---</option>
+                                <option value="produktif">Produktif</option>
+                                <option value="normada">Normada</option>
+                              </select>
                         </div>
                         <div class="flex items-center justify-center w-full flex-col">
-                            <label for="input-group-1" class="block mb-2 text-sm font-medium text-white">Foto
-                                Guru:</label>
+                            <label for="input-group-1" class="block mb-2 text-sm font-medium text-white">Foto Guru:</label>
                             <label for="dropzone-file"
-                                class="flex flex-col items-center justify-center w-full h-32 border-2  @error('foto') border-red-500  @enderror border-dashed rounded-lg cursor-pointer bg-gray-50 dark:hover:bg-bray-800 dark:bg-gray-700 hover:bg-gray-100 dark:border-gray-600 dark:hover:border-gray-500 dark:hover:bg-gray-600">
-                                <div class="flex flex-col items-center justify-center pt-5 pb-6">
-                                    <svg class="w-8 h-8 mb-4 text-gray-500 dark:text-gray-400" aria-hidden="true"
-                                        xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 16">
-                                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-                                            stroke-width="2"
-                                            d="M13 13h3a3 3 0 0 0 0-6h-.025A5.56 5.56 0 0 0 16 6.5 5.5 5.5 0 0 0 5.207 5.021C5.137 5.017 5.071 5 5 5a4 4 0 0 0 0 8h2.167M10 15V6m0 0L8 8m2-2 2 2" />
-                                    </svg>
-                                    @if (!$fotoNew)
-                                        <p class="mb-2 text-sm text-gray-500 dark:text-gray-400"><span
-                                                class="font-semibold">Click
-                                                to upload</span> or drag and drop</p>
-                                        <p class="text-xs text-gray-500 dark:text-gray-400">SVG, PNG, JPG or GIF (Maksimal 1020MB)
-                                        </p>
+                            class="flex flex-col items-center justify-center w-full h-32 border-2  @error('foto') border-red-500  @enderror border-dashed rounded-lg cursor-pointer bg-gray-50 dark:hover:bg-bray-800 dark:bg-gray-700 hover:bg-gray-100 dark:border-gray-600 dark:hover:border-gray-500 dark:hover:bg-gray-600">
+                            <div class="flex flex-col items-center justify-center pt-5 pb-6">
+                                <svg class="w-8 h-8 mb-4 text-gray-500 dark:text-gray-400" aria-hidden="true"
+                                xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 16">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                stroke-width="2"
+                                d="M13 13h3a3 3 0 0 0 0-6h-.025A5.56 5.56 0 0 0 16 6.5 5.5 5.5 0 0 0 5.207 5.021C5.137 5.017 5.071 5 5 5a4 4 0 0 0 0 8h2.167M10 15V6m0 0L8 8m2-2 2 2" />
+                            </svg>
+                            @if(!$foto)
+                                    <p class="mb-2 text-sm text-gray-500 dark:text-gray-400"><span class="font-semibold">Click
+                                            to upload</span> or drag and drop</p>
+                                    <p class="text-xs text-gray-500 dark:text-gray-400">SVG, PNG, JPG or GIF (MAX. 800x400px)
+                                    </p>
                                     @else
                                     @endif
                                 </div>
@@ -187,8 +188,7 @@
                         </div>
                         <hr class="h-[1px] text-white my-2">
                         <div class="w-full h-auto flex items-center">
-                            <button
-                                class="py-2 px-4 bg-secD text-white flex justify-center items-center gap-2 rounded-[10px] group ">
+                            <button class="py-2 px-4 bg-secD text-white flex justify-center items-center gap-2 rounded-[10px] group ">
                                 Save
                                 <i class="ph-fill ph-paper-plane-right group-hover:translate-x-2 transition-all"></i>
                             </button>
@@ -197,7 +197,7 @@
                 </div>
             </div>
         </div>
-
+        
     </div>
 </div>
 
