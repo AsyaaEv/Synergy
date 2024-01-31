@@ -1,5 +1,5 @@
 <section id="sejarah" class="bg-[#0D0D0D]">
-    <div class="mx-20 py-5">
+    <div class="container py-5">
         <h1 class="border-[1px] rounded-[10px] border-white p-[10px] inline-block m-0 text-[20px] md:text-[25px] text-white font-bold">Sejarah</h1>
         <div class="dropdowns mt-10 md:mt-20">
             <div class="flex flex-col lg:flex-row justify-between text-white">
@@ -8,7 +8,7 @@
                     <p class="md:text-[20px] lg:text-[24px] text-[#B7B7B7]">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
                     <div class="flex justify-between items-center">
                         <hr class="md:w-[70%] w-[50%]" style=" border-width: 2px; color: #626262;">
-                        <button id="but" onclick="toggleDropdown()" class="relative text-black bg-[#E8E8E8] py-[14px] pl-[14px] pr-[40px] rounded-lg font-bold text-xs">Open Content <i class="halo ph-bold ph-arrow-right text-xs md:text-xl absolute right-4 md:right-3 top-4 md:top-3 align-middle md:ml-1"></i></button>
+                        <button id="but" onclick="toggleDropdown()" class="relative text-black bg-[#E8E8E8] py-[14px] pl-[14px] pr-[40px] rounded-lg font-bold text-xs">Open Content <i class="ph-bold transition-all duration-700 ph-arrow-right text-xs md:text-xl absolute right-4 md:right-3 top-4 md:top-3 align-middle md:ml-1"></i></button>
                     </div>
                 </div>
             </div>
@@ -30,15 +30,6 @@
 </section>
 
 <style>
-    .rotasi {
-        transform: rotate(90deg);
-        transition: 0.5s ease-in-out
-    }
-
-    .rotasi2 {
-        transition: 0.6s ease-in-out
-    }
-
     .dropdowns {
         width: 100%;
     }
@@ -80,11 +71,9 @@
         dropdownContent.classList.toggle("start");
 
         if (dropdownContent.classList.contains("start")) {
-            arrow.classList.add("rotasi");
-            arrow.classList.remove("rotasi2");
+            arrow.classList.add("rotate-90");
         } else {
-            arrow.classList.add("rotasi2");
-            arrow.classList.remove("rotasi")
+            arrow.classList.remove("rotate-90")
         }
     }
 

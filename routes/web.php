@@ -34,4 +34,6 @@ Route::view('/dashboard/walikelas/add', 'routes.dashboard.walikelas.wkAdd');
 
 Route::view('/', 'routes.home');
 
+Route::view('/profil-guru', 'routes.profil-guru');
+
 

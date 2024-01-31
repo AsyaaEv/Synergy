@@ -50,7 +50,7 @@
         background-image: none;
         background-color: #f78704;
     }
-    }
+   
 
 </style>
 
