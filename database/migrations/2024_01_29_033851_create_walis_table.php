@@ -13,7 +13,8 @@ return new class extends Migration
 {
     Schema::create('walis', function (Blueprint $table) {
         $table->id();
-        $table->string('nama')->unique();
+        $table->string('nama_lengkap')->unique();
+        $table->string('nama_panggilan');
         $table->string('foto');
         $table->string('kode');
         $table->string('mapel');

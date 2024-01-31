@@ -47,7 +47,7 @@ class GuruAdd extends Component
         try {
             $post->save();
             session()->flash('msg', __('Guru Berhasil ditambahkan'));
-            session()->flash('alert', 'blue-300');
+            session()->flash('alert', 'success');
             return redirect('/dashboard/guru');
         } catch (\Throwable $th) {
             session()->flash('msg', $th);

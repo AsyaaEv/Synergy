@@ -30,7 +30,9 @@ Route::view('/dashboard/kelas/add', 'routes.dashboard.kelas.kelasAdd');
 //Dashboard WaliKelas
 Route::view('/dashboard/walikelas', 'routes.dashboard.walikelas.index');
 Route::view('/dashboard/walikelas/add', 'routes.dashboard.walikelas.wkAdd');
-
+Route::get('/dashboard/walikelas/edit/{id}', function($id){
+    return view('routes.dashboard.walikelas.wkEdit', ['id' => $id]);
+});
 
 Route::view('/', 'routes.home');
 

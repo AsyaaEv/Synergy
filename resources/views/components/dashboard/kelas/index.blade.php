@@ -74,7 +74,7 @@
     </div>
     <div class="w-full h-full overflow-hidden bg-secD">
         <div class="w-full h-screen mt-2 px-2 sm:px-0 transition-all">
-            <div class="w-full h-full rounded-[10px] sm:pl-[15rem] flex flex-col gap-2 ">
+            <div class="w-full h-full rounded-[10px] sm:pl-[15rem] flex flex-col gap-2 overflow-auto pb-[5rem]">
                 <div class="w-full h-auto flex">
                     <div class="w-full h-auto">
                         <div class="text-xl text-white font-bold">Dashboard</div>
@@ -103,41 +103,49 @@
                         <i class="ph-fill ph-plus-circle text-secD text-2xl"></i>
                     </a>
                 </div>
-                <div class="w-full h-auto grid gap-2 grid-cols-1 md:grid-cols-2">
-                    @forelse ($data as $item)
-                    <div class="w-full h-[6rem] bg-primaryD rounded-[10px] flex gap-2 shadow-md">
-                        <div class="w-full h-full flex justify-center items-center">
-                            <img src="{{ Storage::url($item->cover) }}" alt=""
-                                class="w-[5rem] h-[5rem] object-cover rounded-full">
+                <div class="w-full h-auto gap-2 flex flex-col md:grid md:grid-cols-2 lg:grid-cols-3 justify-center items-center mt-2 ">
+                    @foreach ($data as $item)
+                    <div class="w-[60%] md:w-full h-[20rem] bg-primaryD rounded-[10px] flex gap-2 shadow-md flex-col">
+                        <div class="w-full h-[10rem]">
+                            <img src="{{Storage::url($item->cover)}}" alt="" class="object-cover w-full h-full rounded-t-[10px]">
                         </div>
-                        <div class="w-full h-full flex justify-center items-center flex-col">
-                            <div class="w-full h-full flex items-center gap-2">
-                                <i class="ph-fill ph-door text-white text-2xl"></i>
-                                <div class="text-white">Kelas : <strong>{{$item->nama}}</strong></div>
+                        <div class="w-full h-auto flex flex-col">
+                            <div class="w-full h-auto flex container items-center justify-between">
+                                <div class="w-auto h-auto  flex gap-2 items-center">
+                                    <i class="ph-fill ph-door text-xl text-white"></i>
+                                    <div class="text-lg text-white">Kelas : </div>
+                                </div>
+                                <div class="w-auto h-auto ">
+                                    <div class="font-bold text-xl text-white">{{$item->nama}}</div>
+                                </div>
                             </div>
-                            <div class="w-full h-full flex items-center gap-2">
-                                <i class="ph-fill ph-calendar text-white text-2xl"></i>
-                                <div class="text-white">Angkatan : <strong>{{$item->angkatan}}</strong></div>
+                            <div class="w-full h-auto flex container items-center justify-between">
+                                <div class="w-auto h-auto  flex gap-2 items-center">
+                                    <i class="ph-fill ph-calendar text-xl text-white"></i>
+                                    <div class="text-lg text-white">Angkatan : </div>
+                                </div>
+                                <div class="w-auto h-auto">
+                                    <div class="font-bold text-xl text-white">{{$item->angkatan}}</div>
+                                </div>
                             </div>
-                            <div class="w-full h-full flex items-center gap-2">
-                                <i class="ph-fill ph-users text-white text-2xl"></i>
-                                <div class="text-white">Walikelas : <strong>{{$item->wali->nama}}</strong></div>
+                            <div class="w-full h-auto flex container items-center justify-between">
+                                <div class="w-auto h-auto  flex gap-2 items-center">
+                                    <i class="ph-fill ph-users text-xl text-white"></i>
+                                    <div class="text-lg text-white">Walikelas : </div>
+                                </div>
+                                <div class="w-auto h-auto">
+                                    <div class="font-bold text-xl text-white">{{$item->wali->nama_panggilan}}</div>
+                                </div>
                             </div>
                         </div>
-                        <div class="w-[20%] h-auto flex flex-col justify-between items-center py-2 mr-2">
-                            <a href=""
-                                class="decoration-transparent p-2 bg-blue-300 rounded-[10px] flex justify-center items-center">
-                                <i class="ph-fill ph-pencil text-xl text-blue-500"></i>
-                            </a>
-                            <a href=""
-                                class="decoration-transparent p-2 bg-green-300 rounded-[10px] flex justify-center items-center">
+                        <div class="w-full h-auto flex justify-center items-center gap-2">
+                            <a href="" class="p-2 bg-blue-300 rounded-[10px] decoration-transparent flex justify-center items-center"><i class="ph-fill ph-pencil text-xl"></i></a>
+                            <div class="p-2 bg-green-300 rounded-[10px] flex justify-center items-center">
                                 <i class="ph-fill ph-eye text-xl text-green-500"></i>
-                            </a>
+                            </div>
                         </div>
                     </div>
-                    @empty
-                        
-                    @endforelse
+                    @endforeach
                 </div>
             </div>
         </div>

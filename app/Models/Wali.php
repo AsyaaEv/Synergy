@@ -15,6 +15,6 @@ class Wali extends Model
 
     public function kelas()
     {
-        return $this->belongsTo(Kelas::class, 'wali_nama', 'nama');
+        return $this->belongsTo(Kelas::class, 'wali_nama', 'nama_lengkap');
     }
 }
