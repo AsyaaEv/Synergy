@@ -8,7 +8,7 @@
                 
             <div class="lg:w-[350px] lg:h-[500px] w-[300px] h-[450px] bg-red-600 relative rounded-3xl group mx-2 mb-6 overflow-hidden">
                 <img class="w-full h-full object-cover rounded-3xl" src="{{ Storage::url('assets/pplg/img/azzam.png')}}" alt="">
-                <div class="text-white absolute lg:-bottom-[11.5rem] -bottom-[13rem] group-hover:bottom-0 transition-all delay-100 z-10 px-4 pb-4 overflow-hidden">
+                <div class="text-white absolute lg:top-[] -bottom-[13rem] group-hover:top-[13rem] transition-all delay-100 z-10 px-4 pb-4 overflow-hidden">
                     <h1 class="text-2xl font-bold">Abdullah Azzam Al Haqqoni, S.Pd</h1>
                     <p class="mb-3">Kepala Jurusan</p>
                     <p class="">Pak azzam adalah guru yang mengajar di produktif rpl, dia mengajar pelajaran PKK, pelajaran yang mendidik anak murid untuk belajar berbisnis dan berniaga untuk </p>

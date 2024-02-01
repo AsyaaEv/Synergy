@@ -20,22 +20,22 @@
                             repellat minus ab.</p>
                     </div>
                 </div>
-                <div class="md:w-1/2 swiper mySwiper">
-                    <div class="swiper-wrapper pb-20">
-                        <div class="swiper-slide img-fluid mx-2 shadow-xl">
+                <div class="md:w-1/2 swiper swiper-sarana mySwiper-sarana">
+                    <div class="swiper-wrapper slide-sar-wrap pb-20">
+                        <div class="swiper-slide slide-sar img-fluid mx-2 shadow-xl">
                             <img class="rounded-2xl" src="https://swiperjs.com/demos/images/nature-1.jpg" />
                         </div>
-                        <div class="swiper-slide img-fluid mx-2 shadow-xl">
+                        <div class="swiper-slide img-fluid mx-2 slide-sar shadow-xl">
                             <img class="rounded-2xl" src="https://swiperjs.com/demos/images/nature-2.jpg" />
                         </div>
-                        <div class="swiper-slide img-fluid mx-2 shadow-xl">
+                        <div class="swiper-slide img-fluid mx-2 slide-sar shadow-xl">
                             <img class="rounded-2xl" src="https://swiperjs.com/demos/images/nature-3.jpg" />
                         </div>
-                        <div class="swiper-slide img-fluid mx-2 shadow-xl">
+                        <div class="swiper-slide img-fluid mx-2 slide-sar shadow-xl">
                             <img class="rounded-2xl" src="https://swiperjs.com/demos/images/nature-3.jpg" />
                         </div>
                     </div>
-                    <div class="swiper-pagination"></div>
+                    <div class="swiper-pagination pag-sar"></div>
                 </div>
             </div>
         </div>
@@ -44,12 +44,12 @@
 </section>
 
 <style>
-    .swiper {
+    .swiper-sarana {
         padding-top: 70px;
         margin: 0;
     }
 
-    .swiper-slide {
+    .slide-sar {
         background-position: center;
         background-size: cover;
         width: 400px;
@@ -57,37 +57,42 @@
     }
 
 
-    .swiper-slide img {
+    .slide-sar img {
         width: 100%;
         height: 100%
     }
 
-    .swiper-pagination .swiper-pagination-bullet {
+    .pag-sar .swiper-pagination-bullet {
         background-color: black;
-        width: 0.8rem;
-        height: 0.8rem;
+        width: 0.6rem;
+        height: 0.6rem;
     }
 
 </style>
 
 <!-- Initialize Swiper -->
 <script>
-    var swiper = new Swiper(".mySwiper", {
+    var swiper = new Swiper(".mySwiper-sarana", {
         effect: "coverflow"
         , grabCursor: true
         , centeredSlides: true
         , slidesPerView: "auto"
+        , autoplay: {
+            delay: 3500
+            , disableOnInteraction: false
+        , }
         , coverflowEffect: {
             rotate: 30
             , stretch: 0
             , depth: 0
             , modifier: 1
             , slideShadows: true
-        
+
         , }
 
         , pagination: {
             el: ".swiper-pagination"
+            , clickable: true
         , }
 
     , });
