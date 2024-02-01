@@ -20,6 +20,9 @@ class WkAdd extends Component
     public $nip;
     public $foto;
     public $type;
+    public $ttl;
+    public $ig;
+    public $fb;
     public $walikelas;
     public function saveWK()
     {
@@ -32,10 +35,21 @@ class WkAdd extends Component
             $namapendek = $namaArray[0];
         }
 
+        if($this->ig == null){
+            $ig = '';
+        } else {
+            $ig = $this->ig;
+        }
+        if($this->fb == null){
+            $fb = '';
+        } else {
+            $fb = $this->fb;
+        }
 
         $input = $this->validate([
             'nama' => 'required',
             'mapel' => 'required',
+            'ttl' => 'required',
             'kode' => 'required',
             'nip' => 'required',
             'type' => 'required',
@@ -46,6 +60,9 @@ class WkAdd extends Component
         $post->nama_lengkap = $this->nama; 
         $post->nama_panggilan = $namapendek; 
         $post->mapel = $this->mapel;
+        $post->ttl = $this->ttl;
+        $post->ig = $ig;
+        $post->fb = $fb;
         $post->kode = $this->kode;
         $post->nip = $this->nip;
         $post->guru = $this->type;
@@ -58,7 +75,7 @@ class WkAdd extends Component
         }
         try {
             $post->save();
-            session()->flash('msg', __('Kelas Berhasil ditambahkan'));
+            session()->flash('msg', __('Walikelas Berhasil ditambahkan'));
             session()->flash('alert', 'success');
             return redirect('/dashboard/walikelas');
             dd('asdasd');

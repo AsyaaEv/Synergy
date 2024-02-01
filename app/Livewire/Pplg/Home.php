@@ -2,12 +2,14 @@
 
 namespace App\Livewire\Pplg;
 
+use App\Models\Guru;
 use Livewire\Component;
 
 class Home extends Component
 {
     public function render()
     {
-        return view('livewire.pplg.home');
+        $guru = Guru::all();
+        return view('livewire.pplg.home', compact('guru'));
     }
 }

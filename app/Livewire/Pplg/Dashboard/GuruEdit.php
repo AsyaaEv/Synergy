@@ -11,6 +11,12 @@ class GuruEdit extends Component
 {
     public $id;
     public $nama;
+    public $nama_panggilan;
+    public $jabatan;
+    public $deskripsi;
+    public $ttl;
+    public $ig;
+    public $fb;
     public $kode;
     public $mapel;
     public $nip;
@@ -23,6 +29,12 @@ class GuruEdit extends Component
     {
         $this->guru = Guru::find($this->id);
         $this->nama = $this->guru->nama;
+        $this->nama_panggilan = $this->guru->nama_panggilan;
+        $this->jabatan = $this->guru->jabatan;
+        $this->deskripsi = $this->guru->deskripsi;
+        $this->ttl = $this->guru->ttl;
+        $this->ig = $this->guru->ig;
+        $this->fb = $this->guru->fb;
         $this->kode = $this->guru->kode;
         $this->mapel = $this->guru->mapel;
         $this->nip = $this->guru->nip;
@@ -32,9 +44,26 @@ class GuruEdit extends Component
     }
 
     public function edit(){
-        
+
+        if($this->ig == null){
+            $ig = '';
+        } else {
+            $ig = $this->ig;
+        }
+        if($this->fb == null){
+            $fb = '';
+        } else {
+            $fb = $this->fb;
+        }
+
         $post = $this->guru;
         $post->nama = $this->nama;
+        $post->nama_panggilan = $this->nama_panggilan;
+        $post->jabatan = $this->jabatan;
+        $post->deskripsi = $this->deskripsi;
+        $post->ttl = $this->ttl;
+        $post->ig = $ig;
+        $post->fb = $fb;
         $post->kode = $this->kode;
         $post->mapel = $this->mapel;
         $post->nip = $this->nip;
