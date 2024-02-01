@@ -3,8 +3,8 @@
         <h1 class="border-[1px] rounded-[10px] border-white p-[10px] inline-block m-0 text-[20px] md:text-[25px] text-white font-bold">Sejarah</h1>
         <div class="dropdowns mt-10 md:mt-20">
             <div class="flex flex-col lg:flex-row justify-between text-white">
-                <h1 class="font-bold lg:w-[15%]">Apa itu PPLG?</h1>
-                <div class="flex flex-col lg:w-[75%]">
+                <h1 class="font-bold lg:w-[15%]" data-aos='fade-right' data-aos-once="true">Apa itu PPLG?</h1>
+                <div class="flex flex-col lg:w-[75%]" data-aos='fade-down' data-aos-once="true">
                     <p class="md:text-[20px] lg:text-[24px] text-[#B7B7B7]">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
                     <div class="flex justify-between items-center">
                         <hr class="md:w-[70%] w-[50%]" style=" border-width: 2px; color: #626262;">
@@ -12,7 +12,7 @@
                     </div>
                 </div>
             </div>
-            <div id="dropdownContent" class="dropdown-content mt-10 flex-col-reverse md:flex-row">
+            <div id="dropdownContent" class="dropdown-content mt-10 flex-col-reverse md:flex-row" '>
                 <div class="contex flex flex-col md:w-[70%] lg:w-[75%] border-[1px] border-[#6F6F6F] font-semibold md:text-xl rounded-3xl text-white overflow-auto">
                     <p class="p-4 m-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, aperiam. Veniam dolore accusantium, commodi architecto aspernatur consectetur mollitia dolor dignissimos dicta voluptas, tempora voluptate error deserunt modi nostrum illum unde, ratione optio id nisi magni dolorem eaque rerum nulla. Deleniti recusandae minima eligendi natus aliquid, architecto animi quia placeat corporis harum tenetur sed fugit quis itaque assumenda possimus dolore quod. </p>
                 </div>

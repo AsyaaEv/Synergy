@@ -16,6 +16,9 @@ class WkEdit extends Component
         $this->nama_lengkap = $this->data->nama_lengkap;
         $this->nama_panggilan = $this->data->nama_panggilan;
         $this->mapel = $this->data->mapel;
+        $this->ttl = $this->data->ttl;
+        $this->ig = $this->data->ig;
+        $this->fb = $this->data->fb;
         $this->kode = $this->data->kode;
         $this->nip = $this->data->nip;
         $this->type = $this->data->guru;
@@ -36,11 +39,26 @@ class WkEdit extends Component
     public $type;
     public $nip;
     public $walikelas;
+    public $ttl;
+    public $ig;
+    public $fb;
     public function edit(){
+        if($this->ig == null){
+            $ig = '';
+        } else {
+            $ig = $this->ig;
+        }
+        if($this->fb == null){
+            $fb = '';
+        } else {
+            $fb = $this->fb;
+        }
         $post = $this->data;
         $post->nama_lengkap = $this->nama_lengkap;
         $post->nama_panggilan = $this->nama_panggilan;
         $post->kode = $this->kode;
+        $post->ig = $ig;
+        $post->fb = $fb;
         $post->mapel = $this->mapel;
         $post->nip = $this->nip;
         $post->guru = $this->type;

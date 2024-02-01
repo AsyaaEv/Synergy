@@ -82,10 +82,8 @@
                             <i class="ph-bold ph-arrow-bend-up-left text-xl  p-2 bg-white rounded-full"></i>
                         </a>
                         <div class="w-auto h-auto">
-                            <div class="font-bold text-xl text-white">Tambah Guru</div>
-                            <div class="font-normal text-md text-white opacity-50">Isi data dibawah ini untuk
-                                menambahkan guru
-                            </div>
+                            <div class="font-bold text-xl text-white">Edit Guru {{$this->nama}}</div>
+                            <div class="font-normal text-md text-white opacity-50">Silakan ganti data dibawah ini untuk mengedit</div>
                         </div>
                     </div>
                     <hr class="h-[1px] text-white my-2">
@@ -100,6 +98,73 @@
                                 <input type="text" id="input-group-1"
                                     class="bg-gray-50   @error('nama') border-[2px] border-red-500 placeholder:text-red-500 @enderror font-semibold  text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full ps-10 p-2.5  dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
                                     placeholder="Nama Lengkap" wire:model='nama'>
+                            </div>
+                        </div>
+                        <div class="w-full h-auto flex flex-col">
+                            <label for="input-group-1" class="block mb-2 text-sm font-medium text-white">Nama
+                                Panggilan:</label>
+                            <div class="relative">
+                                <div class="absolute inset-y-0 start-0 flex items-center ps-2 pointer-events-none">
+                                    <i class="ph-fill ph-user text-3xl"></i>
+                                </div>
+                                <input type="text" id="input-group-1"
+                                    class="bg-gray-50   @error('nama_panggilan') border-[2px] border-red-500 placeholder:text-red-500 @enderror font-semibold  text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full ps-10 p-2.5  dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                                    placeholder="Nama Panggilan" wire:model='nama_panggilan'>
+                            </div>
+                        </div>
+                        <div class="w-full h-auto flex flex-col">
+                            <label for="input-group-1" class="block mb-2 text-sm font-medium text-white">Jabatan Guru:</label>
+                            <div class="relative">
+                                <div class="absolute inset-y-0 start-0 flex items-center ps-2 pointer-events-none">
+                                    <i class="ph-fill ph-stack text-3xl"></i>
+                                </div>
+                                <input type="text" id="input-group-1"  
+                                    class="bg-gray-50   @error('jabatan') border-[2px] border-red-500 placeholder:text-red-500 @enderror font-semibold  text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full ps-10 p-2.5  dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                                    placeholder="Jabatan" wire:model='jabatan'>
+                            </div>
+                        </div>
+                        <div class="w-full h-auto flex flex-col">
+                            <label for="input-group-1" class="block mb-2 text-sm font-medium text-white">Deskripsi Guru:</label>
+                            <div class="relative">
+                                <div class="absolute inset-y-0 start-0 flex items-center ps-2 pointer-events-none">
+                                    <i class="ph-fill ph-article text-3xl"></i>
+                                </div>
+                                <input type="text" id="input-group-1"  
+                                    class="bg-gray-50   @error('deskripsi') border-[2px] border-red-500 placeholder:text-red-500 @enderror font-semibold  text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full ps-10 p-2.5  dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                                    placeholder="Deskripsi" wire:model='deskripsi'>
+                            </div>
+                        </div>
+                        <div class="w-full h-auto flex flex-col">
+                            <label for="input-group-1" class="block mb-2 text-sm font-medium text-white">Tempat Tanggal Lahir:</label>
+                            <div class="relative">
+                                <div class="absolute inset-y-0 start-0 flex items-center ps-2 pointer-events-none">
+                                    <i class="ph-fill ph-calendar text-3xl"></i>
+                                </div>
+                                <input type="text" id="input-group-1"  
+                                    class="bg-gray-50   @error('ttl') border-[2px] border-red-500 placeholder:text-red-500 @enderror font-semibold  text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full ps-10 p-2.5  dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                                    placeholder="TTL" wire:model='ttl'>
+                            </div>
+                        </div>
+                        <div class="w-full h-auto flex flex-col">
+                            <label for="input-group-1" class="block mb-2 text-sm font-medium text-white">Sosmed Instagram:</label>
+                            <div class="relative">
+                                <div class="absolute inset-y-0 start-0 flex items-center ps-2 pointer-events-none">
+                                    <i class="ph-fill ph-instagram-logo text-3xl"></i>
+                                </div>
+                                <input type="text" id="input-group-1"  
+                                    class="bg-gray-50   @error('ig') border-[2px] border-red-500 placeholder:text-red-500 @enderror font-semibold  text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full ps-10 p-2.5  dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                                    placeholder="Username Instagram" wire:model='ig'>
+                            </div>
+                        </div>
+                        <div class="w-full h-auto flex flex-col">
+                            <label for="input-group-1" class="block mb-2 text-sm font-medium text-white">Sosmed Facebook:</label>
+                            <div class="relative">
+                                <div class="absolute inset-y-0 start-0 flex items-center ps-2 pointer-events-none">
+                                    <i class="ph-fill ph-facebook-logo text-3xl"></i>
+                                </div>
+                                <input type="text" id="input-group-1"  
+                                    class="bg-gray-50   @error('fb') border-[2px] border-red-500 placeholder:text-red-500 @enderror font-semibold  text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full ps-10 p-2.5  dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                                    placeholder="Username Facebook" wire:model='fb'>
                             </div>
                         </div>
                         <div class="w-full h-auto flex flex-col">

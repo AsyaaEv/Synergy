@@ -1,5 +1,6 @@
 <section>
-    <div class="lg:h-[50vh] h-[30vh]  bg-no-repeat bg-center bg-cover" style="background-image: url({{ Storage::url('assets/pplg/img/bg-sarana.jpg') }});">
+    <div class="lg:h-[50vh] h-[30vh]  bg-no-repeat bg-center bg-cover"
+        style="background-image: url({{ Storage::url('assets/pplg/img/bg-sarana.jpg') }});">
     </div>
     <div class="container">
         <div class="flex">
@@ -36,6 +37,7 @@
                         <i class="ph ph-facebook-logo text-6xl p-1.5 rounded-lg text-slate-50 transition-all hover:p-1.5 hover:text-slate-300 hover:border-pink-500 bg-blue-500 hover:bg-blue-700"></i>
                     </div>
                 </div>
+                <h1 class="md:text-3xl text-xl font-bold md:w-[40%] w-[60%]">{{$item->nama}}</h1>
             </div>
             <div class="md:w-[60%] ">
                 <h1 class="text-2xl font-bold pt-5 relative pr-7">Pendidikan<i class="ph-bold ph-graduation-cap text-3xl absolute bottom-0.5 ml-1.5"></i></h1>
@@ -53,8 +55,6 @@
                     </div>
                 </div>
             </div>
-        </div>
-
-    </div>
+        @endforeach
     </div>
 </section>
