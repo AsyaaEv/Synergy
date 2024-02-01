@@ -8,14 +8,14 @@
                     <div class="mb-10">
                         <h1 class="font-bold text-[2rem] mb-4">Sarana</h1>
                         <hr class=" lg:ml-6" style=" border-width: 2px; color: #626262;">
-                        <p class="lg:ml-6 font-medium text-[#676767]">Lorem ipsum dolor, sit amet consectetur adipisicing
+                        <p class="lg:ml-6 font-medium text-[#676767]" data-aos='fade-right' data-aos-once="true">Lorem ipsum dolor, sit amet consectetur adipisicing
                             elit. Porro dolore voluptatem voluptas sunt architecto perspiciatis deserunt debitis repellat
                             minus ab.</p>
                     </div>
                     <div class="">
                         <h1 class="font-bold text-[2rem] mb-4">Prasarana</h1>
                         <hr class=" lg:ml-6" style=" border-width: 2px; color: #626262;">
-                        <p class="lg:ml-6 font-medium text-[#676767] md:mb-10">Lorem ipsum dolor, sit amet consectetur
+                        <p class="lg:ml-6 font-medium text-[#676767] md:mb-10" data-aos='fade-right' data-aos-once="true">Lorem ipsum dolor, sit amet consectetur
                             adipisicing elit. Porro dolore voluptatem voluptas sunt architecto perspiciatis deserunt debitis
                             repellat minus ab.</p>
                     </div>

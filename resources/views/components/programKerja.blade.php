@@ -3,7 +3,7 @@
         <h1
             class="border-[1px] rounded-[10px] border-white p-[10px] inline-block m-0 text-[20px] md:text-[25px] text-white font-bold">
             Sejarah</h1>
-        <div class="w-auto h-auto mt-5">
+        <div class="w-auto h-auto mt-5" data-aos-once="true" data-aos='fade-down'>
             <h1 class=" font-bold text-[1.5rem] text-center text-white">PROGRESS PROGAM KERJA</h1>
             <h1 class=" font-bold text-[1.5rem] text-center text-white">PROGAM KEAHLIAN PENGEMBANGAN PERANGKAT LUNAK DAN
                 GIM
@@ -14,7 +14,7 @@
             data-active-classes="bg-white dark:shadow-xl text-orange dark:text-white"
             data-inactive-classes="text-hitam bg-gray-300 dark:text-gray-400 dark:shadow-sm"
             class="flex w-full h-[50svh] justify-between items-center">
-            <div class="w-[31%] bg-white flex flex-col rounded-xl gap-">
+            <div class="w-[31%] bg-white flex flex-col rounded-xl gap-" data-aos-once="true" data-aos="fade-right">
                 <h2 id="accordion-flush-heading-1">
                     <button type="button"
                         class="flex items-center justify-between w-full rounded-xl shadow-xl py-2 font-medium rtl:text-right text-gray-500 border-b border-gray-200 dark:border-gray-700 dark:text-gray-400 gap-3"
@@ -43,7 +43,7 @@
                     </button>
                 </h2>
             </div>
-            <div id="accordion-flush-body-1" class="w-[50%] h-[40svh] flex" aria-labelledby="accordion-flush-heading-1">
+            <div id="accordion-flush-body-1" class="w-[50%] h-[40svh] flex" aria-labelledby="accordion-flush-heading-1" data-aos-once="true" data-aos='fade-left'>
                 <div
                     class="py-3 border-b w-full bg-[#F2F2F2] flex justify-center flex-col items-center rounded-xl border-gray-200 dark:border-gray-700 ">
                     <div class="flex w-[30rem] mt-2 h-auto space-x-3 ml-[2rem]">

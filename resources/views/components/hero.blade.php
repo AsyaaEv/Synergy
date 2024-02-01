@@ -1,5 +1,5 @@
 <!-- Hero -->
-<div class="w-full h-auto bg-white lg:py-20 py-16">
+<div class="w-full h-auto bg-white lg:py-20 py-16 animate__animated animate__fadeIn">
     <div class="container mx-auto justify-center md:justify-between items-center flex">
         <div class="w-full px-2 mx-auto flex lg:flex-row flex-col">
             <!-- Bagian Kiri -->

@@ -2,9 +2,9 @@
     <div class="container py-5">
         <h1 class="border-[1px] rounded-[10px] border-black p-[10px] inline-block m-0 text-[20px] md:text-[25px] text-hitam font-bold">Struktur Organisasi</h1>
         <div class="flex justify-center py-5">
-            <h1 class="text-2xl font-bold text-center w-[55%]">STRUKTUR ORGANISASI JURUSAN PENGEMBANGAN PERANGKAT LUNAK DAN GIM</h1>
+            <h1 class="text-2xl font-bold text-center w-[55%]" data-aos-once="true" data-aos="fade-down">STRUKTUR ORGANISASI JURUSAN PENGEMBANGAN PERANGKAT LUNAK DAN GIM</h1>
         </div>
-        <div class="flex flex-wrap justify-center">
+        <div class="flex flex-wrap justify-center" data-aos='fade-right' data-aos-once="true">
                 
             <div class="lg:w-[350px] lg:h-[500px] w-[300px] h-[450px] bg-red-600 relative rounded-3xl group mx-2 mb-6 overflow-hidden">
                 <img class="w-full h-full object-cover rounded-3xl" src="{{ Storage::url('assets/pplg/img/azzam.png')}}" alt="">
