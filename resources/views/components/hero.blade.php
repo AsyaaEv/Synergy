@@ -27,7 +27,7 @@
                 </div>
 
                 <div
-                    class="bg-white shadow-md p-2 sm:hidden md:hidden absolute rounded-xl lg:flex gap-2 top-[1.5rem] -right-24">
+                    class="bg-white shadow-md p-2 hidden md:hidden absolute rounded-xl lg:flex gap-2 top-[1.5rem] -right-24">
                     <div class="w-8 h-8 rounded-full overflow-hidden">
                         <img src="{{ Storage::url('no_profile.webp') }}" alt="" class="object-cover h-6" />
                     </div>
