@@ -90,7 +90,7 @@
                     <hr class="h-[1px] text-white my-2">
                     <form class="w-full h-auto gap-2 flex flex-col" wire:submit.prevent='saveKelas'>
                         <div class="w-full h-auto flex flex-col">
-                            <label for="input-group-1" class="block mb-2 text-sm font-medium text-white">Nama Kelas:</label>
+                            <label for="input-group-1" class="block mb-2 text-sm font-medium text-white">Nama Kelas:<span class="text-red-500 text-lg"> *</span></label>
                             <div class="relative">
                                 <div class="absolute inset-y-0 start-0 flex items-center ps-2 pointer-events-none">
                                     <i class="ph-fill ph-door text-3xl"></i>
@@ -101,7 +101,7 @@
                             </div>
                         </div>
                         <div class="w-full h-auto flex flex-col">
-                            <label for="input-group-1" class="block mb-2 text-sm font-medium text-white">Angkatan:</label>
+                            <label for="input-group-1" class="block mb-2 text-sm font-medium text-white">Angkatan:<span class="text-red-500 text-lg"> *</span></label>
                             <div class="relative">
                                 <div class="absolute inset-y-0 start-0 flex items-center ps-2 pointer-events-none">
                                     <i class="ph-fill ph-calendar text-3xl"></i>
@@ -112,7 +112,7 @@
                             </div>
                         </div>
                         <div class="w-full h-auto flex flex-col">
-                            <label for="input-group-1" class="block mb-2 text-sm font-medium text-white">Slogan Kelas:</label>
+                            <label for="input-group-1" class="block mb-2 text-sm font-medium text-white">Slogan Kelas:<span class="text-red-500 text-lg"> *</span></label>
                             <div class="relative">
                                 <div class="absolute inset-y-0 start-0 flex items-center ps-2 pointer-events-none">
                                     <i class="ph-fill ph-push-pin text-3xl"></i>
@@ -123,7 +123,7 @@
                             </div>
                         </div>
                         <div class="w-full h-auto flex flex-col">
-                            <label for="input-group-1" class="block mb-2 text-sm font-medium text-white">WaliKelas:</label>
+                            <label for="input-group-1" class="block mb-2 text-sm font-medium text-white">WaliKelas:<span class="text-red-500 text-lg"> *</span></label>
                             <select id="countries" wire:model='wali' class="bg-gray-50 @error('type') border-[2px] border-red-500 placeholder:text-red-500 @enderror font-bold text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
                                 <option selected class="font-bold"> ---Pilih Walikelas---</option>
                                 @forelse ($data as $item)
@@ -134,7 +134,7 @@
                               </select>
                         </div>
                         <div class="flex items-center justify-center w-full flex-col">
-                            <label for="input-group-1" class="block mb-2 text-sm font-medium text-white">Foto Guru:</label>
+                            <label for="input-group-1" class="block mb-2 text-sm font-medium text-white">Foto Kelas:</label>
                             <label for="dropzone-file"
                             class="flex flex-col items-center justify-center w-full h-32 border-2  @error('foto') border-red-500  @enderror border-dashed rounded-lg cursor-pointer bg-gray-50 dark:hover:bg-bray-800 dark:bg-gray-700 hover:bg-gray-100 dark:border-gray-600 dark:hover:border-gray-500 dark:hover:bg-gray-600">
                             <div class="flex flex-col items-center justify-center pt-5 pb-6">

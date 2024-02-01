@@ -112,6 +112,17 @@
                             </div>
                         </div>
                         <div class="w-full h-auto flex flex-col">
+                            <label for="input-group-1" class="block mb-2 text-sm font-medium text-white">Tempat Tanggal Lahir:</label>
+                            <div class="relative">
+                                <div class="absolute inset-y-0 start-0 flex items-center ps-2 pointer-events-none">
+                                    <i class="ph-fill ph-user-circle text-3xl"></i>
+                                </div>
+                                <input type="text" id="input-group-1"  
+                                    class="bg-gray-50   @error('ttl') border-[2px] border-red-500 placeholder:text-red-500 @enderror font-semibold  text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full ps-10 p-2.5  dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                                    placeholder="TTL" wire:model='ttl'> 
+                            </div>
+                        </div>
+                        <div class="w-full h-auto flex flex-col">
                             <label for="input-group-1" class="block mb-2 text-sm font-medium text-white">Mapel Guru:</label>
                             <div class="relative">
                                 <div class="absolute inset-y-0 start-0 flex items-center ps-2 pointer-events-none">
@@ -152,6 +163,28 @@
                                 <option value="produktif">Produktif</option>
                                 <option value="normada">Normada</option>
                               </select>
+                        </div>
+                        <div class="w-full h-auto flex flex-col">
+                            <label for="input-group-1" class="block mb-2 text-sm font-medium text-white">Instagram Guru:</label>
+                            <div class="relative">
+                                <div class="absolute inset-y-0 start-0 flex items-center ps-2 pointer-events-none">
+                                    <i class="ph-fill ph-identification-badge text-3xl"></i>
+                                </div>
+                                <input type="text" id="input-group-1"
+                                    class="bg-gray-50  font-semibold @error('ig') border-[2px] border-red-500 placeholder:text-red-500 @enderror text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full ps-10 p-2.5  dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                                    placeholder="Username IG" wire:model='ig'>
+                            </div>
+                        </div>
+                        <div class="w-full h-auto flex flex-col">
+                            <label for="input-group-1" class="block mb-2 text-sm font-medium text-white">Facebook Guru:</label>
+                            <div class="relative">
+                                <div class="absolute inset-y-0 start-0 flex items-center ps-2 pointer-events-none">
+                                    <i class="ph-fill ph-identification-badge text-3xl"></i>
+                                </div>
+                                <input type="text" id="input-group-1"
+                                    class="bg-gray-50  font-semibold @error('fb') border-[2px] border-red-500 placeholder:text-red-500 @enderror text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full ps-10 p-2.5  dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                                    placeholder="Username FB" wire:model='fb'>
+                            </div>
                         </div>
                         <div class="flex items-center justify-center w-full flex-col">
                             <label for="input-group-1" class="block mb-2 text-sm font-medium text-white">Foto Guru:</label>

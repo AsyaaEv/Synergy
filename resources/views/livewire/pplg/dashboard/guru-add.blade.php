@@ -90,7 +90,7 @@
                     <hr class="h-[1px] text-white my-2">
                     <form class="w-full h-auto gap-2 flex flex-col" wire:submit.prevent='save'>
                         <div class="w-full h-auto flex flex-col">
-                            <label for="input-group-1" class="block mb-2 text-sm font-medium text-white">Nama Guru:</label>
+                            <label for="input-group-1" class="block mb-2 text-sm font-medium text-white">Nama Guru:<span class="text-red-500 text-lg"> *</span></label>
                             <div class="relative">
                                 <div class="absolute inset-y-0 start-0 flex items-center ps-2 pointer-events-none">
                                     <i class="ph-fill ph-user-circle text-3xl"></i>
@@ -101,7 +101,62 @@
                             </div>
                         </div>
                         <div class="w-full h-auto flex flex-col">
-                            <label for="input-group-1" class="block mb-2 text-sm font-medium text-white">Mapel Guru:</label>
+                            <label for="input-group-1" class="block mb-2 text-sm font-medium text-white">Jabatan Guru:<span class="text-red-500 text-lg"> *</span></label>
+                            <div class="relative">
+                                <div class="absolute inset-y-0 start-0 flex items-center ps-2 pointer-events-none">
+                                    <i class="ph-fill ph-stack text-3xl"></i>
+                                </div>
+                                <input type="text" id="input-group-1"  
+                                    class="bg-gray-50   @error('jabatan') border-[2px] border-red-500 placeholder:text-red-500 @enderror font-semibold  text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full ps-10 p-2.5  dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                                    placeholder="Jabatan" wire:model='jabatan'>
+                            </div>
+                        </div>
+                        <div class="w-full h-auto flex flex-col">
+                            <label for="input-group-1" class="block mb-2 text-sm font-medium text-white">Deskripsi Guru:<span class="text-red-500 text-lg"> *</span></label>
+                            <div class="relative">
+                                <div class="absolute inset-y-0 start-0 flex items-center ps-2 pointer-events-none">
+                                    <i class="ph-fill ph-article text-3xl"></i>
+                                </div>
+                                <input type="text" id="input-group-1"  
+                                    class="bg-gray-50   @error('deskripsi') border-[2px] border-red-500 placeholder:text-red-500 @enderror font-semibold  text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full ps-10 p-2.5  dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                                    placeholder="Deskripsi" wire:model='deskripsi'>
+                            </div>
+                        </div>
+                        <div class="w-full h-auto flex flex-col">
+                            <label for="input-group-1" class="block mb-2 text-sm font-medium text-white">Tempat Tanggal Lahir:<span class="text-red-500 text-lg"> *</span></label>
+                            <div class="relative">
+                                <div class="absolute inset-y-0 start-0 flex items-center ps-2 pointer-events-none">
+                                    <i class="ph-fill ph-calendar text-3xl"></i>
+                                </div>
+                                <input type="text" id="input-group-1"  
+                                    class="bg-gray-50   @error('ttl') border-[2px] border-red-500 placeholder:text-red-500 @enderror font-semibold  text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full ps-10 p-2.5  dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                                    placeholder="TTL" wire:model='ttl'>
+                            </div>
+                        </div>
+                        <div class="w-full h-auto flex flex-col">
+                            <label for="input-group-1" class="block mb-2 text-sm font-medium text-white">Sosmed Instagram:</label>
+                            <div class="relative">
+                                <div class="absolute inset-y-0 start-0 flex items-center ps-2 pointer-events-none">
+                                    <i class="ph-fill ph-instagram-logo text-3xl"></i>
+                                </div>
+                                <input type="text" id="input-group-1"  
+                                    class="bg-gray-50   @error('ig') border-[2px] border-red-500 placeholder:text-red-500 @enderror font-semibold  text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full ps-10 p-2.5  dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                                    placeholder="Username Instagram" wire:model='ig'>
+                            </div>
+                        </div>
+                        <div class="w-full h-auto flex flex-col">
+                            <label for="input-group-1" class="block mb-2 text-sm font-medium text-white">Sosmed Facebook:</label>
+                            <div class="relative">
+                                <div class="absolute inset-y-0 start-0 flex items-center ps-2 pointer-events-none">
+                                    <i class="ph-fill ph-facebook-logo text-3xl"></i>
+                                </div>
+                                <input type="text" id="input-group-1"  
+                                    class="bg-gray-50   @error('fb') border-[2px] border-red-500 placeholder:text-red-500 @enderror font-semibold  text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full ps-10 p-2.5  dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                                    placeholder="Username Facebook" wire:model='fb'>
+                            </div>
+                        </div>
+                        <div class="w-full h-auto flex flex-col">
+                            <label for="input-group-1" class="block mb-2 text-sm font-medium text-white">Mapel Guru:<span class="text-red-500 text-lg"> *</span></label>
                             <div class="relative">
                                 <div class="absolute inset-y-0 start-0 flex items-center ps-2 pointer-events-none">
                                     <i class="ph-fill ph-book-bookmark text-3xl"></i>
@@ -112,7 +167,7 @@
                             </div>
                         </div>
                         <div class="w-full h-auto flex flex-col">
-                            <label for="input-group-1" class="block mb-2 text-sm font-medium text-white">Kode Guru:</label>
+                            <label for="input-group-1" class="block mb-2 text-sm font-medium text-white">Kode Guru:<span class="text-red-500 text-lg"> *</span></label>
                             <div class="relative">
                                 <div class="absolute inset-y-0 start-0 flex items-center ps-2 pointer-events-none">
                                     <i class="ph-fill ph-barcode text-3xl"></i>
@@ -123,7 +178,7 @@
                             </div>
                         </div>
                         <div class="w-full h-auto flex flex-col">
-                            <label for="input-group-1" class="block mb-2 text-sm font-medium text-white">NIP Guru:</label>
+                            <label for="input-group-1" class="block mb-2 text-sm font-medium text-white">NIP Guru:<span class="text-red-500 text-lg"> *</span></label>
                             <div class="relative">
                                 <div class="absolute inset-y-0 start-0 flex items-center ps-2 pointer-events-none">
                                     <i class="ph-fill ph-identification-badge text-3xl"></i>
@@ -134,7 +189,7 @@
                             </div>
                         </div>
                         <div class="w-full h-auto flex flex-col">
-                            <label for="input-group-1" class="block mb-2 text-sm font-medium text-white">Email Guru:</label>
+                            <label for="input-group-1" class="block mb-2 text-sm font-medium text-white">Email Guru:<span class="text-red-500 text-lg"> *</span></label>
                             <div class="relative">
                                 <div class="absolute inset-y-0 start-0 flex items-center ps-2 pointer-events-none">
                                     <i class="ph-fill ph-envelope text-3xl"></i>
