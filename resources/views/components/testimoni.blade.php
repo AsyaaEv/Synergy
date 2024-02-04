@@ -1,85 +1,85 @@
-<section id="testimoni" class="bg-[#0D0D0D] py-5">
+<section id="testimoni" class="py-5">
     <div class="container">
-        <h1 class="border-[1px] rounded-[10px] border-white p-[10px] inline-block m-0 text-[20px] md:text-[25px] text-white font-bold">Testimoni</h1>
+        <h1 class="border-[1px] rounded-[10px] border-black p-[10px] inline-block m-0 text-[20px] md:text-[25px] text-black font-bold">Testimoni</h1>
         <div class="swiper swiper-test mySwiper-test py-5 h-full w-full">
             <div class="swiper-wrapper">
-                <div class="swiper-slide slide-test flex flex-col p-7 overflow-hidden rounded-lg border-[1px] border-white">
+                <div class=" swiper-slide slide-test shadow-xl flex flex-col p-7 overflow-hidden rounded-lg border-2 border-[#f78704]">
                     <div class="flex items-center gap-3 mb-3">
-                        <div class="md:w-[4.5rem] md:h-[4.5rem] w-32 h-32 mb-2">
+                        <div class="md:w-[4.5rem] md:h-[4.5rem] w-14 h-14 mb-3">
                             <img class="h-full w-full object-top object-cover rounded-full" src="{{ Storage::url('assets/pplg/img/azzam.png')}}" alt="">
                         </div>
                         <div>
-                            <p class="mb-1 font-bold text-2xl ">Abas</p>
+                            <p class="mb-0 font-bold md:text-2xl text-xl">Abas</p>
                             <p class="text-base">Front-End Dev</p>
                         </div>
                     </div>
-                    <p class="text-lg font-semibold mb-0">"Keren banget suka ama pembelajarannya"</p>
-                    <p class="font-light text-[#a4a2a2] py-3">"jujurly jurusan pplg tuh ada di banyak smk di Indonesia, tapi yang paling bagus untuk jurusan pplg tuh cuma di smkn1 bangsri. karena meyediakan banyak sarana untuk mengembangkan skill dan pelatihan industri yang nyata"</p>
+                    <p class="text-lg font-bold mb-0">"Keren banget suka ama pembelajarannya"</p>
+                    <p class="font-medium text-[#000000] py-3">"jujurly jurusan pplg tuh ada di banyak smk di Indonesia, tapi yang paling bagus untuk jurusan pplg tuh cuma di smkn1 bangsri. karena meyediakan banyak sarana untuk mengembangkan skill dan pelatihan industri yang nyata"</p>
                 </div>
-                <div class="swiper-slide slide-test flex flex-col p-7 overflow-hidden rounded-lg border-[1px] border-white">
+                <div class=" swiper-slide slide-test shadow-xl flex flex-col p-7 overflow-hidden rounded-lg border-2 border-[#f78704]">
                     <div class="flex items-center gap-3 mb-3">
-                        <div class="md:w-[4.5rem] md:h-[4.5rem] w-32 h-32 mb-2">
+                        <div class="md:w-[4.5rem] md:h-[4.5rem] w-14 h-14 mb-3">
                             <img class="h-full w-full object-top object-cover rounded-full" src="{{ Storage::url('assets/pplg/img/azzam.png')}}" alt="">
                         </div>
                         <div>
-                            <p class="mb-1 font-bold text-2xl ">Abas</p>
+                            <p class="mb-0 font-bold md:text-2xl text-xl">Abas</p>
                             <p class="text-base">Front-End Dev</p>
                         </div>
                     </div>
-                    <p class="text-lg font-semibold mb-0">"Keren banget suka ama pembelajarannya"</p>
-                    <p class="font-light text-[#a4a2a2] py-3">"jujurly jurusan pplg tuh ada di banyak smk di Indonesia, tapi yang paling bagus untuk jurusan pplg tuh cuma di smkn1 bangsri. karena meyediakan banyak sarana untuk mengembangkan skill dan pelatihan industri yang nyata"</p>
+                    <p class="text-lg font-bold mb-0">"Keren banget suka ama pembelajarannya"</p>
+                    <p class="font-medium text-[#000000] py-3">"jujurly jurusan pplg tuh ada di banyak smk di Indonesia, tapi yang paling bagus untuk jurusan pplg tuh cuma di smkn1 bangsri. karena meyediakan banyak sarana untuk mengembangkan skill dan pelatihan industri yang nyata"</p>
                 </div>
-                <div class="swiper-slide slide-test flex flex-col p-7 overflow-hidden rounded-lg border-[1px] border-white">
+                <div class=" swiper-slide slide-test shadow-xl flex flex-col p-7 overflow-hidden rounded-lg border-2 border-[#f78704]">
                     <div class="flex items-center gap-3 mb-3">
-                        <div class="md:w-[4.5rem] md:h-[4.5rem] w-32 h-32 mb-2">
+                        <div class="md:w-[4.5rem] md:h-[4.5rem] w-14 h-14 mb-3">
                             <img class="h-full w-full object-top object-cover rounded-full" src="{{ Storage::url('assets/pplg/img/azzam.png')}}" alt="">
                         </div>
                         <div>
-                            <p class="mb-1 font-bold text-2xl ">Abas</p>
+                            <p class="mb-0 font-bold md:text-2xl text-xl">Abas</p>
                             <p class="text-base">Front-End Dev</p>
                         </div>
                     </div>
-                    <p class="text-lg font-semibold mb-0">"Keren banget suka ama pembelajarannya"</p>
-                    <p class="font-light text-[#a4a2a2] py-3">"jujurly jurusan pplg tuh ada di banyak smk di Indonesia, tapi yang paling bagus untuk jurusan pplg tuh cuma di smkn1 bangsri. karena meyediakan banyak sarana untuk mengembangkan skill dan pelatihan industri yang nyata"</p>
+                    <p class="text-lg font-bold mb-0">"Keren banget suka ama pembelajarannya"</p>
+                    <p class="font-medium text-[#000000] py-3">"jujurly jurusan pplg tuh ada di banyak smk di Indonesia, tapi yang paling bagus untuk jurusan pplg tuh cuma di smkn1 bangsri. karena meyediakan banyak sarana untuk mengembangkan skill dan pelatihan industri yang nyata"</p>
                 </div>
-                <div class="swiper-slide slide-test flex flex-col p-7 overflow-hidden rounded-lg border-[1px] border-white">
+                <div class=" swiper-slide slide-test shadow-xl flex flex-col p-7 overflow-hidden rounded-lg border-2 border-[#f78704]">
                     <div class="flex items-center gap-3 mb-3">
-                        <div class="md:w-[4.5rem] md:h-[4.5rem] w-32 h-32 mb-2">
+                        <div class="md:w-[4.5rem] md:h-[4.5rem] w-14 h-14 mb-3">
                             <img class="h-full w-full object-top object-cover rounded-full" src="{{ Storage::url('assets/pplg/img/azzam.png')}}" alt="">
                         </div>
                         <div>
-                            <p class="mb-1 font-bold text-2xl ">Abas</p>
+                            <p class="mb-0 font-bold md:text-2xl text-xl">Abas</p>
                             <p class="text-base">Front-End Dev</p>
                         </div>
                     </div>
-                    <p class="text-lg font-semibold mb-0">"Keren banget suka ama pembelajarannya"</p>
-                    <p class="font-light text-[#a4a2a2] py-3">"jujurly jurusan pplg tuh ada di banyak smk di Indonesia, tapi yang paling bagus untuk jurusan pplg tuh cuma di smkn1 bangsri. karena meyediakan banyak sarana untuk mengembangkan skill dan pelatihan industri yang nyata"</p>
+                    <p class="text-lg font-bold mb-0">"Keren banget suka ama pembelajarannya"</p>
+                    <p class="font-medium text-[#000000] py-3">"jujurly jurusan pplg tuh ada di banyak smk di Indonesia, tapi yang paling bagus untuk jurusan pplg tuh cuma di smkn1 bangsri. karena meyediakan banyak sarana untuk mengembangkan skill dan pelatihan industri yang nyata"</p>
                 </div>
-                <div class="swiper-slide slide-test flex flex-col p-7 overflow-hidden rounded-lg border-[1px] border-white">
+                <div class=" swiper-slide slide-test shadow-xl flex flex-col p-7 overflow-hidden rounded-lg border-2 border-[#f78704]">
                     <div class="flex items-center gap-3 mb-3">
-                        <div class="md:w-[4.5rem] md:h-[4.5rem] w-32 h-32 mb-2">
+                        <div class="md:w-[4.5rem] md:h-[4.5rem] w-14 h-14 mb-3">
                             <img class="h-full w-full object-top object-cover rounded-full" src="{{ Storage::url('assets/pplg/img/azzam.png')}}" alt="">
                         </div>
                         <div>
-                            <p class="mb-1 font-bold text-2xl ">Abas</p>
+                            <p class="mb-0 font-bold md:text-2xl text-xl">Abas</p>
                             <p class="text-base">Front-End Dev</p>
                         </div>
                     </div>
-                    <p class="text-lg font-semibold mb-0">"Keren banget suka ama pembelajarannya"</p>
-                    <p class="font-light text-[#a4a2a2] py-3">"jujurly jurusan pplg tuh ada di banyak smk di Indonesia, tapi yang paling bagus untuk jurusan pplg tuh cuma di smkn1 bangsri. karena meyediakan banyak sarana untuk mengembangkan skill dan pelatihan industri yang nyata"</p>
+                    <p class="text-lg font-bold mb-0">"Keren banget suka ama pembelajarannya"</p>
+                    <p class="font-medium text-[#000000] py-3">"jujurly jurusan pplg tuh ada di banyak smk di Indonesia, tapi yang paling bagus untuk jurusan pplg tuh cuma di smkn1 bangsri. karena meyediakan banyak sarana untuk mengembangkan skill dan pelatihan industri yang nyata"</p>
                 </div>
-                <div class="swiper-slide slide-test flex flex-col p-7 overflow-hidden rounded-lg border-[1px] border-white">
+                <div class=" swiper-slide slide-test shadow-xl flex flex-col p-7 overflow-hidden rounded-lg border-2 border-[#f78704]">
                     <div class="flex items-center gap-3 mb-3">
-                        <div class="md:w-[4.5rem] md:h-[4.5rem] w-32 h-32 mb-2">
+                        <div class="md:w-[4.5rem] md:h-[4.5rem] w-14 h-14 mb-3">
                             <img class="h-full w-full object-top object-cover rounded-full" src="{{ Storage::url('assets/pplg/img/azzam.png')}}" alt="">
                         </div>
                         <div>
-                            <p class="mb-1 font-bold text-2xl ">Abas</p>
+                            <p class="mb-0 font-bold md:text-2xl text-xl">Abas</p>
                             <p class="text-base">Front-End Dev</p>
                         </div>
                     </div>
-                    <p class="text-lg font-semibold mb-0">"Keren banget suka ama pembelajarannya"</p>
-                    <p class="font-light text-[#a4a2a2] py-3">"jujurly jurusan pplg tuh ada di banyak smk di Indonesia, tapi yang paling bagus untuk jurusan pplg tuh cuma di smkn1 bangsri. karena meyediakan banyak sarana untuk mengembangkan skill dan pelatihan industri yang nyata"</p>
+                    <p class="text-lg font-bold mb-0">"Keren banget suka ama pembelajarannya"</p>
+                    <p class="font-medium text-[#000000] py-3">"jujurly jurusan pplg tuh ada di banyak smk di Indonesia, tapi yang paling bagus untuk jurusan pplg tuh cuma di smkn1 bangsri. karena meyediakan banyak sarana untuk mengembangkan skill dan pelatihan industri yang nyata"</p>
                 </div>
             </div>
             <div class="swiper-pagination pag-test"></div>
@@ -87,16 +87,20 @@
     </div>
 
     <style>
-        .slide-test {
-            width: 540px;
-            background: rgb(33, 32, 32);
-            color: white
-        }
-
         .pag-test .swiper-pagination-bullet {
-            background-color: white;
+            background-color: black;
             width: 0.6rem;
             height: 0.6rem;
+        }
+
+        .slide-test {
+            width: 100%;
+        }
+
+        @media (min-width: 768px) {
+            .slide-test {
+                width: 540px;
+            }
         }
 
     </style>

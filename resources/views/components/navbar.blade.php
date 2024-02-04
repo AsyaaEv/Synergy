@@ -1,22 +1,22 @@
-<nav class="navbar navbar-light nav-respon navbar-expand-lg fixed-top py-1 transition ease-in-out">
+<nav class="navbar nav-respon navbar-expand-lg fixed-top py-1 transition ease-in-out">
     <div class="container container-fluid">
         <a class="navbar-brand d-flex align-items-center" href="#"> <img class="h-11" src="{{Storage::url('assets/pplg/img/pplg-logo.png')}}" alt="">
-            <div class="flex flex-col h-full ml-3"><span class="font-bold text-2xl text-[#f78704]">PPLG</span><span class="text-sm ">SMKN 1 BANGSRI</span></div>
+            <div class="flex flex-col h-full ml-3 nav-con text-slate-950"><span class="font-bold text-2xl text-[#f78704]">PPLG</span><span class="text-sm ">SMKN 1 BANGSRI</span></div>
         </a>
         <div class="offcanvas offcanvas-start bg-black" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
             <div class="offcanvas-header">
                 <a href="" class="offcanvas-title d-flex align-items-center no-underline" id="offcanvasNavbarLabel"> <img class="h-11" src="{{Storage::url('assets/pplg/img/pplg-logo.png')}}" alt="">
-                    <div class="flex flex-col h-full ml-3"><span class="font-bold text-2xl text-[#f78704]">PPLG</span><span class="text-sm ">SMKN 1 BANGSRI</span></div>
+                    <div class="flex flex-col h-full ml-3 nav-con text-slate-50 lg:text-slate-950"><span class="font-bold text-2xl text-[#f78704]">PPLG</span><span class="text-sm">SMKN 1 BANGSRI</span></div>
                 </a>
-                <button type="button" class="bg-white  btn-close focus:outline-none shadow-none" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                <button type="button" class="focus:outline-none shadow-none ph ph-x text-3xl text-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
             </div>
             <div class="offcanvas-body">
-                <ul class="navbar-nav justify-content-end flex-grow-1 pe-3 text-base font-semibold">
+                <ul class="navbar-nav flex gap-3 justify-content-end flex-grow-1 pe-3 text-base font-semibold">
                     <li class="nav-item">
-                        <a class="nav-link mx-lg-2 " aria-current="page" href="{{"/"}}">Beranda</a>
+                        <a class="nav-con no-underline text-slate-50 lg:text-slate-950 block" aria-current="page" href="{{"/"}}">Beranda</a>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle " href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <a class="nav-con no-underline text-slate-50 lg:text-slate-950 block dropdown-toggle " href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                             Profil
                         </a>
                         <ul class="dropdown-menu bg-black border-[1.5px] border-white">
@@ -29,16 +29,16 @@
                         </ul>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link mx-lg-2 " href="">Kelas</a>
+                        <a class="nav-con no-underline text-slate-50 lg:text-slate-950 block mx-lg-2 " href="">Kelas</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link mx-lg-2 " aria-current="page" href="">Kontak</a>
+                        <a class="nav-con no-underline text-slate-50 lg:text-slate-950 block mx-lg-2 " aria-current="page" href="">Kontak</a>
                     </li>
                 </ul>
             </div>
         </div>
-        <button class="navbar-toggler border-0 focus:outline-none shadow-none " type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
+        <button class="navbar-toggler border-0 focus:outline-none shadow-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+            <span class="ph ph-list text-3xl nav-con"></span>
         </button>
     </div>
 </nav>
@@ -50,28 +50,31 @@
         background-image: none;
         background-color: #f78704;
     }
-   
-
 </style>
 
 <script>
-    const navbar = document.querySelector("nav");
+    document.addEventListener("DOMContentLoaded", function() {
+        const navbar = document.querySelector("nav");
+        const links = document.querySelectorAll(".nav-con");
 
-    window.addEventListener("scroll", () => {
-        if (window.scrollY > 15) {
-            navbar.classList.add('bg-black')
-            navbar.classList.add('bg-black')
-            navbar.classList.add('border-b-2')
-            navbar.classList.add('navbar-dark')
-            navbar.classList.remove('navbar-light')
-            navbar.classList.add('border-[#f78704]')
-
-        } else if (window.scrollY <= 50) {
-            navbar.classList.remove('bg-black')
-            navbar.classList.remove('border-b-2')
-            navbar.classList.add('navbar-light')
-            navbar.classList.remove('navbar-dark')
-        }
+        window.addEventListener("scroll", () => {
+            if (window.scrollY > 15) {
+                navbar.classList.add('bg-black')
+                navbar.classList.add('bg-black')
+                navbar.classList.add('border-b-2')
+                navbar.classList.add('border-[#f78704]')
+                links.forEach(link => {
+                    link.classList.remove("text-slate-950");
+                    link.classList.add("text-white");
+                });
+            } else if (window.scrollY <= 50){
+                navbar.classList.remove('bg-black')
+                navbar.classList.remove('border-b-2')
+                links.forEach(link => {
+                    link.classList.remove("text-white");
+                });
+            }
+        });
     });
 
 </script>

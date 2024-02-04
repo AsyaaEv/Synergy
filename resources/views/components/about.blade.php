@@ -7,7 +7,7 @@
                 <p class="text-[16px] text-[#D0D0D0] font-medium">Puji syukur kami panjatkan ke hadirat Tuhan Yang Maha Esa atas karunia dan hidayah-Nya, sehingga kita semua dapat membaktikan segala hal yang kita miliki untuk kemajuan dunia pendidikan. Apapun bentuk dan sumbangsih yang kita berikan, jika dilandasi niat yang tulus tanpa memandang imbalan apapun akan menghasilkan mahakarya yang agung untuk bekal kita dan generasi setelah kita. Pendidikan adalah harga mati untuk menjadi pondasi bangsa dan negara dalam menghadapi perkembangan zaman.</p>
                 <p class="text-[16px] text-[#D0D0D0] font-medium">Hal ini seiring dengan penguasaan teknologi untuk dimanfaatkan sebaik mungkin, sehingga menciptakan iklim kondusif dalam ranah keilmuan. Dengan konsep yang kontekstual dan efektif, kami mengejewantahkan nilai-nilai pendidikan yang tertuang dalam visi misi SMK NEGERI 1 BANGSRI, sebagai panduan hukum dalam menjabarkan tujuan hakiki pendidikan.</p>
             </div>
-            <div class=" lg:w-[35%] ">
+            <div class=" lg:w-[35%]">
                 <img class="h-52 lg:h-full w-full rounded-3xl object-cover" src="https://swiperjs.com/demos/images/nature-1.jpg" alt="">
             </div>
         </div>
