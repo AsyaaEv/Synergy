@@ -1,5 +1,6 @@
+import withMT from "@material-tailwind/html/utils/withMT";
 /** @type {import('tailwindcss').Config} */
-export default {
+export default{
     content: [
         "./resources/**/*.blade.php",
         "./resources/**/*.js",
@@ -17,5 +18,7 @@ export default {
             },
         },
     },
-    plugins: [require("flowbite/plugin")],
+    plugins: [
+        require("flowbite/plugin"),
+    ],
 };
