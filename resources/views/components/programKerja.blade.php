@@ -150,8 +150,6 @@
             </div>
         </div>
         <!-- accordion HP end-->
-
-
         <!-- accordion Desk -->
         {{-- <div id="accordion-flush" data-accordion="collapse"
             data-active-classes="bg-white dark:shadow-xl text-orange dark:text-white"
@@ -307,34 +305,11 @@
                 </div>
             </div>
         </div> --}}
-
         <!-- accordion Desk end-->
     </div>
 </section>
 
 
-<style>
-    /* .show-text-animation {
-        opacity: 1;
-        transition: opacity 1s ease-in-out;
-    } */
-</style>
-
-<script>
-    //     function showTextInCenter() {
-//     // Ambil elemen teks yang akan ditampilkan di tengah-tengah
-//     var textElement = document.getElementById('textInCenter');
-
-//     // Tambahkan kelas CSS untuk menampilkan animasi
-//     textElement.classList.add('show-text-animation');
-
-//     // Setelah beberapa waktu, hapus kelas untuk mengakhiri animasi
-//     setTimeout(function() {
-//         textElement.classList.remove('show-text-animation');
-//     }, 3000); // Ganti angka 3000 dengan durasi animasi dalam milidetik
-// }
-
-</script>
 
 
 <!-- accordion Desk -->
