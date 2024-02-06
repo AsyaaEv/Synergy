@@ -8,17 +8,17 @@
                 </div>
                 <div class="relative top-0 left-0 w-full h-full">
                     <div class="relative w-full lg:h-[400px] h-[350px] opacity-0 transition-all group-hover:opacity-5 group-hover:h-[150px]"></div>
-                    <div class="flex flex-col items-center p-[8px] bg-gradient-to-l from-amber-500 to-orange h-full">
-                        <p class="py-7 text-xl font-bold text-white">Angkatan 22</p>
+                    <div class="flex flex-col items-center p-[8px] bg-[#212121] h-full">
+                        <p class="py-7 text-xl font-bold text-white">Angkatan 21</p>
                         <div>
                             <a class="no-underline" href="">
-                                <div class="py-4 px-28 mb-7 bg-[#212020] rounded-xl shadow-lg">
-                                    <p class="mb-0 text-white">PPLG 1</p>
+                                <div class="py-4 px-28 mb-7 bg-[#F88600] rounded-xl shadow-lg">
+                                    <p class="mb-0 text-xl font-bold text-white">PPLG 1</p>
                                 </div>
                             </a>
                             <a class="no-underline" href="">
-                                <div class="py-4 px-28 bg-[#212020] rounded-xl shadow-lg">
-                                    <p class="mb-0 text-white">PPLG 2</p>
+                                <div class="py-4 px-28 bg-[#F88600]  rounded-xl shadow-lg">
+                                    <p class="mb-0 text-xl font-bold text-white">PPLG 2</p>
                                 </div>
                             </a>
                         </div>
@@ -31,17 +31,17 @@
                 </div>
                 <div class="relative top-0 left-0 w-full h-full">
                     <div class="relative w-full lg:h-[400px] h-[350px] opacity-0 transition-all group-hover:opacity-5 group-hover:h-[150px]"></div>
-                    <div class="flex flex-col items-center p-[8px] bg-gradient-to-l from-amber-500 to-orange h-full">
+                    <div class="flex flex-col items-center p-[8px] bg-[#212121] h-full">
                         <p class="py-7 text-xl font-bold text-white">Angkatan 22</p>
                         <div>
                             <a class="no-underline" href="">
-                                <div class="py-4 px-28 mb-7 bg-[#212020] rounded-xl shadow-lg">
-                                    <p class="mb-0 text-white">PPLG 1</p>
+                                <div class="py-4 px-28 mb-7 bg-[#F88600]  rounded-xl shadow-lg">
+                                    <p class="mb-0 text-xl font-bold text-white">PPLG 1</p>
                                 </div>
                             </a>
                             <a class="no-underline" href="">
-                                <div class="py-4 px-28 bg-[#212020] rounded-xl shadow-lg">
-                                    <p class="mb-0 text-white">PPLG 2</p>
+                                <div class="py-4 px-28 bg-[#F88600]  rounded-xl shadow-lg">
+                                    <p class="mb-0 text-xl font-bold text-white">PPLG 2</p>
                                 </div>
                             </a>
                         </div>
@@ -54,17 +54,17 @@
                 </div>
                 <div class="relative top-0 left-0 w-full h-full">
                     <div class="relative w-full lg:h-[400px] h-[350px] opacity-0 transition-all group-hover:opacity-5 group-hover:h-[150px]"></div>
-                    <div class="flex flex-col items-center p-[8px] bg-gradient-to-l from-amber-500 to-orange h-full">
-                        <p class="py-7 text-xl font-bold text-white">Angkatan 22</p>
+                    <div class="flex flex-col items-center p-[8px] bg-[#212121] h-full">
+                        <p class="py-7 text-xl font-bold text-white">Angkatan 23</p>
                         <div>
                             <a class="no-underline" href="">
-                                <div class="py-4 px-28 mb-7 bg-[#212020] rounded-xl shadow-lg">
-                                    <p class="mb-0 text-white">PPLG 1</p>
+                                <div class="py-4 px-28 mb-7 bg-[#F88600]  rounded-xl shadow-lg">
+                                    <p class="mb-0 text-xl text-white font-bold">PPLG 1</p>
                                 </div>
                             </a>
                             <a class="no-underline" href="">
-                                <div class="py-4 px-28 bg-[#212020] rounded-xl shadow-lg">
-                                    <p class="mb-0 text-white">PPLG 2</p>
+                                <div class="py-4 px-28 bg-[#F88600]  rounded-xl shadow-lg">
+                                    <p class="mb-0 text-xl text-white font-bold">PPLG 2</p>
                                 </div>
                             </a>
                         </div>
