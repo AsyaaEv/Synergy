@@ -9,5 +9,6 @@
     @include('components.struktur')
     @include('components.list-kelas')
     @include('components.testimoni')
+    @include('components.footer')
     {{-- The Master doesn't talk, he acts. --}}
 </div>
