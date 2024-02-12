@@ -1,10 +1,10 @@
 <div class="w-full h-screen flex flex-col transition-all overflow-hidden">
-    <nav class="bg-[#0C0C1E] md:pl-[15rem] border-b-[1px] border-white/30 sm:border-none">
+    <nav class="bg-primaryD md:pl-[15rem] border-b-[1px] border-white/30 sm:border-none">
         <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
             <div class="relative flex h-16 items-center justify-between">
                 <div class="flex flex-1 items-center  sm:items-stretch sm:justify-start sm:invisible">
                     <div class="flex flex-shrink-0 items-center">
-                        <i class="ph-fill ph-list text-white text-2xl hover:cursor-pointer transition-all"
+                        <i class="ph-fill ph-list text-black text-2xl hover:cursor-pointer transition-all"
                             onclick="toggleNav()" id="toggle"></i>
                     </div>
                 </div>
@@ -38,7 +38,7 @@
             </div>
         </div>
     </nav>
-    <div class="w-[15rem] h-screen bg-[#0C0C1E] absolute -translate-x-[16rem] transition-all sm:translate-x-0 z-50"
+    <div class="w-[15rem] h-screen bg-primaryD absolute -translate-x-[16rem] transition-all sm:translate-x-0 z-50"
         id="nav">
         <div class="w-full h-auto flex justify-center items-center mt-2">
             <a class="navbar-brand d-flex align-items-center" href="#"> <img class="h-10"
@@ -48,27 +48,27 @@
                         BANGSRI</span></div>
             </a>
         </div>
-        <div class="w-8 h-8 absolute rounded-full ml-[15rem]" style="box-shadow: -20px -20px 0 #0C0C1E"></div>
+        <div class="w-8 h-8 absolute rounded-full ml-[15rem]" style="box-shadow: -20px -20px 0 #ffff"></div>
         <div class="w-full h-auto mt-4 container flex-col flex gap-2 ">
             <a href="/dashboard"
-                class="w-full h-auto  shadow-md hover:border-[1px] rounded-[10px] py-2 flex items-center container gap-2 group hover:cursor-pointer bg-[#060714] decoration-transparent">
-                <i class="ph-fill ph-layout text-white text-2xl"></i>
-                <div class="text-white font-medium group-hover:translate-x-2 transition-all">Dashboard</div>
+                class="w-full h-auto border-b-[1px] shadow-sm hover:border-[1px] border-black rounded-[10px] py-2 flex items-center container gap-2 group hover:cursor-pointer bg-primaryD decoration-transparent">
+                <i class="ph-fill ph-layout text-black text-2xl"></i>
+                <div class="text-black font-medium group-hover:translate-x-2 transition-all">Dashboard</div>
             </a>
             <a href="/dashboard/guru"
-                class="w-full h-auto shadow-md border-b-[1px] hover:border-[1px] rounded-[10px] py-2 flex items-center container gap-2 group hover:cursor-pointer bg-[#060714] decoration-transparent">
-                <i class="ph-fill ph-student text-white text-2xl"></i>
-                <div class="text-white font-medium group-hover:translate-x-2 transition-all">Guru Produktif</div>
+                class="w-full h-auto  hover:shadow-md rounded-[10px] border-black py-2 flex items-center container gap-2 group hover:cursor-pointer bg-primaryD decoration-transparent">
+                <i class="ph-fill ph-student text-black text-2xl"></i>
+                <div class="text-black font-medium group-hover:translate-x-2 transition-all">Guru Produktif</div>
             </a>
             <a href="/dashboard/kelas"
-                class="w-full h-auto  shadow-md hover:border-b-[1px] rounded-[10px] py-2 flex items-center container gap-2 group hover:cursor-pointer bg-[#060714] decoration-transparent">
-                <i class="ph-fill ph-door text-white text-2xl"></i>
-                <div class="text-white font-medium group-hover:translate-x-2 transition-all">Kelas PPLG</div>
+                class="w-full h-auto hover:shadow-md rounded-[10px] border-black py-2 flex items-center container gap-2 group hover:cursor-pointer bg-primaryD decoration-transparent">
+                <i class="ph-fill ph-door text-black text-2xl"></i>
+                <div class="text-black font-medium group-hover:translate-x-2 transition-all">Kelas PPLG</div>
             </a>
             <a href="/dashboard/walikelas"
-                class="w-full h-auto  shadow-md hover:border-b-[1px] rounded-[10px] py-2 flex items-center container gap-2 group hover:cursor-pointer bg-[#060714] decoration-transparent">
-                <i class="ph-fill ph-users text-white text-2xl"></i>
-                <div class="text-white font-medium group-hover:translate-x-2 transition-all">Wali Kelas</div>
+                class="w-full h-auto hover:shadow-md rounded-[10px] border-black py-2 flex items-center container gap-2 group hover:cursor-pointer bg-primaryD decoration-transparent">
+                <i class="ph-fill ph-users text-black text-2xl"></i>
+                <div class="text-black font-medium group-hover:translate-x-2 transition-all">Wali Kelas</div>
             </a>
         </div>
     </div>
@@ -79,18 +79,18 @@
                     <div class="w-full h-auto flex gap-2 pt-2 ">
                         <a href="{{ url('/dashboard/guru') }}"
                             class="w-auto h-auto flex justify-center items-center decoration-transparent text-black">
-                            <i class="ph-bold ph-arrow-bend-up-left text-xl  p-2 bg-white rounded-full"></i>
+                            <i class="ph-bold ph-arrow-bend-up-left text-xl  p-2 bg-secD rounded-full"></i>
                         </a>
                         <div class="w-auto h-auto">
-                            <div class="font-bold text-xl text-white">Tambah Guru</div>
-                            <div class="font-normal text-md text-white opacity-50">Isi data dibawah ini untuk menambahkan guru
+                            <div class="font-bold text-xl text-black">Tambah Guru</div>
+                            <div class="font-normal text-md text-black opacity-50">Isi data dibawah ini untuk menambahkan guru
                             </div>
                         </div>
                     </div>
-                    <hr class="h-[1px] text-white my-2">
+                    <hr class="h-[1px] text-black my-2">
                     <form class="w-full h-auto gap-2 flex flex-col" wire:submit.prevent='save'>
                         <div class="w-full h-auto flex flex-col">
-                            <label for="input-group-1" class="block mb-2 text-sm font-medium text-white">Nama Guru:<span class="text-red-500 text-lg"> *</span></label>
+                            <label for="input-group-1" class="block mb-2 text-sm font-medium text-black">Nama Guru:<span class="text-red-500 text-lg"> *</span></label>
                             <div class="relative">
                                 <div class="absolute inset-y-0 start-0 flex items-center ps-2 pointer-events-none">
                                     <i class="ph-fill ph-user-circle text-3xl"></i>
@@ -101,7 +101,7 @@
                             </div>
                         </div>
                         <div class="w-full h-auto flex flex-col">
-                            <label for="input-group-1" class="block mb-2 text-sm font-medium text-white">Jabatan Guru:<span class="text-red-500 text-lg"> *</span></label>
+                            <label for="input-group-1" class="block mb-2 text-sm font-medium text-black">Jabatan Guru:<span class="text-red-500 text-lg"> *</span></label>
                             <div class="relative">
                                 <div class="absolute inset-y-0 start-0 flex items-center ps-2 pointer-events-none">
                                     <i class="ph-fill ph-stack text-3xl"></i>
@@ -111,7 +111,7 @@
                                     placeholder="Jabatan" wire:model='jabatan'>
                             </div>
                         </div>
-                        <div class="w-full h-auto flex flex-col">
+                        {{-- <div class="w-full h-auto flex flex-col">
                             <label for="input-group-1" class="block mb-2 text-sm font-medium text-white">Deskripsi Guru:<span class="text-red-500 text-lg"> *</span></label>
                             <div class="relative">
                                 <div class="absolute inset-y-0 start-0 flex items-center ps-2 pointer-events-none">
@@ -121,9 +121,9 @@
                                     class="bg-gray-50   @error('deskripsi') border-[2px] border-red-500 placeholder:text-red-500 @enderror font-semibold  text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full ps-10 p-2.5  dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
                                     placeholder="Deskripsi" wire:model='deskripsi'>
                             </div>
-                        </div>
+                        </div> --}}
                         <div class="w-full h-auto flex flex-col">
-                            <label for="input-group-1" class="block mb-2 text-sm font-medium text-white">Tempat Tanggal Lahir:<span class="text-red-500 text-lg"> *</span></label>
+                            <label for="input-group-1" class="block mb-2 text-sm font-medium text-black">Tempat Tanggal Lahir:<span class="text-red-500 text-lg"> *</span></label>
                             <div class="relative">
                                 <div class="absolute inset-y-0 start-0 flex items-center ps-2 pointer-events-none">
                                     <i class="ph-fill ph-calendar text-3xl"></i>
@@ -133,7 +133,7 @@
                                     placeholder="TTL" wire:model='ttl'>
                             </div>
                         </div>
-                        <div class="w-full h-auto flex flex-col">
+                        {{-- <div class="w-full h-auto flex flex-col">
                             <label for="input-group-1" class="block mb-2 text-sm font-medium text-white">Sosmed Instagram:</label>
                             <div class="relative">
                                 <div class="absolute inset-y-0 start-0 flex items-center ps-2 pointer-events-none">
@@ -154,9 +154,9 @@
                                     class="bg-gray-50   @error('fb') border-[2px] border-red-500 placeholder:text-red-500 @enderror font-semibold  text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full ps-10 p-2.5  dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
                                     placeholder="Username Facebook" wire:model='fb'>
                             </div>
-                        </div>
+                        </div> --}}
                         <div class="w-full h-auto flex flex-col">
-                            <label for="input-group-1" class="block mb-2 text-sm font-medium text-white">Mapel Guru:<span class="text-red-500 text-lg"> *</span></label>
+                            <label for="input-group-1" class="block mb-2 text-sm font-medium text-black">Mapel Guru:<span class="text-red-500 text-lg"> *</span></label>
                             <div class="relative">
                                 <div class="absolute inset-y-0 start-0 flex items-center ps-2 pointer-events-none">
                                     <i class="ph-fill ph-book-bookmark text-3xl"></i>
@@ -167,7 +167,7 @@
                             </div>
                         </div>
                         <div class="w-full h-auto flex flex-col">
-                            <label for="input-group-1" class="block mb-2 text-sm font-medium text-white">Kode Guru:<span class="text-red-500 text-lg"> *</span></label>
+                            <label for="input-group-1" class="block mb-2 text-sm font-medium text-black">Kode Guru:<span class="text-red-500 text-lg"> *</span></label>
                             <div class="relative">
                                 <div class="absolute inset-y-0 start-0 flex items-center ps-2 pointer-events-none">
                                     <i class="ph-fill ph-barcode text-3xl"></i>
@@ -178,7 +178,7 @@
                             </div>
                         </div>
                         <div class="w-full h-auto flex flex-col">
-                            <label for="input-group-1" class="block mb-2 text-sm font-medium text-white">NIP Guru:<span class="text-red-500 text-lg"> *</span></label>
+                            <label for="input-group-1" class="block mb-2 text-sm font-medium text-black">NIP Guru:<span class="text-red-500 text-lg"> *</span></label>
                             <div class="relative">
                                 <div class="absolute inset-y-0 start-0 flex items-center ps-2 pointer-events-none">
                                     <i class="ph-fill ph-identification-badge text-3xl"></i>
@@ -189,7 +189,7 @@
                             </div>
                         </div>
                         <div class="w-full h-auto flex flex-col">
-                            <label for="input-group-1" class="block mb-2 text-sm font-medium text-white">Email Guru:<span class="text-red-500 text-lg"> *</span></label>
+                            <label for="input-group-1" class="block mb-2 text-sm font-medium text-black">Email Guru:<span class="text-red-500 text-lg"> *</span></label>
                             <div class="relative">
                                 <div class="absolute inset-y-0 start-0 flex items-center ps-2 pointer-events-none">
                                     <i class="ph-fill ph-envelope text-3xl"></i>
@@ -200,7 +200,7 @@
                             </div>
                         </div>
                         <div class="flex items-center justify-center w-full flex-col">
-                            <label for="input-group-1" class="block mb-2 text-sm font-medium text-white">Foto Guru:</label>
+                            <label for="input-group-1" class="block mb-2 text-sm font-medium text-black">Foto Guru:</label>
                             <label for="dropzone-file"
                             class="flex flex-col items-center justify-center w-full h-32 border-2  @error('foto') border-red-500  @enderror border-dashed rounded-lg cursor-pointer bg-gray-50 dark:hover:bg-bray-800 dark:bg-gray-700 hover:bg-gray-100 dark:border-gray-600 dark:hover:border-gray-500 dark:hover:bg-gray-600">
                             <div class="flex flex-col items-center justify-center pt-5 pb-6">
@@ -227,9 +227,9 @@
                         @if($foto)
                             <img src="{{ $foto->temporaryUrl()}}" alt="" class="mt-3 object-cover" style="width: 100px; height:100px;">
                         @endif
-                        <hr class="h-[1px] text-white my-2">
+                        <hr class="h-[1px] text-black my-2">
                         <div class="w-full h-auto flex items-center">
-                            <button class="py-2 px-4 bg-secD text-white flex justify-center items-center gap-2 rounded-[10px] group ">
+                            <button class="py-2 px-4 bg-black text-white flex justify-center items-center gap-2 rounded-[10px] group ">
                                 Save
                                 <i class="ph-fill ph-paper-plane-right group-hover:translate-x-2 transition-all"></i>
                             </button>

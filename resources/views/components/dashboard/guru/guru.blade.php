@@ -1,10 +1,10 @@
 <div class="w-full h-screen flex flex-col transition-all overflow-hidden">
-    <nav class="bg-[#0C0C1E] md:pl-[15rem] border-b-[1px] border-white/30 sm:border-none">
+    <nav class="bg-primaryD md:pl-[15rem] border-b-[1px] border-white/30 sm:border-none">
         <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
             <div class="relative flex h-16 items-center justify-between">
                 <div class="flex flex-1 items-center  sm:items-stretch sm:justify-start sm:invisible">
                     <div class="flex flex-shrink-0 items-center">
-                        <i class="ph-fill ph-list text-white text-2xl hover:cursor-pointer transition-all"
+                        <i class="ph-fill ph-list text-black text-2xl hover:cursor-pointer transition-all"
                             onclick="toggleNav()" id="toggle"></i>
                     </div>
                 </div>
@@ -38,36 +38,37 @@
             </div>
         </div>
     </nav>
-    <div class="w-[15rem] h-screen bg-[#0C0C1E] absolute -translate-x-[16rem] transition-all sm:translate-x-0 z-50"
+    <div class="w-[15rem] h-screen bg-primaryD absolute -translate-x-[16rem] transition-all sm:translate-x-0 z-50"
         id="nav">
         <div class="w-full h-auto flex justify-center items-center mt-2">
             <a class="navbar-brand d-flex align-items-center" href="#"> <img class="h-10"
                     src="{{ Storage::url('assets/pplg/img/pplg-logo.png') }}" alt="">
                 <div class="flex flex-col h-full ml-3"><span class="font-bold text-2xl text-[#f78704]">PPLG</span><span
-                        class="text-base text-white">SMKN 1
+                        class="text-base">SMKN 1
                         BANGSRI</span></div>
             </a>
         </div>
-        <div class="w-8 h-8 absolute rounded-full ml-[15rem]" style="box-shadow: -20px -20px 0 #0C0C1E"></div>
+        <div class="w-8 h-8 absolute rounded-full ml-[15rem]" style="box-shadow: -20px -20px 0 #ffff"></div>
         <div class="w-full h-auto mt-4 container flex-col flex gap-2 ">
             <a href="/dashboard"
-                class="w-full h-auto  shadow-md hover:border-[1px] rounded-[10px] py-2 flex items-center container gap-2 group hover:cursor-pointer bg-[#060714] decoration-transparent">
-                <i class="ph-fill ph-layout text-white text-2xl"></i>
-                <div class="text-white font-medium group-hover:translate-x-2 transition-all">Dashboard</div>
+                class="w-full h-auto border-b-[1px] shadow-sm hover:border-[1px] border-black rounded-[10px] py-2 flex items-center container gap-2 group hover:cursor-pointer bg-primaryD decoration-transparent">
+                <i class="ph-fill ph-layout text-black text-2xl"></i>
+                <div class="text-black font-medium group-hover:translate-x-2 transition-all">Dashboard</div>
             </a>
             <a href="/dashboard/guru"
-                class="w-full h-auto border-b-[1px] shadow-md hover:border-[1px] rounded-[10px] py-2 flex items-center container gap-2 group hover:cursor-pointer bg-[#060714] decoration-transparent">
-                <i class="ph-fill ph-student text-white text-2xl"></i>
-                <div class="text-white font-medium group-hover:translate-x-2 transition-all">Guru Produktif</div>
+                class="w-full h-auto  hover:shadow-md rounded-[10px] border-black py-2 flex items-center container gap-2 group hover:cursor-pointer bg-primaryD decoration-transparent">
+                <i class="ph-fill ph-student text-black text-2xl"></i>
+                <div class="text-black font-medium group-hover:translate-x-2 transition-all">Guru Produktif</div>
             </a>
-            <a href="/dashboard/kelas" class="w-full h-auto  shadow-md hover:border-b-[1px] rounded-[10px] py-2 flex items-center container gap-2 group hover:cursor-pointer bg-[#060714] decoration-transparent">
-                <i class="ph-fill ph-door text-white text-2xl"></i>
-                <div class="text-white font-medium group-hover:translate-x-2 transition-all">Kelas PPLG</div>
+            <a href="/dashboard/kelas"
+                class="w-full h-auto hover:shadow-md rounded-[10px] border-black py-2 flex items-center container gap-2 group hover:cursor-pointer bg-primaryD decoration-transparent">
+                <i class="ph-fill ph-door text-black text-2xl"></i>
+                <div class="text-black font-medium group-hover:translate-x-2 transition-all">Kelas PPLG</div>
             </a>
             <a href="/dashboard/walikelas"
-                class="w-full h-auto shadow-md hover:border-b-[1px] rounded-[10px] py-2 flex items-center container gap-2 group hover:cursor-pointer bg-[#060714] decoration-transparent">
-                <i class="ph-fill ph-users text-white text-2xl"></i>
-                <div class="text-white font-medium group-hover:translate-x-2 transition-all">Wali Kelas</div>
+                class="w-full h-auto hover:shadow-md rounded-[10px] border-black py-2 flex items-center container gap-2 group hover:cursor-pointer bg-primaryD decoration-transparent">
+                <i class="ph-fill ph-users text-black text-2xl"></i>
+                <div class="text-black font-medium group-hover:translate-x-2 transition-all">Wali Kelas</div>
             </a>
         </div>
     </div>

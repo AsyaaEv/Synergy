@@ -1,6 +1,6 @@
 import withMT from "@material-tailwind/html/utils/withMT";
 /** @type {import('tailwindcss').Config} */
-export default{
+export default withMT({
     content: [
         "./resources/**/*.blade.php",
         "./resources/**/*.js",
@@ -10,8 +10,8 @@ export default{
     theme: {
         extend: {
             colors: {
-                primaryD: "#0C0C1E",
-                secD: "#060714",
+                primaryD: "#ffff",
+                secD: "#f8f7f4",
                 orange: "#FB7A24",
                 putih: "#F1E8DD",
                 hitam: "#1D1B1A",
@@ -21,4 +21,4 @@ export default{
     plugins: [
         require("flowbite/plugin"),
     ],
-};
+});

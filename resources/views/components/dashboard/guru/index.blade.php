@@ -2,8 +2,8 @@
     <div class="w-full h-full rounded-[10px] sm:pl-[15rem] overflow-auto pb-[5rem] table-responsive">
         <div class="w-full h-auto mb-2 flex justify-between items-center">
             <div class="w-full h-auto">
-                <div class="text-xl text-white font-bold">Dashboard</div>
-                <div class="text-white/50">Guru Produktif PPLG</div>
+                <div class="text-xl font-bold">Dashboard</div>
+                <div class="">Guru Produktif PPLG</div>
             </div>
             <div class="px-2  py-3 rounded-[10px] flex justify-between items-center absolute transition-all z-50 @if (!empty(session('alert'))) alert-{{ session('alert') }} @else d-none @endif"
                 id="alert">
@@ -32,49 +32,42 @@
                     </button>
                 </div>
             </div>
-            <div class="w-full h-auto flex justify-end px-2 gap-2">
-                <div class=" flex justify-center items-center decoration-transparent">
-                    <div class="relative">
-                        <i class="ph-bold ph-magnifying-glass absolute inset-y-1 start-0 ps-2 text-secD text-2xl "></i>
-                        <input type="text" placeholder="Search Guru"
-                            class="outline-none text-medium w-auto h-8 pl-8 py-2 bg-white rounded-[10px] font-bold focus:ring-primaryD"
-                            wire:model.live='search'>
-                    </div>
-                </div>
+            <div class="w-full h-auto flex justify-end">
                 <a href="/dashboard/guru/add"
-                    class="w-[2rem] lg:w-auto h-8 px-2 py-2 bg-white rounded-[10px] flex justify-center items-center decoration-transparent">
+                    class="w-[2rem] lg:w-auto h-8 px-2 py-2 bg-black rounded-[10px] flex justify-center items-center decoration-transparent lg:transition-all">
                     <i class="ph-fill ph-student text-secD text-2xl"></i>
                     <div class="text-secD font-semibold hidden lg:block">Tambah Guru</div>
                 </a>
             </div>
         </div>
-        <div class="w-full h-auto grid gap-2 grid-cols-1 md:grid-cols-2">
+        <hr class="h-[1px] text-black my-2">
+        <div class="w-full h-auto grid gap-2 grid-cols-1 lg:grid-cols-2">
             @forelse ($guru as $item)
-                <div class="w-full h-[6rem] bg-primaryD rounded-[10px] flex gap-2 shadow-md">
-                    <div class="w-full h-full flex justify-center items-center">
+                <div class="w-full h-auto py-2 bg-primaryD rounded-[10px] flex gap-2 shadow-md">
+                    <div class="w-[40%] h-full flex justify-center items-center">
                         <img src="{{ Storage::url($item->foto) }}" alt=""
                             class="w-[5rem] h-[5rem] object-cover rounded-full">
                     </div>
                     <div class="w-full h-full flex justify-center items-center flex-col">
                         <div class="w-full h-full flex items-center gap-2">
-                            <i class="ph-fill ph-user text-white text-2xl"></i>
-                            <div class="text-white">Nama : <strong>{{ $item->nama }}</strong></div>
+                            <i class="ph-fill ph-user text-black text-2xl"></i>
+                            <div class="text-black">Nama : <strong>{{ $item->nama }}</strong></div>
                         </div>
                         <div class="w-full h-full flex items-center gap-2">
-                            <i class="ph-fill ph-book text-white text-2xl"></i>
-                            <div class="text-white">Mapel : <strong>{{ $item->mapel }}</strong></div>
+                            <i class="ph-fill ph-book text-black text-2xl"></i>
+                            <div class="text-black">Mapel : <strong>{{ $item->mapel }}</strong></div>
                         </div>
                         <div class="w-full h-full flex items-center gap-2">
-                            <i class="ph-fill ph-door text-white text-2xl"></i>
-                            <div class="text-white">Kode Guru : <strong>{{ $item->kode }}</strong></div>
+                            <i class="ph-fill ph-door text-black text-2xl"></i>
+                            <div class="text-black">Kode Guru : <strong>{{ $item->kode }}</strong></div>
                         </div>
                     </div>
-                    <div class="w-[20%] h-auto flex flex-col justify-between items-center py-2 mr-2">
-                        <a href="{{ url('/dashboard/guru/edit/' . $item->id) }}"
+                    <div class="w-[20%] h-auto flex flex-col justify-center items-center mr-2">
+                        {{-- <a href="{{ url('/dashboard/guru/edit/' . $item->id) }}"
                             class="decoration-transparent p-2 bg-blue-300 rounded-[10px] flex justify-center items-center">
                             <i class="ph-fill ph-pencil text-xl text-blue-500"></i>
-                        </a>
-                        <a href=""
+                        </a> --}}
+                        <a href="{{ url('/dashboard/guru/view/' . $item->nama) }}"
                             class="decoration-transparent p-2 bg-green-300 rounded-[10px] flex justify-center items-center">
                             <i class="ph-fill ph-eye text-xl text-green-500"></i>
                         </a>

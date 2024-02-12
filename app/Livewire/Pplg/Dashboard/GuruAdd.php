@@ -39,7 +39,6 @@ class GuruAdd extends Component
         $input = $this->validate([
             'nama' => 'required',
             'jabatan' => 'required',
-            'deskripsi' => 'required',
             'ttl' => 'required',
             'mapel' => 'required',
             'kode' => 'required',
@@ -58,12 +57,17 @@ class GuruAdd extends Component
         } else {
             $fb = $this->fb;
         }
+        if($this->deskripsi == null) {
+            $desc = '';
+        } else {
+            $desc = $this->deskripsi;
+        }
 
         $post = new Guru();
         $post->nama = $this->nama;
         $post->nama_panggilan = $nama_panggilan;
         $post->jabatan = $this->jabatan;
-        $post->deskripsi = $this->deskripsi;
+        $post->deskripsi = $desc;
         $post->ttl = $this->ttl;
         $post->ig = $ig;
         $post->fb = $fb;
