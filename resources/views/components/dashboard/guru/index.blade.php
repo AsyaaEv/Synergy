@@ -67,7 +67,7 @@
                             class="decoration-transparent p-2 bg-blue-300 rounded-[10px] flex justify-center items-center">
                             <i class="ph-fill ph-pencil text-xl text-blue-500"></i>
                         </a> --}}
-                        <a href="{{ url('/dashboard/guru/view/' . $item->nama) }}"
+                        <a href="{{ url('/dashboard/guru/view/' . $item->id) }}"
                             class="decoration-transparent p-2 bg-green-300 rounded-[10px] flex justify-center items-center">
                             <i class="ph-fill ph-eye text-xl text-green-500"></i>
                         </a>

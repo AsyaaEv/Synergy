@@ -76,6 +76,35 @@
         <div class="w-full h-screen mt-2 px-2 sm:px-0 transition-all">
             <div class="w-full h-full rounded-[10px] sm:pl-[15rem] overflow-auto pb-[5rem]">
                 <div class="w-full bg-primaryD h-auto rounded-[10px] container pb-4">
+                    <div class="px-2  py-3 rounded-[10px] flex justify-between items-center absolute transition-all z-50 @if (!empty(session('alert'))) alert-{{ session('alert') }} @else d-none @endif"
+                        id="alert">
+                        <div id="alert-border-1"
+                            class="flex items-center rounded-[10px] p-4 mb-4 @if (!empty(session('alert'))) text-{{ session('alert') }} border-t-4 border-{{ session('alert') }} bg-blue-50 @endif"
+                            role="alert">
+                            <svg class="flex-shrink-0 w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                                fill="currentColor" viewBox="0 0 20 20">
+                                <path
+                                    d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5ZM9.5 4a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3ZM12 15H8a1 1 0 0 1 0-2h1v-3H8a1 1 0 0 1 0-2h2a1 1 0 0 1 1 1v4h1a1 1 0 0 1 0 2Z" />
+                            </svg>
+                            <div class="ms-3 text-sm font-medium">
+                                @if (!empty(session('alert')))
+                                    {{ session('msg') }}
+                                @endif
+                            </div>
+                            <button type="button"
+                                class="ms-auto -mx-1.5 -my-1.5 bg-blue-50 text-blue-500 rounded-lg focus:ring-2 focus:ring-blue-400 p-1.5 hover:bg-blue-200 inline-flex items-center justify-center h-8 w-8 dark:bg-gray-800 dark:text-blue-400 dark:hover:bg-gray-700"
+                                data-dismiss-target="#alert-border-1" aria-label="Close">
+                                <span class="sr-only">Dismiss</span>
+                                <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                                    fill="none"
+                                    viewBox="0 0 14 14">
+                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                        stroke-width="2"
+                                        d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6" />
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
                     <div class="w-full h-auto flex gap-2 pt-2 ">
                         <a href="{{ url('/dashboard/guru') }}"
                             class="w-auto h-auto flex justify-center items-center decoration-transparent text-black">
@@ -104,11 +133,14 @@
                                         class="ph-bold ph-arrow-down"></i></div>
                                 <input type="file" class="rounded-[10px] border-[1px] container">
                             </div>
-                            <div class="w-full h-auto flex justify-center items-center mt-4 invisible lg:block">
+                            <div
+                                class="w-full h-auto justify-center items-center mt-4 hidden lg:block lg:justify-center mx-auto container">
                                 <button
-                                    class="w-auto py-2 px-4 bg-black text-white rounded-[10px] flex gap-2 items-center group">Hapus
-                                    Guru <i
-                                        class="ph-fill ph-trash-simple text-white group-hover:translate-x-2 transition-all"></i></button>
+                                    class="select-none rounded-lg bg-gradient-to-tr from-red-900 to-red-800 py-3 px-6 text-center align-middle font-sans text-xs font-bold uppercase text-white shadow-md shadow-gray-900/10 transition-all hover:shadow-lg hover:shadow-gray-900/20 active:opacity-[0.85] disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none items-center flex gap-2 group"
+                                    data-ripple-light="true" data-dialog-target="animated-dialog">
+                                    Hapus guru <i
+                                        class="ph-fill ph-trash text-lg group-hover:translate-x-2 transition-all"></i>
+                                </button>
                             </div>
                         </div>
                         <div class="w-full h-auto flex flex-col">
@@ -142,7 +174,7 @@
                                     </div>
                                     <div class="w-full h-auto flex items-center gap-2 justify-end">
                                         <i class="ph-fill ph-user-gear bg-primaryD rounded-[10px] p-1 text-3xl hover:cursor-pointer"
-                                            wire:click=''></i>
+                                            wire:click='' data-ripple-light="true" data-dialog-target="editBio"></i>
                                     </div>
                                 </div>
                                 <div class="w-full h-auto flex flex-col gap-2">
@@ -237,43 +269,13 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="w-full h-auto flex justify-center items-center mt-4">
+                        <div class="w-full h-auto flex justify-center items-center mt-4 lg:hidden">
                             <button
-                                class="select-none rounded-lg bg-gradient-to-tr from-gray-900 to-gray-800 py-3 px-6 text-center align-middle font-sans text-xs font-bold uppercase text-white shadow-md shadow-gray-900/10 transition-all hover:shadow-lg hover:shadow-gray-900/20 active:opacity-[0.85] disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
+                                class="select-none rounded-lg bg-gradient-to-tr from-red-900 to-red-800 py-3 px-6 text-center align-middle font-sans text-xs font-bold uppercase text-white shadow-md shadow-gray-900/10 transition-all hover:shadow-lg hover:shadow-gray-900/20 active:opacity-[0.85] disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none items-center flex gap-2 group"
                                 data-ripple-light="true" data-dialog-target="animated-dialog">
-                                Open Dialog
+                                Hapus guru <i
+                                    class="ph-fill ph-trash text-lg group-hover:translate-x-2 transition-all"></i>
                             </button>
-                            <div data-dialog-backdrop="animated-dialog" data-dialog-backdrop-close="true"
-                                class="pointer-events-none fixed inset-0 z-[999] grid h-screen w-screen place-items-center bg-black/30 bg-opacity-60 opacity-0 backdrop-blur-sm transition-opacity duration-300">
-                                <div data-dialog="animated-dialog"
-                                    data-dialog-mount="opacity-100 translate-y-0 scale-100"
-                                    data-dialog-unmount="opacity-0 -translate-y-28 scale-90 pointer-events-none"
-                                    data-dialog-transition="transition-all duration-300"
-                                    class="relative m-4 w-2/5 min-w-[40%] max-w-[40%] rounded-lg bg-white font-sans text-base font-light leading-relaxed text-blue-gray-500 antialiased shadow-2xl">
-                                    <div
-                                        class="flex items-center p-4 font-sans text-2xl antialiased font-semibold leading-snug shrink-0 text-blue-gray-900">
-                                        Its a simple dialog.
-                                    </div>
-                                    <div
-                                        class="relative p-4 font-sans text-base antialiased font-light leading-relaxed border-t border-b border-t-blue-gray-100 border-b-blue-gray-100 text-blue-gray-500">
-                                        The key to more success is to have a lot of pillows. Put it this
-                                        way, it took me twenty five years to get these plants, twenty five
-                                        years of blood sweat and tears, and I&apos;m never giving up,
-                                        I&apos;m just getting started. I&apos;m up to something. Fan luv.
-                                    </div>
-                                    <div
-                                        class="flex flex-wrap items-center justify-end p-4 shrink-0 text-blue-gray-500">
-                                        <button data-ripple-dark="true" data-dialog-close="true"
-                                            class="px-6 py-3 mr-1 font-sans text-xs font-bold text-red-500 uppercase transition-all rounded-lg middle none center hover:bg-red-500/10 active:bg-red-500/30 disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none">
-                                            Cancel
-                                        </button>
-                                        <button data-ripple-light="true" data-dialog-close="true"
-                                            class="middle none center rounded-lg bg-gradient-to-tr from-green-600 to-green-400 py-3 px-6 font-sans text-xs font-bold uppercase text-white shadow-md shadow-green-500/20 transition-all hover:shadow-lg hover:shadow-green-500/40 active:opacity-[0.85] disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none">
-                                            Confirm
-                                        </button>
-                                    </div>
-                                </div>
-                            </div>
                         </div>
                     </div>
                 </div>
@@ -281,24 +283,179 @@
         </div>
 
     </div>
-</div>
+    {{-- dialog --}}
+    <div data-dialog-backdrop="editBio" data-dialog-backdrop-close='true'
+        class="pointer-events-none fixed inset-0 z-[999] grid h-screen w-screen place-items-center bg-black/30 bg-opacity-60 opacity-0 backdrop-blur-sm transition-opacity duration-300">
+        <div data-dialog="editBio"
+            class="relative mx-auto flex w-full max-w-[24rem] flex-col rounded-xl bg-white bg-clip-border text-gray-700 shadow-md">
+            <div class="flex flex-col gap-4 container mt-2">
+                <h4
+                    class="block font-sans text-2xl antialiased font-semibold leading-snug tracking-normal text-blue-gray-900 ">
+                    Edit Bio data ({{ $dataGuru->nama }})
+                    <p class="block font-sans text-base antialiased font-normal leading-relaxed text-gray-700">
+                        Silakan ganti data di bawah ini
+                    </p>
+                </h4>
+            </div>
+            <form class="max-w-screen-lg w-80 sm:w-96 container">
+                <div class="w-full h-auto flex flex-col">
+                    <label for="input-group-1" class="block mb-2 text-sm font-medium text-black">Nama
+                        Guru:</label>
+                    <div class="relative">
+                        <div class="absolute inset-y-0 start-0 flex items-center ps-2 pointer-events-none">
+                            <i class="ph-fill ph-user-circle text-3xl"></i>
+                        </div>
+                        <input type="text" id="input-group-1"
+                            class="bg-gray-50   @error('nama') border-[2px] border-red-500 placeholder:text-red-500 @enderror font-semibold  text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full ps-10 p-2.5  dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                            placeholder="Nama Lengkap" wire:model='nama'>
+                    </div>
+                </div>
+                <div class="w-full h-auto flex flex-col">
+                    <label for="input-group-1" class="block mb-2 text-sm font-medium text-black">Nama
+                        Panggilan:</label>
+                    <div class="relative">
+                        <div class="absolute inset-y-0 start-0 flex items-center ps-2 pointer-events-none">
+                            <i class="ph-fill ph-user text-3xl"></i>
+                        </div>
+                        <input type="text" id="input-group-1"
+                            class="bg-gray-50   @error('nama_panggilan') border-[2px] border-red-500 placeholder:text-red-500 @enderror font-semibold  text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full ps-10 p-2.5  dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                            placeholder="Nama Panggilan" wire:model='nama_panggilan'>
+                    </div>
+                </div>
+                <div class="w-full h-auto flex flex-col">
+                    <label for="input-group-1" class="block mb-2 text-sm font-medium text-black">Jabatan Guru:</label>
+                    <div class="relative">
+                        <div class="absolute inset-y-0 start-0 flex items-center ps-2 pointer-events-none">
+                            <i class="ph-fill ph-stack text-3xl"></i>
+                        </div>
+                        <input type="text" id="input-group-1"
+                            class="bg-gray-50   @error('jabatan') border-[2px] border-red-500 placeholder:text-red-500 @enderror font-semibold  text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full ps-10 p-2.5  dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                            placeholder="Jabatan" wire:model='jabatan'>
+                    </div>
+                </div>
+                <div class="w-full h-auto flex flex-col">
+                    <label for="input-group-1" class="block mb-2 text-sm font-medium text-black">Tempat Tanggal
+                        Lahir:</label>
+                    <div class="relative">
+                        <div class="absolute inset-y-0 start-0 flex items-center ps-2 pointer-events-none">
+                            <i class="ph-fill ph-calendar text-3xl"></i>
+                        </div>
+                        <input type="text" id="input-group-1"
+                            class="bg-gray-50   @error('ttl') border-[2px] border-red-500 placeholder:text-red-500 @enderror font-semibold  text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full ps-10 p-2.5  dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                            placeholder="TTL" wire:model='ttl'>
+                    </div>
+                </div>
+                <div class="w-full h-auto flex flex-col">
+                    <label for="input-group-1" class="block mb-2 text-sm font-medium text-black">Mapel
+                        Guru:</label>
+                    <div class="relative">
+                        <div class="absolute inset-y-0 start-0 flex items-center ps-2 pointer-events-none">
+                            <i class="ph-fill ph-book-bookmark text-3xl"></i>
+                        </div>
+                        <input type="text" id="input-group-1"
+                            class="bg-gray-50 @error('mapel') border-[2px] border-red-500 placeholder:text-red-500 @enderror font-semibold text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full ps-10 p-2.5  dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                            placeholder="Mapel" wire:model='mapel'>
+                    </div>
+                </div>
+                <div class="w-full h-auto flex flex-col">
+                    <label for="input-group-1" class="block mb-2 text-sm font-medium text-black">Kode
+                        Guru:</label>
+                    <div class="relative">
+                        <div class="absolute inset-y-0 start-0 flex items-center ps-2 pointer-events-none">
+                            <i class="ph-fill ph-barcode text-3xl"></i>
+                        </div>
+                        <input type="text" id="input-group-1"
+                            class="bg-gray-50  font-semibold @error('kode') border-[2px] border-red-500 placeholder:text-red-500 @enderror text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full ps-10 p-2.5  dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                            placeholder="Kode" wire:model='kode'>
+                    </div>
+                </div>
+                <div class="w-full h-auto flex flex-col">
+                    <label for="input-group-1" class="block mb-2 text-sm font-medium text-black">NIP
+                        Guru:</label>
+                    <div class="relative">
+                        <div class="absolute inset-y-0 start-0 flex items-center ps-2 pointer-events-none">
+                            <i class="ph-fill ph-identification-badge text-3xl"></i>
+                        </div>
+                        <input type="text" id="input-group-1"
+                            class="bg-gray-50  font-semibold @error('nip') border-[2px] border-red-500 placeholder:text-red-500 @enderror text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full ps-10 p-2.5  dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                            placeholder="NIP" wire:model='nip'>
+                    </div>
+                </div>
+                <div class="w-full h-auto flex flex-col">
+                    <label for="input-group-1" class="block mb-2 text-sm font-medium text-black">Email
+                        Guru:</label>
+                    <div class="relative">
+                        <div class="absolute inset-y-0 start-0 flex items-center ps-2 pointer-events-none">
+                            <i class="ph-fill ph-envelope text-3xl"></i>
+                        </div>
+                        <input type="text" id="input-group-1"
+                            class="bg-gray-50  font-semibold @error('email') border-[2px] border-red-500 placeholder:text-red-500 @enderror text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full ps-10 p-2.5  dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                            placeholder="Email" wire:model='email'>
+                    </div>
+                </div>
+                <div class="p-6 pt-0 flex mt-2 justify-center items-center gap-2">
+                    <button data-dialog-close="true" data-ripple-light="true"
+                        class="block w-auto select-none rounded-lg text-red-500 py-3 hover:bg-red-500/40 px-6 text-center align-middle font-sans text-xs font-bold uppercase  shadow-gray-900/10 transition-all hover:shadow-sm hover:shadow-gray-900/20 active:opacity-[0.85] disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
+                        type="button">
+                        Batal
+                    </button>
+                    <button data-dialog-close="true"  wire:click='editBio({{$dataGuru->id}})' data-ripple-light="true"
+                        class="block w-auto select-none rounded-lg bg-green-500 py-3 px-6 text-center align-middle font-sans text-xs font-bold uppercase text-white shadow-md shadow-gray-900/10 transition-all hover:shadow-lg hover:shadow-gray-900/20 active:opacity-[0.85] disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
+                        type="button">
+                        Ubah
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div data-dialog-backdrop="animated-dialog"
+        class="pointer-events-none px-8 md:px-[10rem] lg:px-[20rem] xl:px-[30rem] fixed inset-0 z-[999] grid h-screen w-screen place-items-center bg-black/30 bg-opacity-60 opacity-0 backdrop-blur-sm transition-opacity duration-300">
+        <div data-dialog="animated-dialog"
+            data-dialog-mount="opacity-100 translate-y-0 scale-100"
+            data-dialog-unmount="opacity-0 -translate-y-28 scale-90 pointer-events-none"
+            data-dialog-transition="transition-all duration-300"
+            class="relative m-4 w-full rounded-lg bg-white font-sans text-base font-light leading-relaxed text-blue-gray-500 antialiased shadow-2xl">
+            <div
+                class="flex items-center p-4 font-sans text-xl antialiased font-semibold leading-snug shrink-0 text-blue-gray-900">
+                Hapus Guru PPLG
+            </div>
+            <div
+                class="relative p-4 font-sans text-base antialiased font-light leading-relaxed border-t border-b border-t-blue-gray-100 border-b-blue-gray-100 text-blue-gray-500">
+                Apakah Anda Yakin Untuk Menghapus Guru <div class="font-bold">({{ $dataGuru->nama }})</.>
+                </div>
+                <div
+                    class="flex flex-wrap items-center justify-end p-4 shrink-0 text-blue-gray-500">
+                    <button data-ripple-dark="true" data-dialog-close="true"
+                        class="px-6 py-3 mr-1 font-sans text-xs font-bold text-green-500 uppercase transition-all rounded-lg middle none center hover:bg-green-500/10 active:bg-red-500/30 disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none">
+                        Batal
+                    </button>
+                    <button data-ripple-light="true" data-dialog-close="true"
+                        wire:click='hapusGuru({{ $dataGuru->id }})'
+                        class="middle none center rounded-lg bg-red-500 py-3 px-6 font-sans text-xs font-bold uppercase text-white shadow-md shadow-green-500/20 transition-all hover:shadow-lg hover:shadow-green-500/40 active:opacity-[0.85] disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none">
+                        Hapus
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
 
-<script>
-    let toggleN = false;
-    const nav = document.getElementById('nav')
-    const toggle = document.getElementById('toggle')
 
-    function toggleNav() {
-        if (toggleN == false) {
-            console.log('a');
-            nav.classList.remove('-translate-x-[16rem]')
-            toggle.classList.add('translate-x-[15rem]')
-            toggleN = true;
-        } else {
-            console.log('aa');
-            nav.classList.add('-translate-x-[16rem]')
-            toggle.classList.remove('translate-x-[15rem]')
-            toggleN = false;
+    <script>
+        let toggleN = false;
+        const nav = document.getElementById('nav')
+        const toggle = document.getElementById('toggle')
+
+        function toggleNav() {
+            if (toggleN == false) {
+                console.log('a');
+                nav.classList.remove('-translate-x-[16rem]')
+                toggle.classList.add('translate-x-[15rem]')
+                toggleN = true;
+            } else {
+                console.log('aa');
+                nav.classList.add('-translate-x-[16rem]')
+                toggle.classList.remove('translate-x-[15rem]')
+                toggleN = false;
+            }
         }
-    }
-</script>
+    </script>
