@@ -8,7 +8,7 @@
                 <p class="text-[16px] text-[#D0D0D0] font-medium">Hal ini seiring dengan penguasaan teknologi untuk dimanfaatkan sebaik mungkin, sehingga menciptakan iklim kondusif dalam ranah keilmuan. Dengan konsep yang kontekstual dan efektif, kami mengejewantahkan nilai-nilai pendidikan yang tertuang dalam visi misi SMK NEGERI 1 BANGSRI, sebagai panduan hukum dalam menjabarkan tujuan hakiki pendidikan.</p>
             </div>
             <div class=" lg:w-[35%]">
-                <img class="h-52 lg:h-full w-full rounded-3xl object-cover" src="https://swiperjs.com/demos/images/nature-1.jpg" alt="">
+                <img class="pointer-events-none h-52 lg:h-full w-full rounded-3xl object-cover" src="https://swiperjs.com/demos/images/nature-1.jpg" alt="">
             </div>
         </div>
 </section>

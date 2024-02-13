@@ -18,10 +18,10 @@
                 </div>
                 <div class="md:w-[25%] flex justify-center md:items-center lg:items-end flex-col">
                     <div class="flex justify-start items-start md:justify-end md:items-center">
-                        <img class="md:w-56 w-full h-56 mb-5 rounded-3xl object-cover" src="https://swiperjs.com/demos/images/nature-1.jpg" alt="">
+                        <img class="pointer-events-none md:w-56 w-full h-56 mb-5 rounded-3xl object-cover" src="https://swiperjs.com/demos/images/nature-1.jpg" alt="">
                     </div>
                     <div class=" justify-end items-end mb-5 hidden md:flex">
-                        <img class="md:w-56 w-full h-56 rounded-3xl object-cover" src="https://swiperjs.com/demos/images/nature-1.jpg" alt="">
+                        <img class="pointer-events-none md:w-56 w-full h-56 rounded-3xl object-cover" src="https://swiperjs.com/demos/images/nature-1.jpg" alt="">
                     </div>
                 </div>
             </div>

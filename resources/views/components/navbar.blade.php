@@ -1,6 +1,6 @@
 <nav class="navbar nav-respon navbar-expand-lg fixed-top py-1 transition ease-in-out">
     <div class="container container-fluid">
-        <a class="navbar-brand d-flex align-items-center" href="#"> <img class="h-11" src="{{Storage::url('assets/pplg/img/pplg-logo.png')}}" alt="">
+        <a class="navbar-brand d-flex align-items-center" href="{{"/"}}"> <img class="h-11" src="{{Storage::url('assets/pplg/img/pplg-logo.png')}}" alt="">
             <div class="flex flex-col h-full ml-3 nav-con text-slate-950"><span class="font-bold text-2xl text-[#f78704]">PPLG</span><span class="text-sm ">SMKN 1 BANGSRI</span></div>
         </a>
         <div class="offcanvas offcanvas-start bg-black" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">

@@ -11,7 +11,7 @@
                 </div>
                 <div class="max-w-4xl flex sm:justify-center md:justify-end lg:justify-end">
                     <div class="lg:w-[22rem] sm:w-full lg:h-[30rem] md:h-[27rem] sm:h-[350px] rounded-xl overflow-hidden">
-                        <img src="{{ Storage::url('assets/pplg/img/bgVisiMisi.jpg') }}" alt="Gambar" class="w-full h-full object-cover" />
+                        <img src="{{ Storage::url('assets/pplg/img/bgVisiMisi.jpg') }}" alt="Gambar" class="pointer-events-none w-full h-full object-cover" />
                     </div>
                 </div>
 
@@ -108,20 +108,20 @@
             <!-- Bagian Kanan End -->
         </div>
         <div class=" w-full mt-10 flex flex-wrap gap-4 items-center justify-center py-[60px]">
-            <div class=" ">
-                <img class="h-[60px]" src="https://iconape.com/wp-content/png_logo_vector/evercoss-2015-logo.png" alt="">
+            <div class="">
+                <img class="h-[60px] grayscale hover:grayscale-0 transition-all" src="https://iconape.com/wp-content/png_logo_vector/evercoss-2015-logo.png" alt="">
             </div>
             <div class="">
-                <img  class="h-[60px]" src="https://crocodic.com/wp-content/uploads/2023/05/Logo-baru-Crocodic-HD.png" alt="">
+                <img  class="h-[60px] grayscale hover:grayscale-0 transition-all" src="https://crocodic.com/wp-content/uploads/2023/05/Logo-baru-Crocodic-HD.png" alt="">
             </div>
             <div class="">
-                <img  class="h-[60px]" src="https://www.esoftgreat.com/images/modules/config/logo/image_sarwabimbel_1546913142.png" alt="">
+                <img  class="h-[60px] grayscale hover:grayscale-0 transition-all" src="https://www.esoftgreat.com/images/modules/config/logo/image_sarwabimbel_1546913142.png" alt="">
             </div>
             <div class="">
-                <img  class="h-[60px]" src="https://smkn1bangsri.sch.id/assets/images/logo.png" alt="">
+                <img  class="h-[60px] grayscale hover:grayscale-0 transition-all" src="https://smkn1bangsri.sch.id/assets/images/logo.png" alt="">
             </div>
             <div class="">
-                <img  class="h-[60px]" src="{{Storage::url('assets/pplg/img/Tefa.jpg')}}" alt="tefa">
+                <img  class="h-[60px] grayscale hover:grayscale-0 transition-all" src="{{Storage::url('assets/pplg/img/Tefa.jpg')}}" alt="tefa">
             </div>
         </div>
     </div>
