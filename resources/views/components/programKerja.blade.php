@@ -150,145 +150,251 @@
         </div>
         <!-- accordion Desk end-->
 
-        <!-- accordion HP -->
-        <div class="w-full flex justify-center h-auto md:hidden">
-            <div id="accordion-flush" data-accordion="collapse"
-                data-active-classes="bg-white dark:shadow-xl text-orange dark:text-white"
-                data-inactive-classes="text-hitam bg-gray-300 dark:text-gray-400 dark:shadow-sm"
-                class="flex w-[80%] mt-8">
-                <div class="w-full h-auto justify-center items-center bg-white flex flex-col rounded-xl">
-                        <h2 id="accordion-flush-heading-1">
-                            <button type="button"
-                                class="flex items-center rounded-lg w-full font-medium rtl:text-right text-gray-500 border-b border-gray-200 dark:border-hitam dark:text-gray-400 gap-3"
-                                data-accordion-target="#accordion-flush-body-1" aria-expanded="true"
-                                aria-controls="accordion-flush-body-1">
-                                <span class="text-lg font-bold ml-[2rem] capitalize">Progam Kerja Tahunan</span>
-                                <i class="ph-bold ph-arrow-circle-right mr-[2rem]"></i>
-                            </button>
-                        </h2>
-                        <div id="accordion-flush-body-1" class="" aria-labelledby="accordion-flush-heading-1">
-                            <div class=" border-b bg-white flex flex-wrap border-gray-200 dark:border-gray-700">
-                                <div class="flex w-full lg:w-[30rem] mt-2 h-auto space-x-3 ml-[2rem]">
-                                    <i class="ph-bold text-orange ph-info text-xl"></i>
-                                    <h1 class="text-hitam ml-[5rem] font-semibold text-sm dark:text-gray-400">
-                                        UKK PPLG
-                                    </h1>
-                                </div>
-                                <div class="flex w-full lg:w-[30rem] mt-2 h-auto space-x-3 ml-[2rem]">
-                                    <i class="ph-bold text-orange ph-info text-xl"></i>
-                                    <h1 class="text-hitam ml-[5rem] font-semibold text-sm dark:text-gray-400">Rapat
-                                        PKL
-                                    </h1>
-                                </div>
-                                <div class="flex w-full lg:w-[30rem] mt-2 h-auto space-x-3 ml-[2rem]">
-                                    <i class="ph-bold text-orange ph-info text-xl"></i>
-                                    <h1 class="text-hitam ml-[5rem] font-semibold text-sm dark:text-gray-400">
-                                        LKS Kabupaten
-                                    </h1>
-                                </div>
-                                <div class="flex w-full lg:w-[30rem] mt-2 h-auto space-x-3 ml-[2rem]">
-                                    <i class="ph-bold text-orange ph-info text-xl"></i>
-                                    <h1 class="text-hitam ml-[5rem] font-semibold text-sm dark:text-gray-400">
-                                        LKS Provinsi
-                                    </h1>
-                                </div>
-                                <div class="flex w-full lg:w-[30rem] mt-2 h-auto space-x-3 ml-[2rem]">
-                                    <i class="ph-bold text-orange ph-info text-xl"></i>
-                                    <h1 class="text-hitam ml-[5rem] font-semibold text-sm dark:text-gray-400">
-                                        Kunjungan Industri
-                                    </h1>
-                                </div>
-                                <div class="flex w-full lg:w-[30rem] mt-2 h-auto space-x-3 ml-[2rem]">
-                                    <i class="ph-bold text-orange ph-info text-xl"></i>
-                                    <h1 class="text-hitam ml-[5rem] font-semibold text-sm dark:text-gray-400">
-                                        Magang Guru
-                                    </h1>
-                                </div>
-                            </div>
-                        </div>
-                    <h2 id="accordion-flush-heading-2">
-                        <button type="button"
-                            class="flex items-center rounded-lg w-full font-medium rtl:text-right text-gray-500 border-b border-gray-200 dark:border-hitam dark:text-gray-400"
-                            data-accordion-target="#accordion-flush-body-2" aria-expanded="true"
-                            aria-controls="accordion-flush-body-2">
-                            <span class="text-lg font-bold ml-[2rem] capitalize">Progam Kerja Bulanan</span>
-                            <i class="ph-bold ph-arrow-circle-right mr-[2rem]"></i>
-                        </button>
-                    </h2>
-                    <div id="accordion-flush-body-2" class="" aria-labelledby="accordion-flush-heading-2">
-                        <div class=" border-b bg-white rounded-lg flex flex-wrap border-gray-200 dark:border-gray-700">
-                            <div class="flex w-full lg:w-[30rem] mt-2 h-auto space-x-3 ml-[2rem]">
-                                <i class="ph-bold text-orange ph-info text-xl"></i>
-                                <h1 class="text-hitam ml-[5rem] font-semibold text-sm dark:text-gray-400">
-                                    Sinkronisasi kurikulum dengan DU/DI
-                                </h1>
-                            </div>
-                            <div class="flex w-full lg:w-[30rem] mt-2 h-auto space-x-3 ml-[2rem]">
-                                <i class="ph-bold text-orange ph-info text-xl"></i>
-                                <h1 class="text-hitam ml-[5rem] font-semibold text-sm dark:text-gray-400">
-                                    Rapat Koordinasi Jurusan PPLG
-                                </h1>
-                            </div>
-                            <div class="flex w-full lg:w-[30rem] mt-2 h-auto space-x-3 ml-[2rem]">
-                                <i class="ph-bold text-orange ph-info text-xl"></i>
-                                <h1 class="text-hitam ml-[5rem] font-semibold text-sm dark:text-gray-400">
-                                    Pemetaaan kompetensi anak berbasis peminatan
-                                </h1>
-                            </div>
-                            <div class="flex w-full lg:w-[30rem] mt-2 h-auto space-x-3 ml-[2rem]">
-                                <i class="ph-bold text-orange ph-info text-xl"></i>
-                                <h1 class="text-hitam ml-[5rem] font-semibold text-sm dark:text-gray-400">
-                                    Penataan Lab dan pembaruan KIR
-                                </h1>
-                            </div>
-                        </div>
+        <!-- accordion Desk-->
+        {{-- <div class="w-full hidden md:block mt-10">
+            <div class="w-2/3 justify-center">
+                <div class="relative right-0">
+                  <ul
+                    class="relative flex flex-wrap p-1 list-none rounded-xl bg-blue-gray-50/60"
+                    data-tabs="tabs"
+                    role="list"
+                  >
+                    <li class="z-30 flex-auto text-center">
+                      <a
+                        class="z-30 flex items-center justify-center w-full px-0 py-1 mb-0 transition-all ease-in-out border-0 rounded-lg cursor-pointer text-slate-700 bg-inherit"
+                        data-tab-target=""
+                        active=""
+                        role="tab"
+                        aria-selected="true"
+                        aria-controls="app"
+                      >
+                        <span class="ml-1">App</span>
+                      </a>
+                    </li>
+                    <li class="z-30 flex-auto text-center">
+                      <a
+                        class="z-30 flex items-center justify-center w-full px-0 py-1 mb-0 transition-all ease-in-out border-0 rounded-lg cursor-pointer text-slate-700 bg-inherit"
+                        data-tab-target=""
+                        role="tab"
+                        aria-selected="false"
+                        aria-controls="message"
+                      >
+                        <span class="ml-1">Messages</span>
+                      </a>
+                    </li>
+                    <li class="z-30 flex-auto text-center">
+                      <a
+                        class="z-30 flex items-center justify-center w-full px-0 py-1 mb-0 transition-all ease-in-out border-0 rounded-lg cursor-pointer text-slate-700 bg-inherit"
+                        data-tab-target=""
+                        role="tab"
+                        aria-selected="false"
+                        aria-controls="settings"
+                      >
+                        <span class="ml-1">Settings</span>
+                      </a>
+                    </li>
+                  </ul>
+                  <div data-tab-content="" class="p-5">
+                    <div class="block opacity-100" id="app" role="tabpanel">
+                      <p class="block font-sans text-base antialiased font-light leading-relaxed text-inherit text-blue-gray-500">
+                        Because it's about motivating the doers. Because I'm here to follow
+                        my dreams and inspire other people to follow their dreams, too.
+                      </p>
                     </div>
-                    <h2 id="accordion-flush-heading-3">
-                        <button type="button"
-                            class="flex items-center rounded-lg w-full font-medium rtl:text-right text-gray-500 border-b border-gray-200 dark:border-hitam dark:text-gray-400 gap-3"
-                            data-accordion-target="#accordion-flush-body-3" aria-expanded="true"
-                            aria-controls="accordion-flush-body-3">
-                            <span class="text-lg font-bold ml-[2rem] capitalize">Progam Kerja Mingguan</span>
-                            <i class="ph-bold ph-arrow-circle-right mr-[2rem]"></i>
-                        </button>
-                    </h2>
-                    <div id="accordion-flush-body-3" class="" aria-labelledby="accordion-flush-heading-3">
-                        <div class="border-b bg-white rounded-lg flex flex-wrap border-gray-200 dark:border-gray-700">
+                    <div class="hidden opacity-0" id="message" role="tabpanel">
+                      <p class="block font-sans text-base antialiased font-light leading-relaxed text-inherit text-blue-gray-500">
+                        The reading of all good books is like a conversation with the finest
+                        minds of past centuries.
+                      </p>
+                    </div>
+                    <div class="hidden opacity-0" id="settings" role="tabpanel">
+                      <p class="block font-sans text-base antialiased font-light leading-relaxed text-inherit text-blue-gray-500">
+                        Comparing yourself to others is the thief of joy.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+        </div> --}}
+        <!-- accordion Desk end-->
+
+        <!-- accordion HP -->
+        <div class="w-full flex-col justify-center items-center h-auto md:hidden">
+            <!-- collapse 1 -->
+            <div class="relative mb-3 flex-col flex justify-center w-full items-center">
+                <h6 class="mb-0 w-[85%]">
+                  <button
+                    class="relative flex items-center p-4 font-semibold w-full text-left transition-all ease-in border-b border-solid cursor-pointer border-orange rounded-t-1 group text-white"
+                    data-collapse-target="animated-collapse-1"
+                  >
+                    <span>Program Kerja Tahunan</span>
+                    <i class="absolute right-0 pt-1 text-base transition-transform ph-bold ph-caret-down group-open:rotate-180 text-white mr-5"></i>
+                  </button>
+                </h6>
+                <div
+                  data-collapse="animated-collapse-1"
+                  class=" overflow-hidden transition-all w-full h-0 duration-300 ease-in-out"
+                >
+                  <div class="p-4 text-sm leading-normal ">
+                      <div class=" border-b bg-white flex flex-wrap border-gray-200 rounded-lg dark:border-gray-700">
+                          <div class="flex w-full lg:w-[30rem] mt-2 h-auto space-x-3 ml-[2rem]">
+                              <i class="ph-bold text-orange ph-info text-xl"></i>
+                              <h1 class="text-hitam ml-[5rem] font-semibold text-sm dark:text-gray-400">
+                                  UKK PPLG
+                                </h1>
+                            </div>
                             <div class="flex w-full lg:w-[30rem] mt-2 h-auto space-x-3 ml-[2rem]">
                                 <i class="ph-bold text-orange ph-info text-xl"></i>
-                                <h1 class="text-hitam ml-[5rem] font-semibold text-sm dark:text-gray-400">
-                                    Penyusunan dan Penyeragaman jobsheet
+                                <h1 class="text-hitam ml-[5rem] font-semibold text-sm dark:text-gray-400">Rapat
+                                    PKL
                                 </h1>
                             </div>
                             <div class="flex w-full lg:w-[30rem] mt-2 h-auto space-x-3 ml-[2rem]">
                                 <i class="ph-bold text-orange ph-info text-xl"></i>
                                 <h1 class="text-hitam ml-[5rem] font-semibold text-sm dark:text-gray-400">
-                                    Penerapan 5S pada Laboratorium
+                                    LKS Kabupaten
                                 </h1>
                             </div>
                             <div class="flex w-full lg:w-[30rem] mt-2 h-auto space-x-3 ml-[2rem]">
                                 <i class="ph-bold text-orange ph-info text-xl"></i>
                                 <h1 class="text-hitam ml-[5rem] font-semibold text-sm dark:text-gray-400">
-                                    Sinkronisasi antar mapel di jurusan
+                                    LKS Provinsi
                                 </h1>
                             </div>
                             <div class="flex w-full lg:w-[30rem] mt-2 h-auto space-x-3 ml-[2rem]">
                                 <i class="ph-bold text-orange ph-info text-xl"></i>
                                 <h1 class="text-hitam ml-[5rem] font-semibold text-sm dark:text-gray-400">
-                                    Penyusunan KTSP PPLG
+                                    Kunjungan Industri
                                 </h1>
                             </div>
                             <div class="flex w-full lg:w-[30rem] mt-2 h-auto space-x-3 ml-[2rem]">
                                 <i class="ph-bold text-orange ph-info text-xl"></i>
                                 <h1 class="text-hitam ml-[5rem] font-semibold text-sm dark:text-gray-400">
-                                    Mengaktifkan unit produksi
+                                    Magang Guru
                                 </h1>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
+            <!-- collapse 1 end-->
+
+            <!-- collapse 2-->
+            <div class="relative mb-3 flex-col flex justify-center w-full items-center">
+                <h6 class="mb-0 w-[85%]">
+                  <button
+                    class="relative flex items-center w-full p-4 font-semibold text-left transition-all ease-in border-b border-solid cursor-pointer border-orange text-slate-700 rounded-t-1 group text-white"
+                    data-collapse-target="animated-collapse-2"
+                  >
+                    <span>Program Kerja Bulanan</span>
+                    <i class="absolute right-0 pt-1 text-base mr-5 transition-transform ph-bold ph-caret-down group-open:rotate-180 text-white"></i>
+                  </button>
+                </h6>
+                <div data-collapse="animated-collapse-2" class="h-0 overflow-hidden transition-all duration-300 ease-in-out">
+                    <div class="p-4 text-sm leading-normal">
+                        <div class=" border-b bg-white flex flex-wrap border-gray-200 rounded-lg dark:border-gray-700">
+                            <div class="flex w-full lg:w-[30rem] mt-2 h-auto space-x-3 ml-[2rem]">
+                                <i class="ph-bold text-orange ph-info text-xl"></i>
+                                <h1 class="text-hitam ml-[5rem] font-semibold text-sm dark:text-gray-400">
+                                    UKK PPLG
+                                  </h1>
+                              </div>
+                              <div class="flex w-full lg:w-[30rem] mt-2 h-auto space-x-3 ml-[2rem]">
+                                  <i class="ph-bold text-orange ph-info text-xl"></i>
+                                  <h1 class="text-hitam ml-[5rem] font-semibold text-sm dark:text-gray-400">Rapat
+                                      PKL
+                                  </h1>
+                              </div>
+                              <div class="flex w-full lg:w-[30rem] mt-2 h-auto space-x-3 ml-[2rem]">
+                                  <i class="ph-bold text-orange ph-info text-xl"></i>
+                                  <h1 class="text-hitam ml-[5rem] font-semibold text-sm dark:text-gray-400">
+                                      LKS Kabupaten
+                                  </h1>
+                              </div>
+                              <div class="flex w-full lg:w-[30rem] mt-2 h-auto space-x-3 ml-[2rem]">
+                                  <i class="ph-bold text-orange ph-info text-xl"></i>
+                                  <h1 class="text-hitam ml-[5rem] font-semibold text-sm dark:text-gray-400">
+                                      LKS Provinsi
+                                  </h1>
+                              </div>
+                              <div class="flex w-full lg:w-[30rem] mt-2 h-auto space-x-3 ml-[2rem]">
+                                  <i class="ph-bold text-orange ph-info text-xl"></i>
+                                  <h1 class="text-hitam ml-[5rem] font-semibold text-sm dark:text-gray-400">
+                                      Kunjungan Industri
+                                  </h1>
+                              </div>
+                              <div class="flex w-full lg:w-[30rem] mt-2 h-auto space-x-3 ml-[2rem]">
+                                  <i class="ph-bold text-orange ph-info text-xl"></i>
+                                  <h1 class="text-hitam ml-[5rem] font-semibold text-sm dark:text-gray-400">
+                                      Magang Guru
+                                  </h1>
+                              </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- collapse 2 end-->
+
+            <!-- collapse 3 -->
+            <div class="relative mb-3 flex-col flex justify-center w-full items-center">
+              <h6 class="mb-0 w-[85%]">
+                <button
+                  class="relative flex items-center w-full p-4 font-semibold text-left transition-all ease-in border-b border-solid cursor-pointer border-orange text-slate-700 rounded-t-1 group text-white"
+                  data-collapse-target="animated-collapse-3"
+                >
+                  <span>Program Kerja Mingguan</span>
+                  <i class="absolute right-0 mr-5 pt-1 text-base transition-transform ph-bold ph-caret-down group-open:rotate-180 text-white"></i>
+                </button>
+              </h6>
+              <div
+                data-collapse="animated-collapse-3"
+                class="h-0 overflow-hidden transition-all duration-300 ease-in-out"
+              >
+                <div class="p-4 text-sm leading-normal text-blue-gray-500/80">
+                    <div class=" border-b bg-white flex flex-wrap border-gray-200 rounded-lg dark:border-gray-700">
+                        <div class="flex w-full lg:w-[30rem] mt-2 h-auto space-x-3 ml-[2rem]">
+                            <i class="ph-bold text-orange ph-info text-xl"></i>
+                            <h1 class="text-hitam ml-[5rem] font-semibold text-sm dark:text-gray-400">
+                                UKK PPLG
+                              </h1>
+                          </div>
+                          <div class="flex w-full lg:w-[30rem] mt-2 h-auto space-x-3 ml-[2rem]">
+                              <i class="ph-bold text-orange ph-info text-xl"></i>
+                              <h1 class="text-hitam ml-[5rem] font-semibold text-sm dark:text-gray-400">Rapat
+                                  PKL
+                              </h1>
+                          </div>
+                          <div class="flex w-full lg:w-[30rem] mt-2 h-auto space-x-3 ml-[2rem]">
+                              <i class="ph-bold text-orange ph-info text-xl"></i>
+                              <h1 class="text-hitam ml-[5rem] font-semibold text-sm dark:text-gray-400">
+                                  LKS Kabupaten
+                              </h1>
+                          </div>
+                          <div class="flex w-full lg:w-[30rem] mt-2 h-auto space-x-3 ml-[2rem]">
+                              <i class="ph-bold text-orange ph-info text-xl"></i>
+                              <h1 class="text-hitam ml-[5rem] font-semibold text-sm dark:text-gray-400">
+                                  LKS Provinsi
+                              </h1>
+                          </div>
+                          <div class="flex w-full lg:w-[30rem] mt-2 h-auto space-x-3 ml-[2rem]">
+                              <i class="ph-bold text-orange ph-info text-xl"></i>
+                              <h1 class="text-hitam ml-[5rem] font-semibold text-sm dark:text-gray-400">
+                                  Kunjungan Industri
+                              </h1>
+                          </div>
+                          <div class="flex w-full lg:w-[30rem] mt-2 h-auto space-x-3 ml-[2rem]">
+                              <i class="ph-bold text-orange ph-info text-xl"></i>
+                              <h1 class="text-hitam ml-[5rem] font-semibold text-sm dark:text-gray-400">
+                                  Magang Guru
+                              </h1>
+                          </div>
+                    </div>
+                </div>
+              </div>
+            </div>
+            <!-- collapse 3 end-->
         </div>
-        <!-- accordion HP end-->
+        <!-- accordion HP end -->
     </div>
 </section>

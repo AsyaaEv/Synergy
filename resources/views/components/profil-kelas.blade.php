@@ -4,14 +4,26 @@
     <div class="container flex justify-between h-auto">
         <div class="flex-col w-[35%] border-2  border-hitam">
             <div class="md:w-52 md:h-52 w-32 h-32 md:-mt-28 ml-20 -mt-16 mb-2 border-[10px] border-white rounded-full">
-                <img class="h-full w-full object-top object-cover rounded-full" src="{{ Storage::url('assets/pplg/img/azzam.png') }}" alt="">
+                <img class="h-full w-full object-top object-cover rounded-full pointer-events-none" src="{{ Storage::url('assets/pplg/img/azzam.png') }}" alt="">
             </div>
             <div class="flex justify-center">
                 <h1 class="md:text-xl text-xl font-bold px-3 py-2 border-2 rounded-2xl border-hitam">Abdullah Azzam Al Haqqoni, S.Pd</h1>
             </div>
-            <h1 class="text-2xl font-semibold text-center mt-3">Wali Kelas X PPLG 1</h1>
+            <h1 class="text-2xl font-semibold text-center mt-2">Wali Kelas X PPLG 1</h1>
+            <h1 class="text-lg text-hitam ml-5">Sosial Media:</h1>
+            <div class="flex w-auto mx-5 justify-between h-auto border-2 border-hitam">
+                <div class="w-[5rem] h-auto border-2 border-hitam">
+                    <a href=""><img src="{{ Storage::url('assets/pplg/img/Tefa.jpg') }}" alt=""></a>
+                </div>
+                <div class="w-[5rem] h-auto border-2 border-hitam">
+                    <a href=""><img src="{{ Storage::url('assets/pplg/img/Tefa.jpg') }}" alt=""></a>
+                </div>
+                <div class="w-[5rem] h-auto border-2 border-hitam">
+                    <a href=""><img src="{{ Storage::url('assets/pplg/img/Tefa.jpg') }}" alt=""></a>
+                </div>
+            </div>
         </div>
-        <div class="bg-white w-[60%] -mt-[7rem] h-auto border-hitam border-2 shadow-2xl rounded-3xl">
+        <div class="bg-white w-[60%] h-auto border-hitam border-2 shadow-2xl rounded-3xl">
             <div class="flex justify-center mt-3">
                 <h1 class="md:text-xl text-xl font-bold px-3 py-2 border-2 rounded-lg border-hitam">Bio Data</h1>
             </div>
