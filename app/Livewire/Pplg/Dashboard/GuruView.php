@@ -46,10 +46,4 @@ class GuruView extends Component
         session()->flash('alert', 'success');
         return redirect('/dashboard/guru');
     }
-    
-    public function editBio($id){
-        $editGuru = Guru::find($id);
-        $editGuru->nama = $this->nama;
-        $editGuru->update();
-    }
 }

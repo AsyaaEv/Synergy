@@ -19,9 +19,6 @@ Route::view('/dashboard', 'routes.dashboard.index');
 //dashboard guru
 Route::view('/dashboard/guru', 'routes.dashboard.guru');
 Route::view('/dashboard/guru/add', 'routes.dashboard.guruAdd');
-Route::get('/dashboard/guru/edit/{id}', function($id){
-    return view('routes.dashboard.guruEdit', ['id' => $id]);
-});
 Route::get('/dashboard/guru/view/{id}', function($id){
     return view('routes.dashboard.guruView', ['id' => $id]);
 });
