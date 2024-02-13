@@ -39,6 +39,8 @@ Route::get('/dashboard/walikelas/edit/{id}', function($id){
 
 Route::view('/', 'routes.home');
 
+Route::view('/list-kelas', 'routes.list-kelas-section')->name('list-kelas');;
+
 Route::get('/profil-guru/{nama}', function($nama){
     return view('routes.profil-guru', ['nama' => $nama]);
 });

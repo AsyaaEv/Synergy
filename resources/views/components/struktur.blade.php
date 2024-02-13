@@ -1,7 +1,7 @@
 <section id="struktur" class="">
-    <div class="container py-5">
+    <div class="container py-20">
         <h1 class="border-[1px] rounded-[10px] border-black p-[10px] inline-block m-0 text-[20px] md:text-[25px] text-hitam font-bold">Struktur Organisasi</h1>
-        <div class="flex justify-center py-5">
+        <div class="flex justify-center pt-5">
             <h1 class="text-xl md:text-2xl font-bold text-center md:w-[70%] lg:w-[55%]" data-aos-once="true" data-aos="fade-down">STRUKTUR ORGANISASI JURUSAN PENGEMBANGAN PERANGKAT LUNAK DAN GIM</h1>
         </div>
         <div class="flex flex-wrap justify-center" data-aos='fade-right' data-aos-once="true">

@@ -1,9 +1,9 @@
 <section id="sejarah" class="bg-[#0D0D0D]">
-    <div class="container py-5">
+    <div class="container py-20">
         <h1 class="border-[1px] rounded-[10px] border-white p-[10px] inline-block m-0 text-[20px] md:text-[25px] text-white font-bold">Sejarah</h1>
         <div class="dropdowns mt-10 md:mt-20">
             <div class="flex flex-col lg:flex-row justify-between text-white">
-                <h1 class="font-bold lg:w-[15%]" data-aos='fade-right' data-aos-once="true">Apa itu PPLG?</h1>
+                <h1 class="font-bold lg:w-[15%]" data-aos='fade-right' data-aos-once="true">Apa itu <span class="text-orange">PPLG?</span></h1>
                 <div class="flex flex-col lg:w-[75%]" data-aos='fade-down' data-aos-once="true">
                     <p class="md:text-[20px] lg:text-[24px] text-[#B7B7B7]">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
                     <div class="flex justify-between items-center">

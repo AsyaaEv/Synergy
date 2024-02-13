@@ -1,5 +1,5 @@
 <div>
     @include('components.navbar')
-    @include('components.profil-guru')
+    @include('components.list-kelas-section')
     @include('components.footer')
 </div>
