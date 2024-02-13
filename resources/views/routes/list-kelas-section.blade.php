@@ -1,4 +1,4 @@
 @extends('index')
 @section('content')
-@livewire('pplg.home')
+@livewire('pplg.kelas-section')
 @endsection

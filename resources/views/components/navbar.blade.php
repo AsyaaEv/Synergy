@@ -6,33 +6,33 @@
         <div class="offcanvas offcanvas-start bg-black" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
             <div class="offcanvas-header">
                 <a href="" class="offcanvas-title d-flex align-items-center no-underline" id="offcanvasNavbarLabel"> <img class="h-11" src="{{Storage::url('assets/pplg/img/pplg-logo.png')}}" alt="">
-                    <div class="flex flex-col h-full ml-3 nav-con text-slate-50 lg:text-slate-950"><span class="font-bold text-2xl text-[#f78704]">PPLG</span><span class="text-sm">SMKN 1 BANGSRI</span></div>
+                    <div class="flex flex-col h-full ml-3 nav-con text-slate-50 lg:text-slate-950"><span class="font-bold text-2xl text-[#f78704]">PPLG</span><span class="text-sm lg:text-hitam text-gray-100">SMKN 1 BANGSRI</span></div>
                 </a>
                 <button type="button" class="focus:outline-none shadow-none ph ph-x text-3xl text-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
             </div>
             <div class="offcanvas-body">
                 <ul class="navbar-nav flex gap-3 justify-content-end flex-grow-1 pe-3 text-base font-semibold">
                     <li class="nav-item">
-                        <a class="nav-con no-underline text-slate-50 lg:text-slate-950 block" aria-current="page" href="{{"/"}}">Beranda</a>
+                        <a class="nav-con no-underline block lg:text-hitam text-gray-100" aria-current="page" href="{{"/"}}">Beranda</a>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-con no-underline text-slate-50 lg:text-slate-950 block dropdown-toggle " href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <a class="nav-con no-underline lg:text-hitam text-gray-100 block dropdown-toggle " href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                             Profil
                         </a>
                         <ul class="dropdown-menu bg-black border-[1.5px] border-white">
                             <li><a class="dropdown-item text-white" href="{{"#about"}}">Tentang</a></li>
-                            <li><a class="dropdown-item text-white" href="{{""}}">Visi Misi</a></li>
-                            <li><a class="dropdown-item text-white" href="#">Sejarah</a></li>
-                            <li><a class="dropdown-item text-white" href="#">Program Kerja</a></li>
-                            <li><a class="dropdown-item text-white" href="#">Sarana Prasarana</a></li>
-                            <li><a class="dropdown-item text-white" href="#">Struktur Organisasi</a></li>
+                            <li><a class="dropdown-item text-white" href="{{"#visiMisi"}}">Visi Misi</a></li>
+                            <li><a class="dropdown-item text-white" href="{{"#sejarah"}}">Sejarah</a></li>
+                            <li><a class="dropdown-item text-white" href="{{"#sarana"}}">Sarana Prasarana</a></li>
+                            <li><a class="dropdown-item text-white" href="{{"#progamKerja"}}">Program Kerja</a></li>
+                            <li><a class="dropdown-item text-white" href="{{"#struktur"}}">Struktur Organisasi</a></li>
                         </ul>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-con no-underline text-slate-50 lg:text-slate-950 block mx-lg-2 " href="">Kelas</a>
+                        <a class="nav-con no-underline lg:text-hitam text-gray-100 block mx-lg-2 " href="{{"#kelas"}}">Kelas</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-con no-underline text-slate-50 lg:text-slate-950 block mx-lg-2 " aria-current="page" href="">Kontak</a>
+                        <a class="nav-con no-underline lg:text-hitam text-gray-100 block mx-lg-2 " aria-current="page" href="{{"#footer"}}">Kontak</a>
                     </li>
                 </ul>
             </div>

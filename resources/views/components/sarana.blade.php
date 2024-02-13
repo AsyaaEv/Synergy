@@ -6,16 +6,14 @@
             <div class="flex flex-col md:flex-row item-center justify-between">
                 <div class="md:w-[40%] mt-16">
                     <div class="mb-10">
-                        <h1 class="font-bold text-[2rem] mb-4">Sarana</h1>
-                        <hr class=" lg:ml-6" style=" border-width: 2px; color: #626262;">
-                        <p class="lg:ml-6 font-medium text-[#676767]" data-aos='fade-right' data-aos-once="true">Lorem ipsum dolor, sit amet consectetur adipisicing
+                        <h1 class="font-bold text-[2rem] mb-4 text-[#87897]">Sarana</h1>
+                        <p class="lg:ml-6 font-medium text-[#676767] border-t-[1.5px] border-orange pt-6" data-aos='fade-right' data-aos-once="true">Lorem ipsum dolor, sit amet consectetur adipisicing
                             elit. Porro dolore voluptatem voluptas sunt architecto perspiciatis deserunt debitis repellat
                             minus ab.</p>
                     </div>
                     <div class="">
                         <h1 class="font-bold text-[2rem] mb-4">Prasarana</h1>
-                        <hr class=" lg:ml-6" style=" border-width: 2px; color: #626262;">
-                        <p class="lg:ml-6 font-medium text-[#676767] md:mb-10" data-aos='fade-right' data-aos-once="true">Lorem ipsum dolor, sit amet consectetur
+                        <p class="lg:ml-6 font-medium text-[#676767] border-t-[1.5px] border-orange pt-6 md:mb-10" data-aos='fade-right' data-aos-once="true">Lorem ipsum dolor, sit amet consectetur
                             adipisicing elit. Porro dolore voluptatem voluptas sunt architecto perspiciatis deserunt debitis
                             repellat minus ab.</p>
                     </div>
@@ -63,7 +61,7 @@
     }
 
     .pag-sar .swiper-pagination-bullet {
-        background-color: black;
+        background-color: orangered;
         width: 0.6rem;
         height: 0.6rem;
     }
