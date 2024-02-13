@@ -22,8 +22,8 @@ Route::view('/dashboard/guru/add', 'routes.dashboard.guruAdd');
 Route::get('/dashboard/guru/edit/{id}', function($id){
     return view('routes.dashboard.guruEdit', ['id' => $id]);
 });
-Route::get('/dashboard/guru/view/{nama}', function($nama){
-    return view('routes.dashboard.guruView', ['nama' => $nama]);
+Route::get('/dashboard/guru/view/{id}', function($id){
+    return view('routes.dashboard.guruView', ['id' => $id]);
 });
 
 //Dashboard Kelas
@@ -38,6 +38,7 @@ Route::get('/dashboard/walikelas/edit/{id}', function($id){
 });
 
 Route::view('/', 'routes.home');
+Route::view('/profil-kelas', 'routes.profil-kelas');
 
 Route::view('/list-kelas', 'routes.list-kelas-section')->name('list-kelas');;
 
