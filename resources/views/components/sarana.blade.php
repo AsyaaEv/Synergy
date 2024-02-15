@@ -18,7 +18,7 @@
                             repellat minus ab.</p>
                     </div>
                 </div>
-                <div class="md:w-1/2 swiper swiper-sarana mySwiper-sarana">
+                <div class="md:w-1/2 swiper swiper-sarana lg:pt-[70px] mySwiper-sarana">
                     <div class="swiper-wrapper slide-sar-wrap pb-20">
                         <div class="swiper-slide slide-sar img-fluid mx-2 shadow-xl">
                             <img class="rounded-2xl" src="https://swiperjs.com/demos/images/nature-1.jpg" />
@@ -33,7 +33,13 @@
                             <img class="rounded-2xl" src="https://swiperjs.com/demos/images/nature-3.jpg" />
                         </div>
                     </div>
-                    <div class="swiper-pagination pag-sar"></div>
+                    <div class="flex justify-center">
+                        <div class="arrow-swiper-sar">
+                            <div class="swiper-pagination pag-sar"></div>
+                            <div class="swiper-button-next arrow-icon"></div>
+                            <div class="swiper-button-prev arrow-icon"></div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -45,6 +51,7 @@
     .swiper-sarana {
         padding-top: 70px;
         margin: 0;
+        height: 500px;
     }
 
     .slide-sar {
@@ -61,9 +68,42 @@
     }
 
     .pag-sar .swiper-pagination-bullet {
-        background-color: orangered;
         width: 0.6rem;
         height: 0.6rem;
+    }
+
+    .arrow-swiper-sar {
+        position: relative;
+        bottom: 8rem;
+        display: flex;
+        justify-content: center;
+        width: 15rem;
+    }
+
+    .pag-sar {
+        position: relative;
+    }
+
+    .swiper-horizontal>.swiper-pagination-bullets,
+    .swiper-pagination-bullets.swiper-pagination-horizontal,
+    .swiper-pagination-custom,
+    .swiper-pagination-fraction {
+        width: 10rem;
+        text-align: center;
+        margin-top: 1rem;
+    }
+
+    .swiper-pagination-bullet-active {
+        background: #000;
+    }
+
+    .arrow-icon {
+        position: absolute;
+        color: rgb(37, 37, 37);
+    }
+
+    .swiper-button-next:after, .swiper-button-prev:after {
+        font-size: 2rem;
     }
 
 </style>
@@ -79,6 +119,7 @@
             delay: 3500
             , disableOnInteraction: false
         , }
+
         , coverflowEffect: {
             rotate: 30
             , stretch: 0
@@ -91,6 +132,12 @@
         , pagination: {
             el: ".swiper-pagination"
             , clickable: true
+        , }
+
+        , navigation: {
+            nextEl: ".swiper-button-next"
+            , prevEl: ".swiper-button-prev"
+
         , }
 
     , });

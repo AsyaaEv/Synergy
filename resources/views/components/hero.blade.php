@@ -3,7 +3,7 @@
     <div class="container mx-auto justify-center md:justify-between items-center flex flex-col">
         <div class="w-full px-2 mx-auto flex lg:flex-row flex-col">
             <!-- Bagian Kiri -->
-            <div class="sm:w-full md:w-full lg:w-1/2 justify-between sm:relative md:relative lg:order-1">
+            <div class="sm:w-full md:w-full lg:w-1/2 justify-between sm:relative md:relative lg:order-1 pt-2">
                 <div class="mb-10 mt-10 sm:block md:block lg:hidden">
                     <h1 class="font-extrabold lg:text-5xl md:text-4xl sm:text-3xl text-slate-800 uppercase">Pengembangan
                         <span class="text-orange">Perangkat Lunak </span>dan Gim
@@ -25,7 +25,7 @@
 
                 <div class="bg-white shadow-md p-2 hidden md:hidden absolute rounded-xl lg:flex gap-2 top-[1.5rem] -right-24">
                     <div class="w-8 h-8 rounded-full overflow-hidden">
-                        <img src="{{ Storage::url('no_profile.webp') }}" alt="" class="object-cover h-6" />
+                        <img src="{{ Storage::url('assets/pplg/img/aziz.png') }}" alt="" class="object-cover object-top w-full h-full" />
                     </div>
 
                     <div class="h-[5rem] hidden md:hidden lg:block w-auto">
@@ -63,8 +63,8 @@
                         <span class="text-orange">Perangkat Lunak </span>dan Gim
                     </h1>
                 </div>
-                <div class="mb-10 mt-3 md:mt-10 lg:mt-0">
-                    <p class="text-slate-500 sm:text-sm md:text-lg lg:font-normal leading-relaxed capitalize">sekolah
+                <div class="lg:mb-10 mb-6 mt-3 md:mt-10 lg:mt-0">
+                    <p class="mb-0 text-slate-500 sm:text-sm md:text-lg lg:font-normal leading-relaxed capitalize">sekolah
                         adalah tempat
                         mencetak
                         penerus bangsa yang berkualitas dan berprestasi di segala bidang yang dapat bersaing di
@@ -73,8 +73,8 @@
 
                 <div class="flex flex-col gap-2 md:flex-row lg:flex-col justify-between">
                     <div class="flex gap-2 mb-3">
-                        <div class="w-auto h-6 flex gap-2 mb-12">
-                            <a href="" class="bg-orange py-4 text-decoration-none rounded-full px-8 text-white font-semibold flex gap-2 items-center justify-between hover:bg-deep-orange-800 hover:text-orange transition-all duration-500"><span>Get
+                        <div class="w-auto h-6 flex gap-2 mb-10 lg:mb-12">
+                            <a href="" class="bg-orange py-4 hover:bg-white hover:border-2 hover:border-orange text-decoration-none rounded-full px-3 lg:px-8 text-secD hover:text-orange font-semibold flex gap-2 items-center justify-between transition-all"><span class="text-base lg:text-base">Get
                                     Started</span><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
                                     <path stroke-linecap="round" stroke-linejoin="round" d="m12.75 15 3-3m0 0-3-3m3 3h-7.5M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
                                 </svg>
@@ -107,21 +107,21 @@
 
             <!-- Bagian Kanan End -->
         </div>
-        <div class=" w-full mt-10 flex flex-wrap gap-4 items-center justify-center py-[60px]">
+        <div class=" w-full lg:mt-10 flex flex-wrap gap-4 items-center justify-center py-[20px] lg:py-[60px]">
             <div class="">
-                <img class="h-[60px] grayscale hover:grayscale-0 transition-all" src="https://iconape.com/wp-content/png_logo_vector/evercoss-2015-logo.png" alt="">
+                <img class="h-[55px] grayscale hover:grayscale-0 transition-all" src="https://iconape.com/wp-content/png_logo_vector/evercoss-2015-logo.png" alt="">
             </div>
             <div class="">
-                <img  class="h-[60px] grayscale hover:grayscale-0 transition-all" src="https://crocodic.com/wp-content/uploads/2023/05/Logo-baru-Crocodic-HD.png" alt="">
+                <img  class="h-[55px] grayscale hover:grayscale-0 transition-all" src="https://crocodic.com/wp-content/uploads/2023/05/Logo-baru-Crocodic-HD.png" alt="">
             </div>
             <div class="">
-                <img  class="h-[60px] grayscale hover:grayscale-0 transition-all" src="https://www.esoftgreat.com/images/modules/config/logo/image_sarwabimbel_1546913142.png" alt="">
+                <img  class="h-[55px] grayscale hover:grayscale-0 transition-all" src="https://www.esoftgreat.com/images/modules/config/logo/image_sarwabimbel_1546913142.png" alt="">
             </div>
             <div class="">
-                <img  class="h-[60px] grayscale hover:grayscale-0 transition-all" src="https://smkn1bangsri.sch.id/assets/images/logo.png" alt="">
+                <img  class="h-[55px] grayscale hover:grayscale-0 transition-all" src="https://smkn1bangsri.sch.id/assets/images/logo.png" alt="">
             </div>
             <div class="">
-                <img  class="h-[60px] grayscale hover:grayscale-0 transition-all" src="{{Storage::url('assets/pplg/img/Tefa.jpg')}}" alt="tefa">
+                <img  class="h-[55px] grayscale hover:grayscale-0 transition-all" src="{{Storage::url('assets/pplg/img/Tefa.jpg')}}" alt="tefa">
             </div>
         </div>
     </div>

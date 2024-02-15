@@ -1,4 +1,4 @@
-<section id="visiMisi" class="w-auto h-auto py-8"
+<section id="visiMisi" class="w-full h-auto py-8 overflow-hidden"
     style=" background-size: cover; background-image: url({{ Storage::url('assets/pplg/img/bgVisiMisi.jpg') }})">
     <div class="container ">
         <h1

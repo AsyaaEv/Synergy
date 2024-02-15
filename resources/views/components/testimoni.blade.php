@@ -82,7 +82,13 @@
                     <p class="font-medium text-[#000000] py-3">"jujurly jurusan pplg tuh ada di banyak smk di Indonesia, tapi yang paling bagus untuk jurusan pplg tuh cuma di smkn1 bangsri. karena meyediakan banyak sarana untuk mengembangkan skill dan pelatihan industri yang nyata"</p>
                 </div>
             </div>
-            <div class="swiper-pagination pag-test"></div>
+            <div class="flex justify-center">
+                <div class="arrow-swiper-test">
+                    <div class="swiper-pagination pag-sar"></div>
+                    <div class="swiper-button-next arrow-icon"></div>
+                    <div class="swiper-button-prev arrow-icon"></div>
+                </div>
+            </div>
         </div>
     </div>
 
@@ -97,6 +103,20 @@
             width: 100%;
         }
 
+        .arrow-swiper-test {
+            position: relative;
+            bottom: -3rem;
+            display: flex;
+            justify-content: center;
+            width: 15rem;
+        }
+
+        @media (min-width: 768px) {
+            .slide-test {
+                width: 540px;
+            }
+        }
+        
         @media (min-width: 768px) {
             .slide-test {
                 width: 540px;
@@ -114,6 +134,13 @@
                 el: ".swiper-pagination"
                 , clickable: true
             , }
+
+            , navigation: {
+                nextEl: ".swiper-button-next"
+                , prevEl: ".swiper-button-prev"
+
+            , }
+
         , });
 
     </script>
