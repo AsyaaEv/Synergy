@@ -7,37 +7,36 @@
                 <div class="md:w-[40%] mt-16">
                     <div class="mb-10">
                         <h1 class="font-bold text-[2rem] mb-4 text-[#87897]">Sarana</h1>
-                        <p class="lg:ml-6 font-medium text-[#676767] border-t-[1.5px] border-[#676767] pt-6" data-aos='fade-right' data-aos-once="true">Lorem ipsum dolor, sit amet consectetur adipisicing
-                            elit. Porro dolore voluptatem voluptas sunt architecto perspiciatis deserunt debitis repellat
-                            minus ab.</p>
+                        <p class="lg:ml-6 font-medium text-[#676767] border-t-[1.5px] border-[#676767] pt-6 md:mb-10" data-aos='fade-right' data-aos-once="true">
+                            Di SMK dengan jurusan PPLG, sarana mencakup ruang laboratorium komputer yang dilengkapi dengan perangkat keras dan perangkat lunak terkini, serta dilengkapi proyektor dan papan tulis interaktif untuk mendukung pembelajaran interaktif.</p>
                     </div>
                     <div class="">
                         <h1 class="font-bold text-[2rem] mb-4">Prasarana</h1>
-                        <p class="lg:ml-6 font-medium text-[#676767] border-t-[1.5px] border-[#676767] pt-6 md:mb-10" data-aos='fade-right' data-aos-once="true">Lorem ipsum dolor, sit amet consectetur
-                            adipisicing elit. Porro dolore voluptatem voluptas sunt architecto perspiciatis deserunt debitis
-                            repellat minus ab.</p>
+                        <p class="lg:ml-6 font-medium text-[#676767] border-t-[1.5px] border-[#676767] pt-6 md:mb-10" data-aos='fade-right' data-aos-once="true">Prasarana yang tersedia mencakup jaringan internet cepat untuk mengakses sumber daya online, sistem manajemen pembelajaran digital untuk penyampaian materi secara online, dan kerjasama dengan industri lokal untuk pelatihan praktik secara langsung di tempat kerja.</p>
                     </div>
                 </div>
-                <div class="md:w-1/2 swiper swiper-sarana lg:pt-[70px] mySwiper-sarana">
-                    <div class="swiper-wrapper slide-sar-wrap pb-20">
-                        <div class="swiper-slide slide-sar img-fluid mx-2 shadow-xl">
-                            <img class="rounded-2xl" src="https://swiperjs.com/demos/images/nature-1.jpg" />
+                <div class="md:w-1/2 h-screen flex items-center">
+                    <div class="swiper swiper-sarana lg:pt-[70px] mySwiper-sarana">
+                        <div class="swiper-wrapper slide-sar-wrap pb-20 ">
+                            <div class="swiper-slide slide-sar img-fluid mx-2 shadow-xl">
+                                <img class="rounded-2xl" src="https://swiperjs.com/demos/images/nature-1.jpg" />
+                            </div>
+                            <div class="swiper-slide img-fluid mx-2 slide-sar shadow-xl">
+                                <img class="rounded-2xl" src="https://swiperjs.com/demos/images/nature-2.jpg" />
+                            </div>
+                            <div class="swiper-slide img-fluid mx-2 slide-sar shadow-xl">
+                                <img class="rounded-2xl" src="https://swiperjs.com/demos/images/nature-3.jpg" />
+                            </div>
+                            <div class="swiper-slide img-fluid mx-2 slide-sar shadow-xl">
+                                <img class="rounded-2xl" src="https://swiperjs.com/demos/images/nature-3.jpg" />
+                            </div>
                         </div>
-                        <div class="swiper-slide img-fluid mx-2 slide-sar shadow-xl">
-                            <img class="rounded-2xl" src="https://swiperjs.com/demos/images/nature-2.jpg" />
-                        </div>
-                        <div class="swiper-slide img-fluid mx-2 slide-sar shadow-xl">
-                            <img class="rounded-2xl" src="https://swiperjs.com/demos/images/nature-3.jpg" />
-                        </div>
-                        <div class="swiper-slide img-fluid mx-2 slide-sar shadow-xl">
-                            <img class="rounded-2xl" src="https://swiperjs.com/demos/images/nature-3.jpg" />
-                        </div>
-                    </div>
-                    <div class="flex justify-center">
-                        <div class="arrow-swiper-sar">
-                            <div class="swiper-pagination pag-sar"></div>
-                            <div class="swiper-button-next arrow-icon"></div>
-                            <div class="swiper-button-prev arrow-icon"></div>
+                        <div class="flex justify-center">
+                            <div class="arrow-swiper-sar">
+                                <div class="swiper-pagination pag-sar"></div>
+                                <div class="swiper-button-next arrow-icon"></div>
+                                <div class="swiper-button-prev arrow-icon"></div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -102,7 +101,8 @@
         color: rgb(37, 37, 37);
     }
 
-    .swiper-button-next:after, .swiper-button-prev:after {
+    .swiper-button-next:after,
+    .swiper-button-prev:after {
         font-size: 2rem;
     }
 

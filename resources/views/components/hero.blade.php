@@ -25,7 +25,7 @@
 
                 <div class="bg-white shadow-md p-2 hidden md:hidden absolute rounded-xl lg:flex gap-2 top-[1.5rem] -right-24">
                     <div class="w-8 h-8 rounded-full overflow-hidden">
-                        <img src="{{ Storage::url('assets/pplg/img/aziz.png') }}" alt="" class="object-cover object-top w-full h-full" />
+                        <img src="https://www.kieranjameswalker.com/wp-content/uploads/2016/07/person_sample_2-1.jpg" alt="" class="object-cover object-top w-full h-full" />
                     </div>
 
                     <div class="h-[5rem] hidden md:hidden lg:block w-auto">
