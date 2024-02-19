@@ -8,7 +8,7 @@
                 <p class="text-hitam lg:text-[20px] text-[16px] font-semibold mt-2 ">PPLG akan berkembang menjadi unggulan, memasukan pengembangan game, menjadi jurusan yang dapat membangkang lulusan untuk terjun ke dunia ekonomi kreatif dan bekerja sesuai bidangnya.
                 </p>
             </div>
-            <img src="{{ Storage::url('assets/pplg/img/background.png')}}" class="object-cover w-[20rem] lg:w-[25rem] md:h-[20rem] lg:h-[25rem] h-[20rem] mb-5 rounded-tl-[3rem] rounded-tr-[3rem] rounded-br-[3rem] md:mt-8 lg:-mt-[4.5rem]" alt="" data-aos='fade-left' data-aos-delay="500" data-aos-once="true">
+            <img src="{{ Storage::url('assets/pplg/img/visi.jpg')}}" class="object-cover w-[20rem] lg:w-[25rem] md:h-[20rem] lg:h-[25rem] h-[20rem] mb-5 rounded-tl-[3rem] rounded-tr-[3rem] rounded-br-[3rem] md:mt-8 lg:-mt-[4.5rem] shadow-md" alt="" data-aos='fade-left' data-aos-delay="500" data-aos-once="true">
         </div>
         <div class=" w-full flex h-auto md:gap-6 lg:justify-between items-center flex-col-reverse md:flex-row-reverse">
             <div class="w-[90%] md:w-[60%] lg:w-[50%] flex-col mb-3 md:mb-5  h-full flex " data-aos='fade-left' data-aos-once="true">
@@ -21,7 +21,7 @@
                 </ul>
                
             </div>
-            <img src="{{ Storage::url('assets/pplg/img/background.png')}}" class="object-cover w-[20rem] md:w-[20rem] lg:w-[25rem] md:h-[20rem] lg:h-[25rem] h-[20rem] mb-5 rounded-tl-[3rem] rounded-tr-[3rem] rounded-br-[3rem] md:-mt-[4.5rem]" alt="" data-aos='fade-right' data-aos-delay="500" data-aos-once="true">
+            <img src="{{ Storage::url('assets/pplg/img/misi.png')}}" class="object-cover w-[20rem] md:w-[20rem] lg:w-[25rem] md:h-[20rem] lg:h-[25rem] h-[20rem] mb-5 rounded-tl-[3rem] rounded-tr-[3rem] rounded-br-[3rem] md:-mt-[4.5rem] shadow-md" alt="" data-aos='fade-right' data-aos-delay="500" data-aos-once="true">
         </div>
     </div>
 </section>

@@ -15,20 +15,26 @@
                         <p class="lg:ml-6 font-medium text-[#676767] border-t-[1.5px] border-[#676767] pt-6 md:mb-10" data-aos='fade-right' data-aos-once="true">Prasarana yang tersedia mencakup jaringan internet cepat untuk mengakses sumber daya online, sistem manajemen pembelajaran digital untuk penyampaian materi secara online, dan kerjasama dengan industri lokal untuk pelatihan praktik secara langsung di tempat kerja.</p>
                     </div>
                 </div>
-                <div class="md:w-1/2 h-screen flex items-center">
+                <div class="md:w-1/2 lg:h-screen flex items-center">
                     <div class="swiper swiper-sarana lg:pt-[70px] mySwiper-sarana">
                         <div class="swiper-wrapper slide-sar-wrap pb-20 ">
                             <div class="swiper-slide slide-sar img-fluid mx-2 shadow-xl">
-                                <img class="rounded-2xl" src="https://swiperjs.com/demos/images/nature-1.jpg" />
+                                <img class="rounded-2xl object-cover" src="{{ Storage::url('assets/pplg/img/sarana-1.jpg')}}" />
                             </div>
                             <div class="swiper-slide img-fluid mx-2 slide-sar shadow-xl">
-                                <img class="rounded-2xl" src="https://swiperjs.com/demos/images/nature-2.jpg" />
+                                <img class="rounded-2xl object-cover" src="{{ Storage::url('assets/pplg/img/sarana-2.jpg')}}" />
                             </div>
                             <div class="swiper-slide img-fluid mx-2 slide-sar shadow-xl">
-                                <img class="rounded-2xl" src="https://swiperjs.com/demos/images/nature-3.jpg" />
+                                <img class="rounded-2xl object-cover" src="{{ Storage::url('assets/pplg/img/sarana-3.jpg')}}" />
                             </div>
                             <div class="swiper-slide img-fluid mx-2 slide-sar shadow-xl">
-                                <img class="rounded-2xl" src="https://swiperjs.com/demos/images/nature-3.jpg" />
+                                <img class="rounded-2xl object-cover" src="{{ Storage::url('assets/pplg/img/sarana-4.jpg')}}" />
+                            </div>
+                            <div class="swiper-slide img-fluid mx-2 slide-sar shadow-xl">
+                                <img class="rounded-2xl object-cover" src="{{ Storage::url('assets/pplg/img/sarana-5.jpg')}}" />
+                            </div>
+                            <div class="swiper-slide img-fluid mx-2 slide-sar shadow-xl">
+                                <img class="rounded-2xl object-cover" src="{{ Storage::url('assets/pplg/img/sarana-6.jpg')}}" />
                             </div>
                         </div>
                         <div class="flex justify-center">
@@ -115,10 +121,6 @@
         , grabCursor: true
         , centeredSlides: true
         , slidesPerView: "auto"
-        , autoplay: {
-            delay: 3500
-            , disableOnInteraction: false
-        , }
 
         , coverflowEffect: {
             rotate: 30

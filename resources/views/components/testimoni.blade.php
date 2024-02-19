@@ -6,10 +6,10 @@
                 <div class=" swiper-slide slide-test shadow-xl flex flex-col p-7 overflow-hidden rounded-lg border-2 border-[#f78704]">
                     <div class="flex items-center gap-3 mb-3">
                         <div class="md:w-[4.5rem] md:h-[4.5rem] w-14 h-14 mb-3">
-                            <img class="h-full w-full object-top object-cover rounded-full" src="https://cms.disway.id/uploads/293ceeded9507edc186a39d5b8792280.jpeg" alt="">
+                            <img class="h-full w-full object-top object-cover rounded-full" src="{{ Storage::url('assets/pplg/img/test-1.jpg')}}" alt="">
                         </div>
                         <div>
-                            <p class="mb-0 font-bold md:text-2xl text-xl">Jaka Pratama</p>
+                            <p class="mb-0 font-bold text-xl">Zunaldo Zaskia Putra Puja Alvian</p>
                             <p class="text-base">FrontEnd Dev</p>
                         </div>
                     </div>
@@ -19,10 +19,10 @@
                 <div class=" swiper-slide slide-test shadow-xl flex flex-col p-7 overflow-hidden rounded-lg border-2 border-[#f78704]">
                     <div class="flex items-center gap-3 mb-3">
                         <div class="md:w-[4.5rem] md:h-[4.5rem] w-14 h-14 mb-3">
-                            <img class="h-full w-full object-top object-cover rounded-full" src="https://awsimages.detik.net.id/community/media/visual/2016/10/07/1f310a6b-1204-4920-a100-b551ce14cfff_34.jpg?w=600&q=90" alt="">
+                            <img class="h-full w-full object-top object-cover rounded-full" src="{{ Storage::url('assets/pplg/img/test-2.jpg')}}" alt="">
                         </div>
                         <div>
-                            <p class="mb-0 font-bold md:text-2xl text-xl">Anggita Lestari</p>
+                            <p class="mb-0 font-bold text-xl">Muhammad Taufiq Adi Nugroho</p>
                             <p class="text-base">Graphic Designer</p>
                         </div>
                     </div>
@@ -32,10 +32,10 @@
                 <div class=" swiper-slide slide-test shadow-xl flex flex-col p-7 overflow-hidden rounded-lg border-2 border-[#f78704]">
                     <div class="flex items-center gap-3 mb-3">
                         <div class="md:w-[4.5rem] md:h-[4.5rem] w-14 h-14 mb-3">
-                            <img class="h-full w-full object-top object-cover rounded-full" src="https://static.republika.co.id/uploads/images/inpicture_slide/dheo-sanjaya-anak-petani-sawit-kuliah-di-kampus-digital_221209120050-172.jpeg" alt="">
+                            <img class="h-full w-full object-top object-cover rounded-full" src="{{ Storage::url('assets/pplg/img/test-3.jpg')}}" alt="">
                         </div>
                         <div>
-                            <p class="mb-0 font-bold md:text-2xl text-xl">Azmi Nabil</p>
+                            <p class="mb-0 font-bold text-xl">Vian</p>
                             <p class="text-base">BackEnd Dev</p>
                         </div>
                     </div>
@@ -48,7 +48,7 @@
                             <img class="h-full w-full object-top object-cover rounded-full" src="https://news.nusamandiri.ac.id/wp-content/uploads/2021/10/WhatsApp-Image-2021-10-22-at-10.09.24.jpeg" alt="">
                         </div>
                         <div>
-                            <p class="mb-0 font-bold md:text-2xl text-xl">Leysha Delila</p>
+                            <p class="mb-0 font-bold text-xl">Evan Febri</p>
                             <p class="text-base">Mobile App Dev</p>
                         </div>
                     </div>

@@ -11,21 +11,17 @@
                 </div>
                 <div class="max-w-4xl flex sm:justify-center md:justify-end lg:justify-end">
                     <div class="lg:w-[22rem] sm:w-full lg:h-[30rem] md:h-[27rem] sm:h-[350px] rounded-xl overflow-hidden">
-                        <img src="{{ Storage::url('assets/pplg/img/bgVisiMisi.jpg') }}" alt="Gambar" class="pointer-events-none w-full h-full object-cover" />
+                        <img src="{{ Storage::url('assets/pplg/img/about.jpg') }}" alt="Gambar" class="pointer-events-none w-full h-full object-cover" />
                     </div>
                 </div>
 
                 <div class="absolute hidden md:hidden lg:block bottom-[1.5rem] lg:left-[5rem] w-[16rem] h-auto rounded-md shadow-md bg-white py-2 px-3">
-                    <p class="text-sm p-1 font-semibold italic leading-relaxed text-slate-800">"Lorem ipsum
-                        dolor
-                        sit
-                        amet,
-                        consectetur adipisicing elit. Explicabo, vero lorem, elit"</p>
+                    <p class="text-sm p-1 font-semibold italic leading-relaxed text-slate-800">"Setiap kesabaran adalah langkah kecil menuju kesuksesan."</p>
                 </div>
 
                 <div class="bg-white shadow-md p-2 hidden md:hidden absolute rounded-xl lg:flex gap-2 top-[1.5rem] -right-24">
                     <div class="w-8 h-8 rounded-full overflow-hidden">
-                        <img src="https://www.kieranjameswalker.com/wp-content/uploads/2016/07/person_sample_2-1.jpg" alt="" class="object-cover object-top w-full h-full" />
+                        <img src="{{ Storage::url('assets/pplg/img/test-hero.jpg') }}" alt="" class="object-cover object-top w-full h-full" />
                     </div>
 
                     <div class="h-[5rem] hidden md:hidden lg:block w-auto">
@@ -50,7 +46,7 @@
                             Sukses
                             Berlajarlah
                             bersabar</p>
-                        <p class="text-xs font-normal text-slate-600 capitalize">by admin </p>
+                        <p class="text-xs font-normal text-slate-600 capitalize">by Anggun Rasya Evaldo </p>
                     </div>
                 </div>
             </div>

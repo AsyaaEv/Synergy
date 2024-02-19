@@ -3,7 +3,7 @@
         <h1 class="border-[1px] rounded-[10px] border-white p-[10px] inline-block m-0 text-[20px] md:text-[25px] text-white font-bold">Sejarah</h1>
         <div class="dropdowns mt-10 md:mt-20">
             <div class="flex flex-col lg:flex-row justify-between text-white">
-                <h1 class="font-bold lg:w-[15%]" data-aos='fade-right' data-aos-once="true">Sejarah <span class="text-orange">PPLG?</span></h1>
+                <h1 class="font-bold `:w-[15%]" data-aos='fade-right' data-aos-once="true">Sejarah <span class="text-orange">PPLG?</span></h1>
                 <div class="flex flex-col lg:w-[75%]" data-aos='fade-down' data-aos-once="true">
                     <p class="md:text-[20px] lg:text-[24px] text-[#B7B7B7]">
                         Sejarahnya dimulai sejak revolusi komputer pada abad ke-20, ketika komputer menjadi lebih mudah diakses dan digunakan oleh masyarakat umum.</p>

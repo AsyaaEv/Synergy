@@ -4,11 +4,11 @@
     <div class="container lg:-mt-20 -mt-14">
         <div class="content-wrap flex justify-between flex-col md:flex-row">
             <div class="lg:w-[25%] md:w-[30%] ">
-                <div class="flex bg-secD rounded-lg mb-3 p-3">
+                <div class="flex bg-secD rounded-lg mb-3 p-3 shadow-md">
                     <div class="w-full flex justify-center flex-col items-center">
-                        <img class="mb-4 pointer-events-none md:w-full md:h-[15rem] w-[50%] h-[10rem] rounded-lg object-cover" src="https://smkn1bangsri.sch.id/assets/images/azzam.jpg" alt="">
-                        <p class="mb-0 text-black font-bold text-center">Abdullah Azzam Al Haqqoni, S.Pd</p>
-                        <p class="mb-0 text-black font-medium text-center">Ketua Jurusan</p>
+                        <img class="mb-4 pointer-events-none md:w-full md:h-[15rem] w-[50%] h-[10rem] rounded-lg object-cover" src="https://smkn1bangsri.sch.id/assets/images/latif.jpg" alt="">
+                        <p class="mb-0 text-black font-bold text-center">Muhammad Abdul Latif, S.Kom</p>
+                        <p class="mb-0 text-black font-medium text-center">Kepala Lab, Kesiswaan</p>
                     </div>
                 </div>
                 <div class="bg-secD rounded-lg mb-4 shadow-md h-20 flex justify-center items-center">
@@ -60,7 +60,7 @@
                     <div class="w-full h-full">
                         <div class="bg-secD rounded-lg mb-4 p-3 shadow-md">
                             <h1 class="text-lg font-bold relative pl-9 text-black"><i class="ph-fill ph-article-medium text-3xl absolute top-0 left-0 "></i>Deskirpsi</h1>
-                            <p class="mb-0">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorum eaque repellendus fugiat dolore odit ducimus error mollitia, veniam quasi dolor quos, cumque ullam! Illum repudiandae expedita iure quasi dolorum magni velit voluptatibus autem magnam doloremque a dolore, assumenda, non possimus.</p>
+                            <p class="mb-0">Pak Latif adalah guru produktif PPLG yang mengajar Mobile App Dev. Pak Latif mendidik anak murid nya agar mampu membuat sebuah aplikasi mobile yang berkualitas</p>
                         </div>
                     </div>
                 </div>
@@ -68,22 +68,23 @@
                     <div class="lg:w-[55%] w-full h-full">
                         <div class="bg-secD rounded-lg mb-4 p-3 shadow-md">
                             <h1 class="text-lg font-bold relative pl-9 mb-3 text-black"><i class="ph-fill ph-user-list text-3xl absolute top-0 left-0"></i>Biodata</h1>
-                            <p class="font-medium mb-2.5 relative pl-[1.9rem]"><i class="ph-fill ph-user-circle text-2xl absolute top-0 left-0"></i>Nama Panggilan : <span class="font-bold">Pak Azzam</span></p>
-                            <p class="font-medium mb-2.5 relative pl-[1.9rem]"><i class="ph-fill ph-calendar text-2xl absolute top-0 left-0"></i>Tempat / Tanggal Lahir : <span class="font-bold">Gresik, 24 Januari 1993</span></p>
-                            <p class="font-medium mb-2.5 relative pl-[1.9rem]"><i class="ph-fill ph-book-bookmark text-2xl absolute top-0 left-0"></i>Mapel : <span class="font-bold">PKK</span></p>
-                            <p class="font-medium mb-2.5 relative pl-[1.9rem]"><i class="ph-fill ph-identification-badge text-2xl absolute top-0 left-0"></i>NIP : <span class="font-bold">0852</span></p>
-                            <p class="font-medium mb-2.5 relative pl-[1.9rem]"><i class="ph-fill ph-barcode text-2xl absolute top-0 left-0"></i>Kode Guru : <span class="font-bold">0852</span></p>
-                            <p class="font-medium mb-2.5 relative pl-[1.9rem]"><i class="ph-fill ph-envelope text-2xl absolute top-0 left-0"></i>Email : <span class="font-bold">0852</span></p>
+                            <p class="font-medium mb-2.5 relative pl-[1.9rem]"><i class="ph-fill ph-user-circle text-2xl absolute top-0 left-0"></i>Nama Panggilan : <span class="font-bold">Pak Latif</span></p>
+                            <p class="font-medium mb-2.5 relative pl-[1.9rem]"><i class="ph-fill ph-calendar text-2xl absolute top-0 left-0"></i>Tempat / Tanggal Lahir : <span class="font-bold">Jepara, 22 Mei 1983</span></p>
+                            <p class="font-medium mb-2.5 relative pl-[1.9rem]"><i class="ph-fill ph-book-bookmark text-2xl absolute top-0 left-0"></i>Mapel : <span class="font-bold">Mobile App</span></p>
+                            <p class="font-medium mb-2.5 relative pl-[1.9rem]"><i class="ph-fill ph-identification-badge text-2xl absolute top-0 left-0"></i>NIP : <span class="font-bold">198305222022211004</span></p>
+                            <p class="font-medium mb-2.5 relative pl-[1.9rem]"><i class="ph-fill ph-barcode text-2xl absolute top-0 left-0"></i>Kode Guru : <span class="font-bold">P</span></p>
+                            <p class="font-medium mb-2.5 relative pl-[1.9rem]"><i class="ph-fill ph-envelope text-2xl absolute top-0 left-0"></i>Email : <span class="font-bold">abdul02.speed@gmail.com</span></p>
                         </div>
                     </div>
                     <div class="lg:w-[40%] w-full h-auto">
                         <div class="bg-secD h-auto rounded-lg mb-4 p-3 shadow-md">
                             <h1 class="text-lg font-bold relative pl-9 mb-3 text-black"><i class="ph ph-graduation-cap text-3xl absolute top-0 left-0"></i>Pendidikan</h1>
-                            <p class="font-bold mb-2.5 relative pl-[1.9rem]"><i class="ph-fill ph-student text-2xl absolute top-0 left-0"></i>S1 Computer Science Harvard University</p>
-                            
+                            <p class="font-bold mb-2.5 relative pl-[1.9rem]"><i class="ph-fill ph-student text-2xl absolute top-0 left-0"></i>S-1 Teknik Informatika</p>
+
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+    </div>
 </section>

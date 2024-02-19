@@ -43,3 +43,10 @@ Route::get('/profil-guru/{nama}', function($nama){
     return view('routes.profil-guru', ['nama' => $nama]);
 });
 
+Route::view('/profil-rima', 'routes.profil-guru.profil-rima')->name('profil-rima');
+Route::view('/profil-azzam', 'routes.profil-guru.profil-azzam')->name('profil-azzam');
+Route::view('/profil-iwan', 'routes.profil-guru.profil-iwan')->name('profil-iwan');
+Route::view('/profil-agung', 'routes.profil-guru.profil-agung')->name('profil-agung');
+Route::view('/profil-latif', 'routes.profil-guru.profil-latif')->name('profil-latif');
+Route::view('/profil-eko', 'routes.profil-guru.profil-eko')->name('profil-eko');
+
