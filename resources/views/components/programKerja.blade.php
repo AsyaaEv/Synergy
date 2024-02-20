@@ -14,16 +14,16 @@
         <div class="w-full hidden md:block mt-10">
             <div class="flex justify-center items-center flex-col">
                 <div class="w-[60%]">
-                    <div class="mb-4 border-b border-gray-200">
+                    <div class="mb-4 border-b border-white">
                         <ul class="flex flex-wrap -mb-px text-sm font-medium gap-3 text-center" id="default-tab" data-tabs-toggle="#default-tab-content" role="tablist">
                             <li class="me-2" role="presentation">
-                                <button class="inline-block p-4 custom-color hover:text-gray-600 border-b-2  rounded-t-lg" id="profile-tab" data-tabs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false">Program Tahunan</button>
+                                <button class="inline-block p-4 custom-color hover:text-white focus:border-orange focus:text-orange border-b-2  rounded-t-lg" id="profile-tab" data-tabs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false">Program Tahunan</button>
                             </li>
                             <li class="me-2" role="presentation">
-                                <button class="inline-block p-4 border-b-2 rounded-t-lg hover:text-gray-600 hover:border-gray-300 dark:hover:text-gray-300" id="dashboard-tab" data-tabs-target="#dashboard" type="button" role="tab" aria-controls="dashboard" aria-selected="false">Program Bulanan</button>
+                                <button class="inline-block p-4 border-b-2 rounded-t-lg hover:text-white focus:text-orange hover:border-gray-300 focus:border-orange dark:hover:text-gray-300" id="dashboard-tab" data-tabs-target="#dashboard" type="button" role="tab" aria-controls="dashboard" aria-selected="false">Program Bulanan</button>
                             </li>
                             <li class="me-2" role="presentation">
-                                <button class="inline-block p-4 border-b-2 rounded-t-lg hover:text-gray-600 hover:border-gray-300 dark:hover:text-gray-300" id="settings-tab" data-tabs-target="#settings" type="button" role="tab" aria-controls="settings" aria-selected="false">Program Mingguan</button>
+                                <button class="inline-block p-4 border-b-2 rounded-t-lg hover:text-white focus:text-orange hover:border-gray-300 focus:border-orange dark:hover:text-gray-300" id="settings-tab" data-tabs-target="#settings" type="button" role="tab" aria-controls="settings" aria-selected="false">Program Mingguan</button>
                             </li>   
                         </ul>
                     </div>
@@ -39,32 +39,32 @@
                             </div>
                             <div class="flex w-[20rem] mt-2 h-auto space-x-3 ml-[2rem] mr-[2rem]">
                                 <i class="ph-bold text-orange ph-info text-xl"></i>
-                                <h1 class="text-hitam ml-[5rem] font-semibold text-sm dark:text-gray-400">Rapat
-                                    PKL
+                                <h1 class="text-hitam ml-[5rem] font-semibold text-sm dark:text-gray-400">
+                                    Rapat PKL
                                 </h1>
                             </div>
                             <div class="flex w-[20rem] mt-2 h-auto space-x-3 ml-[2rem] mr-[2rem]">
                                 <i class="ph-bold text-orange ph-info text-xl"></i>
-                                <h1 class="text-hitam ml-[5rem] font-semibold text-sm dark:text-gray-400">Pemetaaan
-                                    LKS Kabupaten
+                                <h1 class="text-hitam ml-[5rem] font-semibold text-sm dark:text-gray-400">
+                                    Pemetaaan LKS Kabupaten
                                 </h1>
                             </div>
                             <div class="flex w-[20rem] mt-2 h-auto space-x-3 ml-[2rem] mr-[2rem]">
                                 <i class="ph-bold text-orange ph-info text-xl"></i>
-                                <h1 class="text-hitam ml-[5rem] font-semibold text-sm dark:text-gray-400">Penataan
-                                    LKS Provinsi
+                                <h1 class="text-hitam ml-[5rem] font-semibold text-sm dark:text-gray-400">
+                                    Penataan LKS Provinsi
                                 </h1>
                             </div>
                             <div class="flex w-[20rem] mt-2 h-auto space-x-3 ml-[2rem] mr-[2rem]">
                                 <i class="ph-bold text-orange ph-info text-xl"></i>
-                                <h1 class="text-hitam ml-[5rem] font-semibold text-sm dark:text-gray-400">Penataan
-                                    Kunjungan Industri
+                                <h1 class="text-hitam ml-[5rem] font-semibold text-sm dark:text-gray-400">
+                                    Penataan Kunjungan Industri
                                 </h1>
                             </div>
                             <div class="flex w-[20rem] mt-2 h-auto space-x-3 ml-[2rem] mr-[2rem]">
                                 <i class="ph-bold text-orange ph-info text-xl"></i>
-                                <h1 class="text-hitam ml-[5rem] font-semibold text-sm dark:text-gray-400">Penataan
-                                    Magang Guru
+                                <h1 class="text-hitam ml-[5rem] font-semibold text-sm dark:text-gray-400">
+                                    Penataan Magang Guru
                                 </h1>
                             </div>
                         </div>
@@ -72,37 +72,25 @@
                             <div class="flex w-[20rem] mt-2 h-auto space-x-3 ml-[2rem] mr-[2rem]">
                                 <i class="ph-bold text-orange ph-info text-xl"></i>
                                 <h1 class="text-hitam ml-[5rem] font-semibold text-sm dark:text-gray-400">
-                                    UKK PPLG
+                                    Sinkronisasi kurikulum dengan DU/DI
                                 </h1>
                             </div>
                             <div class="flex w-[20rem] mt-2 h-auto space-x-3 ml-[2rem] mr-[2rem]">
                                 <i class="ph-bold text-orange ph-info text-xl"></i>
-                                <h1 class="text-hitam ml-[5rem] font-semibold text-sm dark:text-gray-400">Rapat
-                                    PKL
+                                <h1 class="text-hitam ml-[5rem] font-semibold text-sm dark:text-gray-400">
+                                    Rapat Koordinasi Jurusan PPLG
                                 </h1>
                             </div>
                             <div class="flex w-[20rem] mt-2 h-auto space-x-3 ml-[2rem] mr-[2rem]">
                                 <i class="ph-bold text-orange ph-info text-xl"></i>
-                                <h1 class="text-hitam ml-[5rem] font-semibold text-sm dark:text-gray-400">Pemetaaan
-                                    LKS Kabupaten
+                                <h1 class="text-hitam ml-[5rem] font-semibold text-sm dark:text-gray-400">
+                                    Pemetaaan kompetensi anak berbasis peminatan
                                 </h1>
                             </div>
                             <div class="flex w-[20rem] mt-2 h-auto space-x-3 ml-[2rem] mr-[2rem]">
                                 <i class="ph-bold text-orange ph-info text-xl"></i>
-                                <h1 class="text-hitam ml-[5rem] font-semibold text-sm dark:text-gray-400">Penataan
-                                    LKS Provinsi
-                                </h1>
-                            </div>
-                            <div class="flex w-[20rem] mt-2 h-auto space-x-3 ml-[2rem] mr-[2rem]">
-                                <i class="ph-bold text-orange ph-info text-xl"></i>
-                                <h1 class="text-hitam ml-[5rem] font-semibold text-sm dark:text-gray-400">Penataan
-                                    Kunjungan Industri
-                                </h1>
-                            </div>
-                            <div class="flex w-[20rem] mt-2 h-auto space-x-3 ml-[2rem] mr-[2rem]">
-                                <i class="ph-bold text-orange ph-info text-xl"></i>
-                                <h1 class="text-hitam ml-[5rem] font-semibold text-sm dark:text-gray-400">Penataan
-                                    Magang Guru
+                                <h1 class="text-hitam ml-[5rem] font-semibold text-sm dark:text-gray-400"> 
+                                    Penataan Lab dan pembaruan KIR
                                 </h1>
                             </div>
                         </div>
@@ -110,37 +98,31 @@
                             <div class="flex w-[20rem] mt-2 h-auto space-x-3 ml-[2rem] mr-[2rem]">
                                 <i class="ph-bold text-orange ph-info text-xl"></i>
                                 <h1 class="text-hitam ml-[5rem] font-semibold text-sm dark:text-gray-400">
-                                    UKK PPLG
+                                    Penyusunan dan Penyeragaman jobsheet
                                 </h1>
                             </div>
                             <div class="flex w-[20rem] mt-2 h-auto space-x-3 ml-[2rem] mr-[2rem]">
                                 <i class="ph-bold text-orange ph-info text-xl"></i>
-                                <h1 class="text-hitam ml-[5rem] font-semibold text-sm dark:text-gray-400">Rapat
-                                    PKL
+                                <h1 class="text-hitam ml-[5rem] font-semibold text-sm dark:text-gray-400">
+                                    Penerapan 5S pada Laboratorium
                                 </h1>
                             </div>
                             <div class="flex w-[20rem] mt-2 h-auto space-x-3 ml-[2rem] mr-[2rem]">
                                 <i class="ph-bold text-orange ph-info text-xl"></i>
-                                <h1 class="text-hitam ml-[5rem] font-semibold text-sm dark:text-gray-400">Pemetaaan
-                                    LKS Kabupaten
+                                <h1 class="text-hitam ml-[5rem] font-semibold text-sm dark:text-gray-400">
+                                    Sinkronisasi antar mapel di jurusan
                                 </h1>
                             </div>
                             <div class="flex w-[20rem] mt-2 h-auto space-x-3 ml-[2rem] mr-[2rem]">
                                 <i class="ph-bold text-orange ph-info text-xl"></i>
-                                <h1 class="text-hitam ml-[5rem] font-semibold text-sm dark:text-gray-400">Penataan
-                                    LKS Provinsi
+                                <h1 class="text-hitam ml-[5rem] font-semibold text-sm dark:text-gray-400">
+                                    Penyusunan KTSP PPLG
                                 </h1>
                             </div>
                             <div class="flex w-[20rem] mt-2 h-auto space-x-3 ml-[2rem] mr-[2rem]">
                                 <i class="ph-bold text-orange ph-info text-xl"></i>
-                                <h1 class="text-hitam ml-[5rem] font-semibold text-sm dark:text-gray-400">Penataan
-                                    Kunjungan Industri
-                                </h1>
-                            </div>
-                            <div class="flex w-[20rem] mt-2 h-auto space-x-3 ml-[2rem] mr-[2rem]">
-                                <i class="ph-bold text-orange ph-info text-xl"></i>
-                                <h1 class="text-hitam ml-[5rem] font-semibold text-sm dark:text-gray-400">Penataan
-                                    Magang Guru
+                                <h1 class="text-hitam ml-[5rem] font-semibold text-sm dark:text-gray-400">
+                                    Mengaktifkan unit produksi
                                 </h1>
                             </div>
                         </div>
@@ -220,7 +202,7 @@
         <!-- accordion Desk end-->
 
         <!-- accordion HP -->
-        <div class="w-full flex-col justify-center items-center h-auto md:hidden">
+        <div class="w-full flex-col  md:hidden justify-center items-center h-auto">
             <!-- collapse 1 -->
             <div class="relative mb-3 flex-col flex justify-center w-full items-center">
                 <h6 class="mb-0 w-[85%]">
@@ -228,7 +210,7 @@
                     class="relative flex items-center p-4 font-semibold w-full text-left transition-all ease-in border-b border-solid cursor-pointer border-orange rounded-t-1 group text-white"
                     data-collapse-target="animated-collapse-1"
                   >
-                    <span>Program Kerja Tahunan</span>
+                    <span class="text-white">Program Kerja Tahunan</span>
                     <i class="absolute right-0 pt-1 text-base transition-transform ph-bold ph-caret-down group-open:rotate-180 text-white mr-5"></i>
                   </button>
                 </h6>
