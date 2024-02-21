@@ -9,12 +9,12 @@
                             <img class="h-full w-full object-top object-cover rounded-full" src="{{ Storage::url('assets/pplg/img/test-1.jpg')}}" alt="">
                         </div>
                         <div>
-                            <p class="mb-0 font-bold text-xl">Zunaldo Zaskia Putra Puja Alvian</p>
-                            <p class="text-base">FrontEnd Dev</p>
+                            <p class="mb-0 font-bold text-xl">Diandra Rullyadtitya</p>
+                            <p class="text-base">Front-end</p>
                         </div>
                     </div>
-                    <p class="text-lg font-bold mb-0">"Keren banget suka ama pembelajarannya"</p>
-                    <p class="font-medium text-[#000000] py-3">"Jujurly jurusan pplg tuh ada di banyak smk di Indonesia, tapi yang paling bagus untuk jurusan pplg tuh cuma di smkn1 bangsri. karena meyediakan banyak sarana untuk mengembangkan skill dan pelatihan industri yang nyata"</p>
+                    <p class="text-lg font-bold mb-0">"SMK gue banget nih, jurusan PPLG!"</p>
+                    <p class="font-medium text-[#000000] py-3">"Saya masuk jurusan PPLG, bisa ngutak-atik kode sambil nongkrong di lab komputer yang kece, Guru-gurunya juga santai tapi kompeten banget. Plus, ada kesempatan buat magang di perusahaan IT, jadi bener-bener siap tempur pas lulus nanti. Pokoknya, SMK PPLG ini juara deh!"</p>
                 </div>
                 <div class=" swiper-slide slide-test shadow-xl flex flex-col p-7 overflow-hidden rounded-lg border-2 border-[#f78704]">
                     <div class="flex items-center gap-3 mb-3">
@@ -22,8 +22,8 @@
                             <img class="h-full w-full object-top object-cover rounded-full" src="{{ Storage::url('assets/pplg/img/test-2.jpg')}}" alt="">
                         </div>
                         <div>
-                            <p class="mb-0 font-bold text-xl">Muhammad Taufiq Adi Nugroho</p>
-                            <p class="text-base">Graphic Designer</p>
+                            <p class="mb-0 font-bold text-xl">Muhammad Rifal Prasetyo</p>
+                            <p class="text-base">Back-end</p>
                         </div>
                     </div>
                     <p class="text-lg font-bold mb-0">"Gak ada yang ngalahin emang"</p>
@@ -35,21 +35,21 @@
                             <img class="h-full w-full object-top object-cover rounded-full" src="{{ Storage::url('assets/pplg/img/test-3.jpg')}}" alt="">
                         </div>
                         <div>
-                            <p class="mb-0 font-bold text-xl">Vian</p>
-                            <p class="text-base">BackEnd Dev</p>
+                            <p class="mb-0 font-bold text-xl">Evan Febri</p>
+                            <p class="text-base">Designer Graphic</p>
                         </div>
                     </div>
-                    <p class="text-lg font-bold mb-0">"SMK gue banget nih, jurusan PPLG!</p>
-                    <p class="font-medium text-[#000000] py-3">"Gue masuk jurusan PPLG, bisa ngutak-atik kode sambil nongkrong di lab komputer yang kece, Guru-gurunya juga santai tapi kompeten banget. Plus, ada kesempatan buat magang di perusahaan IT, jadi bener-bener siap tempur pas lulus nanti. Pokoknya, SMK PPLG ini juara deh!"</p>
+                    <p class="text-lg font-bold mb-0">"Keren banget suka ama pembelajarannya</p>
+                    <p class="font-medium text-[#000000] py-3">"Jujurly jurusan pplg tuh ada di banyak smk di Indonesia, tapi yang paling bagus untuk jurusan pplg tuh cuma di smkn1 bangsri. karena meyediakan banyak sarana untuk mengembangkan skill dan pelatihan industri yang nyata"</p>
                 </div>
                 <div class=" swiper-slide slide-test shadow-xl flex flex-col p-7 overflow-hidden rounded-lg border-2 border-[#f78704]">
                     <div class="flex items-center gap-3 mb-3">
                         <div class="md:w-[4.5rem] md:h-[4.5rem] w-14 h-14 mb-3">
-                            <img class="h-full w-full object-top object-cover rounded-full" src="https://news.nusamandiri.ac.id/wp-content/uploads/2021/10/WhatsApp-Image-2021-10-22-at-10.09.24.jpeg" alt="">
+                            <img class="h-full w-full object-top object-cover rounded-full" src="{{ Storage::url('assets/pplg/img/test-4.jpg')}}" alt="">
                         </div>
                         <div>
-                            <p class="mb-0 font-bold text-xl">Evan Febri</p>
-                            <p class="text-base">Mobile App Dev</p>
+                            <p class="mb-0 font-bold text-xl">Muhammad Novian</p>
+                            <p class="text-base">Designer Graphic</p>
                         </div>
                     </div>
                     <p class="text-lg font-bold mb-0">"Gak nyesel pilih PPLG"</p>
