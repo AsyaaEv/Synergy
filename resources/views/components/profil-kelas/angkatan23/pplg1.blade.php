@@ -4,12 +4,12 @@
     <div class="container md:flex-row flex flex-col md:justify-between lg:h-[80svh] border-b-2 border-solid pb-8 px-4">
         <div class="flex-col md:w-[35%] justify-center w-full">
             <div class="lg:w-52 lg:h-52 md:w-36 md:h-36 w-32 h-32 lg:-mt-28 md:-mt-12 lg:ml-20 ml-[9.5rem] md:ml-[2.5rem] -mt-16 mb-2 flex justify-center border-[10px] border-white rounded-full">
-                <img class="h-full w-full object-top object-cover rounded-full pointer-events-none" src="{{ Storage::url('assets/pplg/img/iwan.jpg') }}" alt="">
+                <img class="h-full w-full object-top object-cover rounded-full pointer-events-none" src="{{ Storage::url('assets/pplg/img/kasih.jpg') }}" alt="">
             </div>
             <div class="flex flex-col justify-center items-center mt-4 md:mt-6 lg:mt-0">
-                <h1 class="lg:text-xl md:text-sm text-sm font-bold px-2 py-2 border-2 md:rounded-2xl rounded-lg border-hitam">Iwan Safrudin, S.Kom</h1>
+                <h1 class="lg:text-xl md:text-sm text-sm font-bold px-2 py-2 border-2 md:rounded-2xl rounded-lg border-hitam">Nur Kasih Fatmawati, S.pd</h1>
                 <h1 class="lg:text-xl text-lg font-semibold text-center mt-2">Wali Kelas X PPLG 2</h1>
-                <a href="/profil-iwan" class="text-decoration-none w-[5rem] lg:w-[7rem] bg-secD border-2 border-hitam md:py-3 py-2 px-3 lg:px-6 mt-3 rounded-lg lg:text-xl text-sm font-bold text-hitam hover:text-orange hover:border-orange transition-all">Profile</a>
+                {{-- <a href="/profil-iwan" class="text-decoration-none w-[5rem] lg:w-[7rem] bg-secD border-2 border-hitam md:py-3 py-2 px-3 lg:px-6 mt-3 rounded-lg lg:text-xl text-sm font-bold text-hitam hover:text-orange hover:border-orange transition-all">Profile</a> --}}
             </div>
         </div>
         <div class="bg-secD md:w-[60%] w-full  h-auto mt-10 border-hitam border-2 shadow-2xl rounded-3xl">
