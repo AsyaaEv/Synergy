@@ -13,7 +13,7 @@
         <!-- accordion Desk -->
         <div class="w-full hidden md:block mt-10">
             <div class="flex justify-center items-center flex-col">
-                <div class="w-[60%]">
+                <div class="md:w-full lg:w-[60%] ">
                     <div class="mb-4 border-b border-white">
                         <ul class="flex flex-wrap -mb-px text-sm font-medium gap-3 text-center" id="default-tab" data-tabs-toggle="#default-tab-content" role="tablist">
                             <li class="me-2" role="presentation">

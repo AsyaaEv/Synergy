@@ -17,22 +17,21 @@
                 </div>
                 <div class="mb-6 md:mb-0 w-[16rem] mt-12">
                     <h6 class="text-white md:text-xl text-xl font-semibold">Contact Info</h6>
-                    <p class="text-white font-medium text-sm">Our major studies and explores ways of developing software.
-                        Starting
-                        from creation, maintenance,</p>
+                    <p class="text-white font-medium text-sm">( 291 ) 772321 smkn1bangsri@yahoo.co.id
+                        admin@smkn1bangsri.sch.id</p>
                 </div>
             </div>
             <div class="md:flex md:justify-between lg:gap-10 lg:justify-normal mb-10 md:mx-5">
                 <div class="mb-6 md:mb-0 w-[17rem] mt-12">
                     <h6 class="text-white md:text-xl text-lg font-semibold">Location</h6>
-                    <p class="text-white font-medium text-sm">Our major studies and explores ways of developing software.
-                        Starting
-                        from creation, maintenance, quality management</p>
+                    <p class="text-white font-medium text-sm">SMK NEGERI 1 BANGSRI
+                        JL. KH. Achmad Fauzan No. 17 Bangsri Jepara
+                        Jawa Tengah</p>
                 </div>
                 <div class="mb-6 md:mb-0 w-auto mt-12">
                     <h6 class="text-white md:text-xl text-xl font-semibold">Follow us</h6>
                     <div class="flex flex-row gap-4 items-start justify-start relative">
-                        <a href="">
+                        <a href="https://www.instagram.com/smkn1bangsri.official?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==">
                             <div class="shrink-0 w-[25px] h-[25px] relative overflow-hidden">
                                 <svg class="h-auto absolute right-[0%] left-[0%] w-[100%] bottom-[0%] top-[0%] overflow-visible" style="" width="37" height="37" viewBox="0 0 37 37" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M28.3281 0H8.67188C3.88253 0 0 3.88253 0 8.67188V28.3281C0 33.1175 3.88253 37 8.67188 37H28.3281C33.1175 37 37 33.1175 37 28.3281V8.67188C37 3.88253 33.1175 0 28.3281 0Z" fill="url(#paint0_radial_438_19)" />
@@ -54,31 +53,33 @@
                                 </svg>
                             </div>
                         </a>
-                        <svg class="shrink-0 w-[25px] h-[25px] relative overflow-visible" style="" width="37" height="37" viewBox="0 0 37 37" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <g clip-path="url(#clip0_438_23)">
-                                <path d="M37 18.5C37 8.2828 28.7172 0 18.5 0C8.2828 0 0 8.2828 0 18.5C0 27.7338 6.76522 35.3875 15.6094 36.7753V23.8477H10.9121V18.5H15.6094V14.4242C15.6094 9.78766 18.3714 7.22656 22.5972 7.22656C24.6212 7.22656 26.7383 7.58789 26.7383 7.58789V12.1406H24.4055C22.1074 12.1406 21.3906 13.5667 21.3906 15.0298V18.5H26.5215L25.7013 23.8477H21.3906V36.7753C30.2348 35.3875 37 27.734 37 18.5Z" fill="#1877F2" />
-                                <path d="M25.7013 23.8477L26.5215 18.5H21.3906V15.0298C21.3906 13.5666 22.1074 12.1406 24.4055 12.1406H26.7383V7.58789C26.7383 7.58789 24.6212 7.22656 22.597 7.22656C18.3714 7.22656 15.6094 9.78766 15.6094 14.4242V18.5H10.9121V23.8477H15.6094V36.7753C16.5656 36.9251 17.5321 37.0003 18.5 37C19.4679 37.0003 20.4344 36.9251 21.3906 36.7753V23.8477H25.7013Z" fill="white" />
-                            </g>
-                            <defs>
-                                <clipPath id="clip0_438_23">
-                                    <rect width="37" height="37" fill="white" />
-                                </clipPath>
-                            </defs>
-                        </svg>
-                        <svg class="shrink-0 w-[25px] h-[25px] relative overflow-visible" style="" width="37" height="37" viewBox="0 0 37 37" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M28.1258 3.46875H33.2277L22.0844 16.202L35.1934 33.5312H24.9316L16.8885 23.0238L7.69629 33.5312H2.58711L14.5037 19.9092L1.93672 3.46875H12.4586L19.7213 13.0729L28.1258 3.46875ZM26.3336 30.4816H29.1592L10.9193 6.35938H7.88418L26.3336 30.4816Z" fill="white" />
-                        </svg>
-                        <svg class="shrink-0 w-[30px] h-[25px] relative overflow-visible" style="" width="46" height="37" viewBox="0 0 46 37" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <g clip-path="url(#clip0_438_28)">
-                                <path d="M44.9841 5.77097C44.7202 4.65554 44.2056 3.63863 43.4913 2.82151C42.7771 2.0044 41.8881 1.41558 40.9131 1.1137C37.3434 0 22.9767 0 22.9767 0C22.9767 0 8.60922 0.033711 5.03955 1.14741C4.06448 1.44931 3.17555 2.03816 2.46129 2.85531C1.74704 3.67247 1.23237 4.68941 0.96855 5.80489C-0.111192 13.0606 -0.530044 24.1166 0.998199 31.0821C1.26205 32.1975 1.77672 33.2144 2.49098 34.0315C3.20524 34.8486 4.09415 35.4374 5.0692 35.7393C8.63887 36.853 23.006 36.853 23.006 36.853C23.006 36.853 37.3729 36.853 40.9424 35.7393C41.9175 35.4375 42.8064 34.8487 43.5207 34.0316C44.235 33.2144 44.7497 32.1975 45.0136 31.0821C46.1524 23.8161 46.5033 12.7668 44.9841 5.77097Z" fill="#FF0000" />
-                                <path d="M18.4038 26.3234L30.3221 18.4263L18.4038 10.5293V26.3234Z" fill="white" />
-                            </g>
-                            <defs>
-                                <clipPath id="clip0_438_28">
-                                    <rect width="46" height="37" fill="white" />
-                                </clipPath>
-                            </defs>
-                        </svg>
+                        <a href="https://www.facebook.com/profile.php?id=61555742302650">
+                            <svg class="shrink-0 w-[25px] h-[25px] relative overflow-visible" style="" width="37" height="37" viewBox="0 0 37 37" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_438_23)">
+                                    <path d="M37 18.5C37 8.2828 28.7172 0 18.5 0C8.2828 0 0 8.2828 0 18.5C0 27.7338 6.76522 35.3875 15.6094 36.7753V23.8477H10.9121V18.5H15.6094V14.4242C15.6094 9.78766 18.3714 7.22656 22.5972 7.22656C24.6212 7.22656 26.7383 7.58789 26.7383 7.58789V12.1406H24.4055C22.1074 12.1406 21.3906 13.5667 21.3906 15.0298V18.5H26.5215L25.7013 23.8477H21.3906V36.7753C30.2348 35.3875 37 27.734 37 18.5Z" fill="#1877F2" />
+                                    <path d="M25.7013 23.8477L26.5215 18.5H21.3906V15.0298C21.3906 13.5666 22.1074 12.1406 24.4055 12.1406H26.7383V7.58789C26.7383 7.58789 24.6212 7.22656 22.597 7.22656C18.3714 7.22656 15.6094 9.78766 15.6094 14.4242V18.5H10.9121V23.8477H15.6094V36.7753C16.5656 36.9251 17.5321 37.0003 18.5 37C19.4679 37.0003 20.4344 36.9251 21.3906 36.7753V23.8477H25.7013Z" fill="white" />
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_438_23">
+                                        <rect width="37" height="37" fill="white" />
+                                    </clipPath>
+                                </defs>
+                            </svg>
+                        </a>
+                        <a href="https://youtube.com/@SMKN1BANGSRI?si=dV5LwaFgNi-N88uF">
+                            <svg class="shrink-0 w-[30px] h-[25px] relative overflow-visible" style="" width="46" height="37" viewBox="0 0 46 37" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_438_28)">
+                                    <path d="M44.9841 5.77097C44.7202 4.65554 44.2056 3.63863 43.4913 2.82151C42.7771 2.0044 41.8881 1.41558 40.9131 1.1137C37.3434 0 22.9767 0 22.9767 0C22.9767 0 8.60922 0.033711 5.03955 1.14741C4.06448 1.44931 3.17555 2.03816 2.46129 2.85531C1.74704 3.67247 1.23237 4.68941 0.96855 5.80489C-0.111192 13.0606 -0.530044 24.1166 0.998199 31.0821C1.26205 32.1975 1.77672 33.2144 2.49098 34.0315C3.20524 34.8486 4.09415 35.4374 5.0692 35.7393C8.63887 36.853 23.006 36.853 23.006 36.853C23.006 36.853 37.3729 36.853 40.9424 35.7393C41.9175 35.4375 42.8064 34.8487 43.5207 34.0316C44.235 33.2144 44.7497 32.1975 45.0136 31.0821C46.1524 23.8161 46.5033 12.7668 44.9841 5.77097Z" fill="#FF0000" />
+                                    <path d="M18.4038 26.3234L30.3221 18.4263L18.4038 10.5293V26.3234Z" fill="white" />
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_438_28">
+                                        <rect width="46" height="37" fill="white" />
+                                    </clipPath>
+                                </defs>
+                            </svg>
+                        </a>
+
                     </div>
                 </div>
             </div>
