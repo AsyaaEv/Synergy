@@ -2,14 +2,14 @@
     <div class="lg:h-[50vh] h-[30vh]  bg-no-repeat bg-center bg-cover" style="background-image: url({{ Storage::url('assets/pplg/img/bgVisiMIsi.jpg') }})">
     </div>
     <div class="container md:flex-row flex flex-col md:justify-between lg:h-[80svh] border-b-2 border-solid pb-8 px-4">
-        <div class="flex-col md:w-[35%] w-full border-2 border-hitam">
-            <div class="md:w-52 md:h-52 w-32 h-32 md:-mt-28 ml-20 -mt-16 mb-2 flex justify-center border-[10px] border-white rounded-full">
-                <img class="h-full w-full object-top object-cover rounded-full pointer-events-none" src="{{ Storage::url('assets/pplg/img/iwan.png') }}" alt="">
+        <div class="flex-col md:w-[35%] justify-center w-full">
+            <div class="lg:w-52 lg:h-52 md:w-36 md:h-36 w-32 h-32 lg:-mt-28 md:-mt-12 lg:ml-20 ml-[9.5rem] md:ml-[2.5rem] -mt-16 mb-2 flex justify-center border-[10px] border-white rounded-full">
+                <img class="h-full w-full object-top object-cover rounded-full pointer-events-none" src="{{ Storage::url('assets/pplg/img/iwan.jpg') }}" alt="">
             </div>
-            <div class="flex flex-col justify-center items-center">
-                <h1 class="md:text-xl text-sm font-bold px-2 py-2 border-2 md:rounded-2xl rounded-lg border-hitam">Abdullah Azzam Al Haqqoni, S.Pd</h1>
-                <h1 class="md:text-2xl text-lg font-semibold text-center mt-2">Wali Kelas X PPLG 1</h1>
-                <a href="#" class="text-decoration-none w-[7rem] bg-secD border-2 border-hitam py-3 px-6 mt-3 rounded-lg text-xl font-bold text-hitam hover:text-orange hover:border-orange transition-all">Profile</a>
+            <div class="flex flex-col justify-center items-center mt-4 md:mt-6 lg:mt-0">
+                <h1 class="lg:text-xl md:text-sm text-sm font-bold px-2 py-2 border-2 md:rounded-2xl rounded-lg border-hitam">Iwan Safrudin, S.Kom</h1>
+                <h1 class="lg:text-xl text-lg font-semibold text-center mt-2">Wali Kelas X PPLG 2</h1>
+                <a href="/profil-iwan" class="text-decoration-none w-[5rem] lg:w-[7rem] bg-secD border-2 border-hitam md:py-3 py-2 px-3 lg:px-6 mt-3 rounded-lg lg:text-xl text-sm font-bold text-hitam hover:text-orange hover:border-orange transition-all">Profile</a>
             </div>
         </div>
         <div class="bg-secD md:w-[60%] w-full  h-auto mt-10 border-hitam border-2 shadow-2xl rounded-3xl">
@@ -92,11 +92,11 @@
                 <div class="w-[85%] rounded-lg shadow-xl bg-secD flex mt-10 h-auto mb-3">
                     <div class="flex-col w-full gap-3 relative">
                         <div class="w-full bg-secD md:h-28 h-20 rounded-[15px] flex justify-center items-center">
-                            <span class="text-hitam text-2xl font-bold">PPLG 1</span>
+                            {{-- <span class="text-hitam text-2xl font-bold">PPLG 1</span> --}}
                         </div>
-                        {{-- <div class="w-[94px] h-[26px] bg-secD text-center absolute border top-0 rounded-tl-lg rounded-br-xl shadow">
+                        <div class="w-[94px] h-[26px] bg-secD text-center absolute border top-0 rounded-tl-lg rounded-br-xl shadow">
                             <p class="text-base font-semibold">Slogan</p>
-                        </div> --}}
+                        </div>
                     </div>
                 </div>
             </div>
