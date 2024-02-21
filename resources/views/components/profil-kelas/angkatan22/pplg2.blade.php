@@ -1,35 +1,36 @@
 <section class="w-full h-screen">
     <div class="lg:h-[50vh] h-[30vh]  bg-no-repeat bg-center bg-cover" style="background-image: url({{ Storage::url('assets/pplg/img/bgVisiMIsi.jpg') }})">
     </div>
-    <div class="container md:flex flex-col justify-between h-[80svh] border-b-2 border-solid pb-8 px-4">
+    <div class="container md:flex-row flex flex-col md:justify-between lg:h-[80svh] border-b-2 border-solid pb-8 px-4">
         <div class="flex-col md:w-[35%] w-full border-2 border-hitam">
-            <div class="md:w-52 md:h-52 w-32 h-32 md:-mt-28 ml-20 -mt-16 mb-2 border-[10px] border-white rounded-full">
-                <img class="h-full w-full object-top object-cover rounded-full pointer-events-none" src="{{ Storage::url('assets/pplg/img/azzam.png') }}" alt="">
+            <div class="md:w-52 md:h-52 w-32 h-32 md:-mt-28 ml-20 -mt-16 mb-2 flex justify-center border-[10px] border-white rounded-full">
+                <img class="h-full w-full object-top object-cover rounded-full pointer-events-none" src="{{ Storage::url('assets/pplg/img/rima.jpg') }}" alt="">
             </div>
-            <div class="flex justify-center">
-                <h1 class="md:text-xl text-lg font-bold px-2 py-2 border-2 rounded-2xl border-hitam">Abdullah Azzam Al Haqqoni, S.Pd</h1>
+            <div class="flex flex-col justify-center items-center">
+                <h1 class="md:text-xl text-sm font-bold px-2 py-2 border-2 md:rounded-2xl rounded-lg border-hitam">Rima Ariona Nur Awalia, S.Pd</h1>
+                <h1 class="md:text-2xl text-lg font-semibold text-center mt-2">Wali Kelas XI PPLG B</h1>
+                <a href="/profil-rima" class="text-decoration-none w-[7rem] bg-secD border-2 border-hitam py-3 px-6 mt-3 rounded-lg text-xl font-bold text-hitam hover:text-orange hover:border-orange transition-all">Profile</a>
             </div>
-            <h1 class="text-2xl font-semibold text-center mt-2">Wali Kelas X PPLG 1</h1>
         </div>
-        <div class="bg-white md:w-[60%] w-full h-auto mt-10 border-hitam border-2 shadow-2xl rounded-3xl">
-            <div class="flex justify-start ml-7 mt-5">
-                <h1 class="md:text-xl text-xl font-bold px-3 py-2 border-2 rounded-lg border-hitam">Bio Data</h1>
+        <div class="bg-secD md:w-[60%] w-full  h-auto mt-10 border-hitam border-2 shadow-2xl rounded-3xl">
+            <div class="flex justify-start ml-7 md:mt-5 mt-4">
+                <h1 class="md:text-xl text-lg font-bold px-3 py-2 border-2 rounded-lg border-hitam">Bio Data</h1>
             </div>
             <div class="w-full flex justify-center flex-col items-center">
-                <div class="w-[85%] border-2 border-hitam flex mt-4 h-auto justify-between">
-                    <div class="flex-col w-[28.3%]">
-                        <h1 class="text-xl font-semibold">Kelas</h1>
-                        <div class="flex shadow w-[8rem] bg-blue-gray-200 h-[3rem] rounded-lg justify-center items-center">
-                            <h1 class="text-base font-semibold uppercase mt-3">pplg 1</h1>
+                <div class="w-[90%] flex md:flex-wrap lg:flex-nowrap mt-4 h-auto lg:gap-0 gap-5 ">
+                    <div class="flex-col w-[28.3%] ml-3 md:ml-0">
+                        <h1 class="md:text-xl text-base font-semibold">Kelas</h1>
+                        <div class="flex shadow md:w-[8rem] w-[5rem] bg-secD md:h-[3rem] h-[2.5rem] md:rounded-lg rounded-[0.3rem] justify-center items-center">
+                            <h1 class="md:text-base text-sm font-semibold uppercase md:mt-3 mt-2">XI pplg b</h1>
                         </div>
                     </div>
-                    <div class="flex-col w-[28.3%]">
-                        <h1 class="text-xl font-semibold">Angkatan</h1>
-                        <div class="flex shadow w-[6rem] bg-blue-gray-200 h-[3rem] rounded-lg justify-center items-center">
-                            <h1 class="text-base font-semibold uppercase mt-3">2021</h1>
+                    <div class="flex-col w-[28.3%] ml-5">
+                        <h1 class="md:text-xl text-base font-semibold">Angkatan</h1>
+                        <div class="flex shadow md:w-[8rem] w-[5rem] bg-secD md:h-[3rem] h-[2.5rem] md:rounded-lg rounded-[0.3rem] justify-center items-center">
+                            <h1 class="md:text-base text-sm font-semibold uppercase md:mt-3 mt-2">2022</h1>
                         </div>
                     </div>
-                    <div class="flex flex-col w-[28.3%] mr-5 mt-2">
+                    {{-- <div class="flex flex-col lg:w-[28.3%] w-[30%] ml-3 lg:ml-0 mr-5 mt-2">
                         <p class="font-semibold text-slate-600 text-sm text-start">Sosial Media :</p>
                         <div class="space-x-3 flex">
                             <a href="#">
@@ -86,14 +87,14 @@
                                 </svg>
                             </a>
                         </div>
-                    </div>
+                    </div> --}}
                 </div>
-                <div class="w-[85%] border-2 border-hitam flex mt-10 h-auto mb-3">
+                <div class="w-[85%] rounded-lg shadow-xl bg-secD flex mt-10 h-auto mb-3">
                     <div class="flex-col w-full gap-3 relative">
-                        <div class="w-full bg-blue-gray-100 h-28 rounded-[15px] flex justify-center items-center">
-                            <span class="text-hitam text-2xl font-bold">PPLG 1</span>
+                        <div class="w-full bg-secD md:h-28 h-20 rounded-[15px] flex justify-center items-center">
+                            <span class="text-hitam text-2xl font-bold">Coding is very easy</span>
                         </div>
-                        <div class="w-[94px] h-[26px] bg-white text-center absolute border top-0 rounded-tl-md rounded-br-xl shadow">
+                        <div class="w-[94px] h-[26px] bg-secD text-center absolute border top-0 rounded-tl-lg rounded-br-xl shadow">
                             <p class="text-base font-semibold">Slogan</p>
                         </div>
                     </div>
@@ -101,119 +102,115 @@
             </div>
         </div>
     </div>
-    <div class="container mt-10 flex flex-col items-center justify-center">
-        <div class="w-[90%] flex justify-center">
-            <div class="block w-full max-w-screen-xl px-6 py-3 mx-auto text-white bg-white border shadow-md rounded-xl border-white/80 bg-opacity-80 backdrop-blur-2xl backdrop-saturate-200">
-                <div class="flex items-center justify-between text-blue-gray-900">
-                    <h1 class="mr-4 md:block hidden cursor-pointer py-1.5 font-sans text-base font-semibold leading-relaxed tracking-normal text-inherit antialiased">Material Tailwind</h1>
-                    <div class="lg:block md:w-2/3 w-full">
-                        <ul class="relative flex flex-wrap p-1 list-none rounded-xl bg-blue-gray-50/60" data-tabs="tabs"role="list">
-                            <li class="z-30 flex-auto text-center">
-                                <a class="z-30 flex items-center justify-center w-full px-0 py-1 mb-0 transition-all ease-in-out border-0 rounded-lg cursor-pointer text-slate-700 bg-inherit" data-tab-target="" active="" role="tab" aria-selected="true" aria-controls="app">
-                                    <span class="ml-1">App</span>
-                                </a>
-                            </li>
-                            <li class="z-30 flex-auto text-center">
-                                <a class="z-30 flex items-center justify-center w-full px-0 py-1 mb-0 transition-all ease-in-out border-0 rounded-lg cursor-pointer text-slate-700 bg-inherit" data-tab-target="" role="tab" aria-selected="false" aria-controls="message">
-                                    <span class="ml-1">Messages</span>
-                                </a>
-                            </li>
-                            <li class="z-30 flex-auto text-center">
-                                <a class="z-30 flex items-center justify-center w-full px-0 py-1 mb-0 transition-all ease-in-out border-0 rounded-lg cursor-pointer text-slate-700 bg-inherit" data-tab-target="" role="tab"aria-selected="false" aria-controls="settings">
-                                    <span class="ml-1">Settings</span>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>                              
+    <div class="container">
+        
+        <div class="w-full block">
+            <div class="flex items-center w-full justify-between mt-5">
+                <h1 class="mt-2 mb-4 block md:hidden lg:hidden text-lg font-semibold text-hitam px-2 border-2 border-hitam rounded-lg">Menu</h1>
             </div>
-        </div>
-        <div data-tab-content="" class="w-full flex justify-center">
-            <div class="opacity-100 w-full" id="app" role="tabpanel">
-                <div class="w-full h-screen flex items-center">
-                    <div class="swiper swiper-kelas lg:pt-[70px] mySwiper-kelas">
-                        <div class="swiper-wrapper slide-kelas-wrap pb-20 ">
-                            <div class="swiper-slide slide-kelas img-fluid mx-2 shadow-xl">
-                                <img class="rounded-2xl" src="https://swiperjs.com/demos/images/nature-1.jpg" />
+            <div class="w-full bg-[#ff8800] block h-[10svh] bg-opacity-50 rounded-2xl">
+                {{-- tampilan hp --}}
+                <div class="relative flex  right-0 justify-between items-center  h-[10svh] ">
+                    <div class="w-[15%] h-[10svh] hidden md:flex border-2 border-hitam rounded-2xl items-center justify-center">
+                        <h1 class="mb-3 text-xl text-center mt-4 font-semibold text-hitam px-2 ">Menu</h1>
+                    </div>
+                    <ul class="relative w-full md:w-2/3 flex flex-wrap border-2 mt-3 border-hitam p-1 h-[10svh] list-none rounded-2xl" data-tabs="tabs" role="list">
+                        <li class="z-30 flex-auto text-center ">
+                            <a class="z-30 flex items-center justify-center text-decoration-none w-full px-0 py-[10px] transition-all ease-in-out border-0 rounded-lg cursor-pointer text-slate-700 bg-inherit" data-tab-target="" active="" role="tab" aria-selected="true" aria-controls="app">
+                                <span class="ml-1 text-sm  text-orange mt-1">Galery</span>
+                            </a>
+                        </li>
+                        <li class="z-30 flex-auto text-center">
+                            <a class="z-30 flex items-center justify-center text-decoration-none w-full px-0 py-[10px] transition-all ease-in-out border-0 rounded-lg cursor-pointer text-slate-700 bg-inherit" data-tab-target="" role="tab" aria-selected="false" aria-controls="message">
+                                <span class="ml-1 text-sm  text-orange mt-1">Memories</span>
+                            </a>
+                        </li>
+                        <li class="z-30 flex-auto text-center">
+                            <a class="z-30 flex items-center justify-center text-decoration-none w-full px-0 py-[10px] transition-all ease-in-out border-0 rounded-lg cursor-pointer text-slate-700 bg-inherit" data-tab-target="" role="tab" aria-selected="false" aria-controls="settings">
+                                <span class="ml-1 text-sm  text-orange mt-1">project</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div data-tab-content="" class="p-3 container">
+                <div class="block opacity-100 w-full" id="app" role="tabpanel">
+                    <div class="block w-full items-center antialiased leading-relaxed h-auto">
+                        <div class="swiper swiper-kelas lg:pt-[70px] mySwiper-kelas">
+                            <div class="swiper-wrapper slide-kelas-wrap pb-20 ">
+                                <div class="swiper-slide slide-kelas">
+                                    <img class="rounded-2xl object-cover" src="{{ Storage::url('assets/pplg/img/pplgb/pplgb(1).png') }}" />
+                                </div>
+                                <div class="swiper-slide slide-kelas">
+                                    <img class="rounded-2xl object-cover" src="{{ Storage::url('assets/pplg/img/pplgb/pplgb(3).jpg') }}" />
+                                </div>
+                                <div class="swiper-slide img-fluid mx-2 slide-kelas shadow-xl">
+                                    <img class="rounded-2xl object-cover" src="{{ Storage::url('assets/pplg/img/pplgb/pplgb(8).jpg') }}" />
+                                </div>
+                                <div class="swiper-slide img-fluid mx-2 slide-kelas shadow-xl">
+                                    <img class="rounded-2xl object-cover" src="{{ Storage::url('assets/pplg/img/pplgb/pplgb(9).jpg') }}" />
+                                </div>
+                                <div class="swiper-slide img-fluid mx-2 slide-kelas shadow-xl">
+                                    <img class="rounded-2xl object-cover" src="{{ Storage::url('assets/pplg/img/pplgb/pplgb(11).jpg') }}" />
+                                </div>
                             </div>
-                            <div class="swiper-slide slide-kelas img-fluid mx-2 shadow-xl">
-                                <img class="rounded-2xl" src="https://swiperjs.com/demos/images/nature-1.jpg" />
-                            </div>
-                            <div class="swiper-slide img-fluid mx-2 slide-kelas shadow-xl">
-                                <img class="rounded-2xl" src="https://swiperjs.com/demos/images/nature-2.jpg" />
-                            </div>
-                            <div class="swiper-slide img-fluid mx-2 slide-kelas shadow-xl">
-                                <img class="rounded-2xl" src="https://swiperjs.com/demos/images/nature-3.jpg" />
-                            </div>
-                            <div class="swiper-slide img-fluid mx-2 slide-kelas shadow-xl">
-                                <img class="rounded-2xl" src="https://swiperjs.com/demos/images/nature-3.jpg" />
-                            </div>
-                        </div>
-                        <div class="flex justify-center">
-                            <div class="arrow-swiper-kelas">
-                                <div class="swiper-pagination pag-kelas"></div>
-                                <div class="swiper-button-next arrow-icon"></div>
-                                <div class="swiper-button-prev arrow-icon"></div>
+                            <div class="flex justify-center">
+                                <div class="arrow-swiper-kelas">
+                                    <div class="swiper-pagination pag-kelas"></div>
+                                    <div class="swiper-button-next arrow-icon"></div>
+                                    <div class="swiper-button-prev arrow-icon"></div>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="hidden opacity-0" id="message" role="tabpanel">
-                <div class="block container mt-5">
-                    <div class="swiper swiper-kelas lg:pt-[70px] mySwiper-kelas">
-                        <div class="swiper-wrapper slide-kelas-wrap pb-20 ">
-                            <div class="swiper-slide slide-kelas img-fluid mx-2 shadow-xl">
-                                <img class="rounded-2xl" src="https://swiperjs.com/demos/images/nature-1.jpg" />
+                <div class="hidden opacity-0" id="message" role="tabpanel">
+                    <div class="block w-full items-center antialiased leading-relaxed h-auto">
+                        <div class="swiper swiper-kelas lg:pt-[70px] mySwiper-kelas">
+                            <div class="swiper-wrapper slide-kelas-wrap pb-20 ">
+                                <div class="swiper-slide slide-kelas img-fluid mx-2 shadow-xl">
+                                    <img class="rounded-2xl object-cover" src="{{ Storage::url('assets/pplg/img/pplgb/pplgb(8).jpg') }}" />
+                                </div>
+                                <div class="swiper-slide slide-kelas">
+                                    <img class="rounded-2xl object-cover" src="{{ Storage::url('assets/pplg/img/pplgb/pplgb(2).jpg') }}" />
+                                </div>
+                                <div class="swiper-slide img-fluid mx-2 slide-kelas shadow-xl">
+                                    <img class="rounded-2xl object-cover" src="{{ Storage::url('assets/pplg/img/pplgb/pplgb(10).jpg') }}" />
+                                </div>
                             </div>
-                            <div class="swiper-slide slide-kelas img-fluid mx-2 shadow-xl">
-                                <img class="rounded-2xl" src="https://swiperjs.com/demos/images/nature-1.jpg" />
-                            </div>
-                            <div class="swiper-slide img-fluid mx-2 slide-kelas shadow-xl">
-                                <img class="rounded-2xl" src="https://swiperjs.com/demos/images/nature-2.jpg" />
-                            </div>
-                            <div class="swiper-slide img-fluid mx-2 slide-kelas shadow-xl">
-                                <img class="rounded-2xl" src="https://swiperjs.com/demos/images/nature-3.jpg" />
-                            </div>
-                            <div class="swiper-slide img-fluid mx-2 slide-kelas shadow-xl">
-                                <img class="rounded-2xl" src="https://swiperjs.com/demos/images/nature-3.jpg" />
-                            </div>
-                        </div>
-                        <div class="flex justify-center">
-                            <div class="arrow-swiper-kelas">
-                                <div class="swiper-pagination pag-kelas"></div>
-                                <div class="swiper-button-next arrow-icon"></div>
-                                <div class="swiper-button-prev arrow-icon"></div>
+                            <div class="flex justify-center">
+                                <div class="arrow-swiper-kelas">
+                                    <div class="swiper-pagination pag-kelas"></div>
+                                    <div class="swiper-button-next arrow-icon"></div>
+                                    <div class="swiper-button-prev arrow-icon"></div>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-            </div>
-            <div class="hidden opacity-0" id="settings" role="tabpanel">
-                <div class="block container mt-5">
-                    <div class="swiper swiper-kelas lg:pt-[70px] mySwiper-kelas">
-                        <div class="swiper-wrapper slide-kelas-wrap pb-20 ">
-                            <div class="swiper-slide slide-kelas img-fluid mx-2 shadow-xl">
-                                <img class="rounded-2xl" src="https://swiperjs.com/demos/images/nature-1.jpg" />
+                </div>          
+                <div class="hidden opacity-0" id="settings" role="tabpanel">
+                    <div class="block w-full items-center antialiased leading-relaxed h-auto">
+                        <div class="swiper swiper-kelas lg:pt-[70px] mySwiper-kelas">
+                            <div class="swiper-wrapper slide-kelas-wrap pb-20 ">
+                                <div class="swiper-slide img-fluid mx-2 slide-kelas shadow-xl">
+                                    <img class="rounded-2xl object-cover" src="{{ Storage::url('assets/pplg/img/pplgb/pplgb(4).jpg') }}" />
+                                </div>
+                                <div class="swiper-slide img-fluid mx-2 slide-kelas shadow-xl">
+                                    <img class="rounded-2xl object-cover" src="{{ Storage::url('assets/pplg/img/pplgb/pplgb(2).jpg') }}" />
+                                </div>
+                                <div class="swiper-slide img-fluid mx-2 slide-kelas shadow-xl">
+                                    <img class="rounded-2xl object-cover" src="{{ Storage::url('assets/pplg/img/pplgb/pplgb(6).jpg') }}" />
+                                </div>
+                                <div class="swiper-slide img-fluid mx-2 slide-kelas shadow-xl">
+                                    <img class="rounded-2xl object-cover" src="{{ Storage::url('assets/pplg/img/pplgb/pplgb(7).jpg') }}" />
+                                </div>
                             </div>
-                            <div class="swiper-slide slide-kelas img-fluid mx-2 shadow-xl">
-                                <img class="rounded-2xl" src="https://swiperjs.com/demos/images/nature-1.jpg" />
-                            </div>
-                            <div class="swiper-slide img-fluid mx-2 slide-kelas shadow-xl">
-                                <img class="rounded-2xl" src="https://swiperjs.com/demos/images/nature-2.jpg" />
-                            </div>
-                            <div class="swiper-slide img-fluid mx-2 slide-kelas shadow-xl">
-                                <img class="rounded-2xl" src="https://swiperjs.com/demos/images/nature-3.jpg" />
-                            </div>
-                            <div class="swiper-slide img-fluid mx-2 slide-kelas shadow-xl">
-                                <img class="rounded-2xl" src="https://swiperjs.com/demos/images/nature-3.jpg" />
-                            </div>
-                        </div>
-                        <div class="flex justify-center">
-                            <div class="arrow-swiper-kelas">
-                                <div class="swiper-pagination pag-kelas"></div>
-                                <div class="swiper-button-next arrow-icon"></div>
-                                <div class="swiper-button-prev arrow-icon"></div>
+                            <div class="flex justify-center">
+                                <div class="arrow-swiper-kelas">
+                                    <div class="swiper-pagination pag-kelas"></div>
+                                    <div class="swiper-button-next arrow-icon"></div>
+                                    <div class="swiper-button-prev arrow-icon"></div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -234,13 +231,13 @@
     .slide-kelas {
         background-position: center;
         background-size: cover;
-        width: 400px;
+        width: 500px;
         height: 350px;
     }
 
 
     .slide-kelas img {
-        width: 100%;
+        width: 150%;
         height: 100%
     }
 
@@ -291,7 +288,7 @@
         effect: "coverflow"
         , grabCursor: true
         , centeredSlides: true
-        , slidesPerView: "3"
+        , slidesPerView: "auto"
         , autoplay: {
             delay: 3500
             , disableOnInteraction: false

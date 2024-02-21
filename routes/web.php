@@ -35,7 +35,7 @@ Route::get('/dashboard/walikelas/edit/{id}', function($id){
 });
 
 Route::view('/', 'routes.home');
-Route::view('/profil-kelas', 'routes.profil-kelas');
+
 
 Route::view('/list-kelas', 'routes.list-kelas-section')->name('list-kelas');;
 
@@ -50,3 +50,8 @@ Route::view('/profil-agung', 'routes.profil-guru.profil-agung')->name('profil-ag
 Route::view('/profil-latif', 'routes.profil-guru.profil-latif')->name('profil-latif');
 Route::view('/profil-eko', 'routes.profil-guru.profil-eko')->name('profil-eko');
 
+
+Route::view('/angkatan22/profil-pplg-1', 'routes.profil-kelas.angkatan22.pplg1');
+Route::view('/angkatan22/profil-pplg-2', 'routes.profil-kelas.angkatan22.pplg2');
+Route::view('/angkatan23/profil-pplg-1', 'routes.profil-kelas.angkatan23.pplg1');
+Route::view('/angkatan23/profil-pplg-2', 'routes.profil-kelas.angkatan23.pplg2');
